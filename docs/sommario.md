@@ -9,88 +9,89 @@ description: introduzione ai contenuti, sommario
 
 ## Grade 1 - *Senior Guardian*
 ### Livello 1: Introduzione alla programmazione e Rust
-  - Sotto-Livello 1.1: [Cos'è la Programmazione?](./Livello-01/la-programmazione)
-  - Sotto-Livello 1.2: [Perché Imparare Rust?](./Livello-01/perchè-imparare-rust)
-  - Sotto-Livello 1.3: [Ambiente di Sviluppo per Rust](./Livello-01/ambiente-sviluppo-rust)
-  - Sotto-Livello 1.3: [Installazione di Rust](./Livello-01/installazione)
+  - Sotto livello 1.1: [Cos'è la Programmazione?](./Livello-01/la-programmazione)
+  - Sotto livello 1.2: [Perché Imparare Rust?](./Livello-01/perchè-imparare-rust)
+  - Sotto livello 1.3: [Ambiente di Sviluppo per Rust](./Livello-01/ambiente-sviluppo-rust)
+  - Sotto livello 1.3: [Installazione di Rust](./Livello-01/installazione)
 
 ### Livello 2: Fondamenti della Programmazione
-  - Sotto-Livello 2.1: Variabili e Tipi di Dati in Rust
-  - Sotto-Livello 2.2: Operazioni Matematiche e Operatori
-  - Sotto-Livello 2.3: Input e Output Utente
-  - Sotto-Livello 2.4: Istruzioni Condizionali (if, else)
-  - Sotto-Livello 2.5: Cicli e Looping (while, for)
+  - Sotto livello 2.1: [Le variabili](./Livello-02/variabili)
+  - Sotto livello 2.2: Tipi di dato
+  - Sotto livello 2.3: Operazioni Matematiche e Operatori
+  - Sotto livello 2.4: Input e Output Utente
+  - Sotto livello 2.5: Istruzioni Condizionali (if, else)
+  - Sotto livello 2.6: Cicli e Looping (while, for)
 
 ### Livello 3: Strutture Dati in Rust
-  - Sotto-Livello 3.1: Array e Vettori
-  - Sotto-Livello 3.2: Stringhe
-  - Sotto-Livello 3.3: Tuple
-  - Sotto-Livello 3.4: Strutture (Structs) e Enumerazioni (Enums)
+  - Sotto livello 3.1: Array e Vettori
+  - Sotto livello 3.2: Stringhe
+  - Sotto livello 3.3: Tuple
+  - Sotto livello 3.4: Strutture (Structs) e Enumerazioni (Enums)
 
 ### Livello 4: Funzioni e Modularità
-  - Sotto-Livello 4.1: Cosa Sono le Funzioni
-  - Sotto-Livello 4.2: Parametri e Restituzione dei Valori
-  - Sotto-Livello 4.3: Organizzare il Codice con Funzioni
-  - Sotto-Livello 4.4: Importare Moduli e Pacchetti Esterni
+  - Sotto livello 4.1: Cosa Sono le Funzioni
+  - Sotto livello 4.2: Parametri e Restituzione dei Valori
+  - Sotto livello 4.3: Organizzare il Codice con Funzioni
+  - Sotto livello 4.4: Importare Moduli e Pacchetti Esterni
 
 
 ## Grade 2 - *Planet Guardian*
 ### Livello 5: Programmazione Orientata agli Oggetti (OOP) in Rust
-  - Sotto-Livello 5.1: Concetti di Base dell'OOP
-  - Sotto-Livello 5.2: Creazione di Metodi e Strutture
-  - Sotto-Livello 5.3: Ereditarietà e Polimorfismo
+  - Sotto livello 5.1: Concetti di Base dell'OOP
+  - Sotto livello 5.2: Creazione di Metodi e Strutture
+  - Sotto livello 5.3: Ereditarietà e Polimorfismo
 
 ### Livello 6: Gestione degli Errori in Rust
-  - Sotto-Livello 6.1: Introduzione alla Gestione degli Errori
-  - Sotto-Livello 6.2: Il Tipo di Dato Result
-  - Sotto-Livello 6.3: Il Tipo di Dato Option
-  - Sotto-Livello 6.4: Gestire Errori Personalizzati
+  - Sotto livello 6.1: Introduzione alla Gestione degli Errori
+  - Sotto livello 6.2: Il Tipo di Dato Result
+  - Sotto livello 6.3: Il Tipo di Dato Option
+  - Sotto livello 6.4: Gestire Errori Personalizzati
 
 ### Livello 7: Progetti Pratici
-  - Sotto-Livello 7.1: Creazione di un Gioco Semplice
-  - Sotto-Livello 7.2: Automatizzazione di Compiti
-  - Sotto-Livello 7.3: Risoluzione di Problemi Matematici
-  - Sotto-Livello 7.4: Progetto Finale: Applicazione Interattiva
+  - Sotto livello 7.1: Creazione di un Gioco Semplice
+  - Sotto livello 7.2: Automatizzazione di Compiti
+  - Sotto livello 7.3: Risoluzione di Problemi Matematici
+  - Sotto livello 7.4: Progetto Finale: Applicazione Interattiva
 
 ### Livello 8: Approfondimenti in Rust
-  - Sotto-Livello 8.1: Generics e Trait
-  - Sotto-Livello 8.2: Concorrenza e Multithreading in Rust
-  - Sotto-Livello 8.3: Uso delle Librerie e dei Framework
+  - Sotto livello 8.1: Generics e Trait
+  - Sotto livello 8.2: Concorrenza e Multithreading in Rust
+  - Sotto livello 8.3: Uso delle Librerie e dei Framework
 
 ### Livello 9: Contribuzione Open Source e Comunità Rust
-  - Sotto-Livello 9.1: Cos'è l'Open Source
-  - Sotto-Livello 9.2: Contribuzione a Progetti Rust
-  - Sotto-Livello 9.3: Partecipazione alla Comunità Rust
+  - Sotto livello 9.1: Cos'è l'Open Source
+  - Sotto livello 9.2: Contribuzione a Progetti Rust
+  - Sotto livello 9.3: Partecipazione alla Comunità Rust
 
 ### Livello 10: Il Futuro della Programmazione in Rust
-  - Sotto-Livello 10.1: Opportunità di Carriera
-  - Sotto-Livello 10.2: Ulteriori Risorse e Approfondimenti
-  - Sotto-Livello 10.3: Il Vostro Cammino di Apprendimento Continuo
+  - Sotto livello 10.1: Opportunità di Carriera
+  - Sotto livello 10.2: Ulteriori Risorse e Approfondimenti
+  - Sotto livello 10.3: Il Vostro Cammino di Apprendimento Continuo
 
 
 ## Grade 3 - *Galaxy Guardian*
 ### Livello 11: Etica dell'Hacking e sicurezza informatica con Rust
-  - **Sotto-Livello 11.1: Introduzione all'Hacking Etico**
+  - **Sotto livello 11.1: Introduzione all'Hacking Etico**
     - Scopo dell'hacking etico
     - Differenza tra hacking etico, white hat e black hat
     - Come diventare un white hat hacker
 
-  - **Sotto-Livello 11.2: Sicurezza Informatica Fondamentale**
+  - **Sotto livello 11.2: Sicurezza Informatica Fondamentale**
     - Concetti di base della sicurezza informatica
     - Come proteggere il tuo computer e i tuoi dati personali
     - Rischi della cattiva sicurezza informatica
 
-  - **Sotto-Livello 11.3: Utilizzo di Rust per la Sicurezza**
+  - **Sotto livello 11.3: Utilizzo di Rust per la Sicurezza**
     - Perché Rust è una scelta solida per la sicurezza informatica
     - Esempi di strumenti di sicurezza scritti in Rust
     - Come sviluppare applicazioni sicure con Rust
 
-  - **Sotto-Livello 11.4: Hacking Etico con Rust**
+  - **Sotto livello 11.4: Hacking Etico con Rust**
     - Etica nell'hacking e nell'analisi di vulnerabilità
     - Metodologie e approcci nell'hacking etico
     - Esempi di progetti di hacking etico con Rust
 
-  - **Sotto-Livello 11.5: La Tua Responsabilità Etica**
+  - **Sotto livello 11.5: La Tua Responsabilità Etica**
     - L'importanza dell'etica nell'uso delle tue abilità di programmazione e hacking
     - Linee guida per un comportamento etico nel mondo digitale
     - Come contribuire alla sicurezza informatica e all'etica online con le tue competenze

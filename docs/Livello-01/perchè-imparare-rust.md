@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Perchè imparare Rust?
+# 1.2 Perchè imparare Rust?
 Imparare Rust è una scelta eccellente per diversi motivi, specialmente se desideri apprendere la programmazione in modo completo e sicuro. Rust è un linguaggio di programmazione di sistema che offre una sintassi pulita e moderna, ma ciò che lo rende veramente speciale è il suo focus sulla sicurezza e l'affidabilità del codice.
 
 Differenza tra Linguaggi Compilati e Interpretati:

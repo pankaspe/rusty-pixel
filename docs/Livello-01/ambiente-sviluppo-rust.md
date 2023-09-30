@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# L'ambiente di sviluppo di Rust
+# 1.3 L'ambiente di sviluppo di Rust
 ### Cargo
 Cargo è il sistema di gestione dei pacchetti e il sistema di compilazione ufficiale per il linguaggio di programmazione Rust. È una delle caratteristiche distintive di Rust e semplifica notevolmente il processo di sviluppo fornendo una serie di strumenti integrati per la gestione del progetto.
 

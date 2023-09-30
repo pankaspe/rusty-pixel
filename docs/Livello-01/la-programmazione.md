@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Cos'è la Programmazione
+# 1.1 Cos'è la Programmazione
 Certamente! Immagina di sederti al tavolo con un amico che non parla la tua lingua. Questo amico è un computer e, nonostante sia molto intelligente, capisce solo un linguaggio molto specifico, chiamato **linguaggio di programmazione**. La programmazione è *l'arte di scrivere* un elenco preciso e dettagliato di *istruzioni* in questo linguaggio speciale.
 
 Queste istruzioni sono come comandi magici che dirigeranno il tuo amico digitale (il computer) su come eseguire compiti specifici in modo rapido ed efficiente. In altre parole, tu sei il mago che dà vita a oggetti virtuali, giochi interattivi e applicazioni utili solo con l'aiuto della tua bacchetta magica, ovvero il codice!

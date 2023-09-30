@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# Installazione di Rust
+# 1.4 Installazione di Rust
 ### Su sistemi Linux
 L'installazione di Rust su un sistema Linux è un processo diretto. Ecco come farlo:
 
