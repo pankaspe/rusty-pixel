@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Rusty Guardians',
-  tagline: 'Sicurezza e Creatività nel Mondo della Programmazione!',
+  tagline: 'Impara gratuitamente a programmare in Rust e a pensare come un programmatore.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -18,7 +18,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
+  organizationName: 'pankaspe', // Usually your GitHub org/user name.
   projectName: 'rusty-guardians', // Usually your repo name.
 
   onBrokenLinks: 'throw',
@@ -66,10 +66,10 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Rusty Guardians',
+        title: 'R.G.',
         logo: {
           alt: 'rusty guardians',
-          src: 'img/logo.svg',
+          src: 'img/logo-rg.png',
         },
         items: [
           {

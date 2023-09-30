@@ -1,41 +1,25 @@
-# Website
+# Benvenuti in Rusty Guardians!
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+Rusty Guardians è un progetto educativo dedicato a insegnare ai ragazzi i fondamenti della programmazione in Rust, un linguaggio di programmazione moderno e sicuro. Condividiamo le avventure della programmazione in un ambiente accogliente e divertente!
 
-### Installation
+## Che cos'è Rusty Guardians?
 
-```
-$ yarn
-```
+Rusty Guardians è un corso online progettato per ragazzi tra i 13 e i 16 anni. Il nostro obiettivo è rendere la programmazione accessibile e divertente. Insegneremo i concetti di base della programmazione usando Rust come linguaggio principale. Che tu sia un principiante assoluto o abbia già qualche esperienza, Rusty Guardians è il posto perfetto per iniziare il tuo viaggio nel mondo della programmazione.
 
-### Local Development
+## Cosa Imparerai:
 
-```
-$ yarn start
-```
+- **Fondamenti della Programmazione:** Imparerai le basi della programmazione, comprese variabili, cicli e condizioni.
+- **Sicurezza Informatica:** Esploreremo concetti di sicurezza informatica e comportamento etico online.
+- **Rust Programming:** Scoprirai il linguaggio di programmazione Rust e come usarlo per creare software sicuri e affidabili.
+- **Progetti Interattivi:** Avrai l'opportunità di lavorare su progetti interattivi, giochi e applicazioni.
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+## Requisiti:
 
-### Build
+- Un computer con accesso a Internet.
+- Curiosità e voglia di imparare!
 
-```
-$ yarn build
-```
+## Contribuisci:
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+Siamo aperti alle contribuzioni! Se vuoi migliorare i tutorial esistenti o aggiungere nuovi progetti, fai una pull request.
 
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+**Divertiti a programmare con Rusty Guardians!** 🚀

@@ -9,7 +9,7 @@ const FeatureList = [
     description: (
       <>
         Rusty Guardians è progettato per essere intuitivo e accessibile. 
-        Con un'interfaccia utente semplice e istruzioni chiare, anche i principianti possono imparare facilmente i concetti della programmazione in Rust.
+        Con un'interfaccia utente semplice e istruzioni chiare, anche i principianti possono imparare facilmente i concetti della programmazione con Rust.
       </>
     ),
   },
@@ -18,17 +18,18 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        La sezione tutorial offre una guida completa alle basi fondamentali della programmazione. 
+        La sezione tutorial offre una guida completa alle fondamenta della programmazione. 
         Dai concetti di base alle strutture dati avanzate, i tutorial coprono tutto ciò di cui hai bisogno per iniziare a programmare in modo efficace e sicuro.
       </>
     ),
   },
   {
-    title: 'Powered by ChatGPT',
+    title: 'Powered by ChatGPT & Docusaurus',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Ogni testo in Rusty Guardians è stato accuratamente revisionato da ChatGPT e OpenAI seguendo le mie indicazioni, garantendo così contenuti precisi e affidabili.
+        Ogni testo in Rusty Guardians è stato accuratamente revisionato da ChatGPT seguendo le mie indicazioni, garantendo così contenuti precisi e affidabili.
+        Organizzato come una dettagliata enciclopedia interattiva grazie all'efficiente utilizzo di Docusaurus.
       </>
     ),
   },

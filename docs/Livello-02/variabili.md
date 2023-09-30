@@ -15,8 +15,12 @@ Le variabili sono contenitori che immagazzinano dati nel computer. Puoi creare v
    let nome = "Alice"; // Dichiarazione di una variabile di tipo stringa
    let eta = 30; // Dichiarazione di una variabile di tipo intero
    ```
-   In Rust, le variabili sono immutabili per impostazione predefinita, il che significa che, una volta che assegni un valore a una variabile, non puoi modificarlo. Questa caratteristica contribuisce alla sicurezza e alla prevenzione degli errori nel codice.  
+   In Rust, le variabili sono **immutabili** per impostazione predefinita, il che significa che, una volta che assegni un valore a una variabile, non puoi modificarlo. Questa caratteristica contribuisce alla sicurezza e alla prevenzione degli errori nel codice.  
    La variabile `nome` e la variabile `eta` sono immutabili, non puoi assegnare a loro un nuovo valore in un secondo momento. Se provi a farlo, il compilatore di Rust ti darà un errore.
+
+   ```
+   ^^^^^^^^ cannot assign twice to immutable variable
+   ```
 
 2. **Variabili mutabili:**
    Per rendere una variabile modificabile, devi dichiararla come mutabile utilizzando la parola chiave `mut`.
@@ -75,21 +79,40 @@ const PI: f64 = 3.14; // Costante con tipo e valore definiti
 In breve, le variabili immutabili e le costanti in Rust offrono modi diversi per garantire l'immutabilità dei valori, ciascuno con le proprie caratteristiche e applicazioni specifiche nel codice Rust.
 
 ### Esempio completo
-Ecco un esempio di calcolo della circonferenza di un cerchio utilizzando variabili e costanti in Rust:
+Ecco un esempio di calcolo della circonferenza di un cerchio utilizzando variabili e costanti in Rust, creiamo un nuovo progetto con cargo:
 
 ```rust
+cargo new calcolo_circonferenza
+```
+Ora, accedi alla cartella del progetto appena creata utilizzando il comando `cd calcolo_circonferenza` e modifica il file `src/main.rs`
+
+```rust
+// Costante globale per il valore di pi greco, posizionata fuori dallo scope main {}
+const PI: f64 = 3.14159;
+
 fn main() {
-    const PI: f64 = 3.14159; // Costante per il valore di pi greco
 
-    let raggio: f64 = 5.0; // Variabile per il raggio del cerchio
+   // Variabile per il raggio del cerchio
+   let raggio: f64 = 5.0; 
 
-    // Calcolo della circonferenza utilizzando la formula: C = 2 * pi * raggio
-    let circonferenza: f64 = 2.0 * PI * raggio;
+   // Calcolo della circonferenza utilizzando la formula: C = 2 * pi * raggio
+   let circonferenza: f64 = 2.0 * PI * raggio;
 
     println!("La circonferenza del cerchio con raggio {raggio} è: {circonferenza}");
 }
 ```
+:::tip
+La funzione `main()` in Rust è il punto di ingresso principale di un programma. Quando esegui un programma Rust, il sistema operativo avvia l'esecuzione proprio dalla funzione `main()`. All'interno di `main()`, puoi scrivere il codice che vuoi che il programma esegua. Quindi, è fondamentale perché rappresenta il punto di partenza del tuo programma Rust, definendo cosa farà il programma quando verrà eseguito.
+:::
 
+Eseguite il progetto `calcolo_circonferenza`, sempre posizionati nella directory date il comando:
+```bash
+$ cargo run
+
+Finished dev [unoptimized + debuginfo] target(s) in 0.00s
+Running `target\debug\calcolo_circonferenza.exe`
+La circonferenza del cerchio con raggio 5 è: 31.4159
+```
 In questo esempio:
 
 - `PI` è una costante dichiarata con il valore approssimato di π (pi greco).
@@ -98,5 +121,11 @@ In questo esempio:
 
 Il programma calcola la circonferenza del cerchio utilizzando la formula matematica `C = 2 * π * raggio` e stampa il risultato a schermo.  
 Puoi modificare il valore di `raggio` per calcolare la circonferenza per cerchi con raggio diverso. La costante `PI` è utilizzata come una variabile immutabile (costante) nel calcolo, garantendo che non venga modificata accidentalmente durante l'esecuzione del programma.
+
+:::info
+Commentare il codice e usare un'indentazione ordinata è utile per migliorare la comprensibilità del codice. I commenti forniscono spiegazioni sul significato del codice, mentre l'indentazione crea una struttura visuale che facilita la lettura. Entrambi sono pratiche utili perché:
+- **Commenti**: Aggiungono chiarimenti al codice. Quando altri programmatori o anche tu stesso rileggi il codice in futuro, i commenti aiutano a capire cosa fa una certa parte di codice, perché è stata scritta in quel modo o quali sono gli obiettivi di un particolare blocco di codice. I commenti rendono il codice più comprensibile per te e per gli altri.
+- **Indentazione ordinata**: Rende la struttura del codice visivamente chiara. L'indentazione mostra i blocchi di codice annidati e aiuta a capire quale parte del codice è all'interno di un ciclo, di una condizione o di una funzione. Un'indentazione ordinata facilita il riconoscimento delle strutture di controllo del programma e migliora la leggibilità.
+:::
 
 Nel prossimo livello andremo a capire bene cosa sono i tipi di dato (`f64`) in rust e perchè sono importanti
