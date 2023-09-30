@@ -12,7 +12,8 @@ description: introduzione ai contenuti, sommario
   - Sotto livello 1.1: [Cos'è la Programmazione?](./Livello-01/la-programmazione)
   - Sotto livello 1.2: [Perché Imparare Rust?](./Livello-01/perchè-imparare-rust)
   - Sotto livello 1.3: [Ambiente di Sviluppo per Rust](./Livello-01/ambiente-sviluppo-rust)
-  - Sotto livello 1.3: [Installazione di Rust](./Livello-01/installazione)
+  - Sotto livello 1.4: [Il terminale](./Livello-01/il-terminale)
+  - Sotto livello 1.5: [Installazione di Rust](./Livello-01/installazione)
 
 ### Livello 2: Fondamenti della Programmazione
   - Sotto livello 2.1: [Le variabili](./Livello-02/variabili)

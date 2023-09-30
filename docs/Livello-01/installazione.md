@@ -2,7 +2,10 @@
 sidebar_position: 5
 ---
 
-# 1.4 Installazione di Rust
+# 1.5 Installazione di Rust
+
+Ora che abbiamo una chiara comprensione di cosa sia un terminale, è il momento perfetto per mettere le mani in pasta e iniziare a lavorare con Rust!
+
 ### Su sistemi Linux
 L'installazione di Rust su un sistema Linux è un processo diretto. Ecco come farlo:
 
@@ -93,6 +96,8 @@ Installare Rust su un sistema macOS è semplice grazie a Rustup, il gestore uffi
 Ora hai Rust installato sul tuo sistema macOS. Puoi iniziare a scrivere e compilare programmi Rust sul tuo computer!
 
 ### Creazione del primo progetto in Rust
+Avviamo il nostro [terminale](./il-terminale#come-avviare-il-terminale-in-un-so).
+
 **Cargo** è il sistema di gestione dei pacchetti e il sistema di compilazione per Rust. Per lavorare con Cargo, è utile conoscere alcuni dei suoi comandi principali:
 
 1. **`cargo new nome_progetto`:** Crea un nuovo progetto Rust nella directory specificata. Ad esempio, per creare un progetto chiamato "ciao guardiani", utilizzeremmo:

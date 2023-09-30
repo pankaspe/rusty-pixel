@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 3
 ---
 
 # 1.3 L'ambiente di sviluppo di Rust
