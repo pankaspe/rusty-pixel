@@ -6,116 +6,117 @@ description: introduzione ai contenuti, sommario
 ---
 
 # Sommario
+Ho suddiviso il corso in 4 Livelli per cercare di renderlo accessibile a tutti. Questa struttura a livelli è stata pensata per garantire un apprendimento graduale, partendo dalle basi e progredendo verso concetti più avanzati. In ogni livello, affronteremo argomenti specifici legati alla programmazione in Rust, fornendo esempi pratici e progetti che vi aiuteranno a consolidare le vostre competenze.
 
-## Grade 1 - *Senior Guardian*
-### Livello 1: Introduzione alla programmazione e Rust
-  - Sotto livello 1.1: [Cos'è la Programmazione?](./Livello-01/la-programmazione)
-  - Sotto livello 1.2: [Perché Imparare Rust?](./Livello-01/perchè-imparare-rust)
-  - Sotto livello 1.3: [Ambiente di Sviluppo per Rust](./Livello-01/ambiente-sviluppo-rust)
-  - Sotto livello 1.4: [Il terminale](./Livello-01/il-terminale)
-  - Sotto livello 1.5: [Installazione di Rust](./Livello-01/installazione)
+## Livello 1 - *Novizio* ★
+### Capitolo 1: Introduzione alla programmazione e Rust
+  - 1.1: [Cos'è la Programmazione?](./Livello-01/la-programmazione)
+  - 1.2: [Perché Imparare Rust?](./Livello-01/perchè-imparare-rust)
+  - 1.3: [Ambiente di Sviluppo per Rust](./Livello-01/ambiente-sviluppo-rust)
+  - 1.4: [Funzionamento del computer](./Livello-01/il-terminale)
+  - 1.5: [Installazione di Rust](./Livello-01/installazione)
 
-### Livello 2: Fondamenti della Programmazione
-  - Sotto livello 2.1: [Le variabili](./Livello-02/variabili)
-  - Sotto livello 2.2: Tipi di dato
-  - Sotto livello 2.3: Operazioni Matematiche e Operatori
-  - Sotto livello 2.4: Input e Output Utente
-  - Sotto livello 2.5: Istruzioni Condizionali (if, else)
-  - Sotto livello 2.6: Cicli e Looping (while, for)
+### Capitolo 2: Fondamenti della Programmazione
+  - 2.1: [Le variabili](./Livello-02/variabili)
+  - 2.2: [Tipi di Dato](./Livello-02/i-tipi-di-dato)
+  - 2.3: Operazioni Matematiche e Operatori
+  - 2.4: Input e Output Utente
+  - 2.5: Istruzioni Condizionali (if, else)
+  - 2.6: Cicli e Looping (while, for)
 
-### Livello 3: Strutture Dati in Rust
-  - Sotto livello 3.1: Array e Vettori
-  - Sotto livello 3.2: Stringhe
-  - Sotto livello 3.3: Tuple
-  - Sotto livello 3.4: Strutture (Structs) e Enumerazioni (Enums)
+### Capitolo 3: Strutture Dati in Rust
+  - 3.1: Array e Vettori
+  - 3.2: Stringhe
+  - 3.3: Tuple
+  - 3.4: Strutture (Structs) e Enumerazioni (Enums)
 
-### Livello 4: Funzioni e Modularità
-  - Sotto livello 4.1: Cosa Sono le Funzioni
-  - Sotto livello 4.2: Parametri e Restituzione dei Valori
-  - Sotto livello 4.3: Organizzare il Codice con Funzioni
-  - Sotto livello 4.4: Importare Moduli e Pacchetti Esterni
-
-
-## Grade 2 - *Planet Guardian*
-### Livello 5: Programmazione Orientata agli Oggetti (OOP) in Rust
-  - Sotto livello 5.1: Concetti di Base dell'OOP
-  - Sotto livello 5.2: Creazione di Metodi e Strutture
-  - Sotto livello 5.3: Ereditarietà e Polimorfismo
-
-### Livello 6: Gestione degli Errori in Rust
-  - Sotto livello 6.1: Introduzione alla Gestione degli Errori
-  - Sotto livello 6.2: Il Tipo di Dato Result
-  - Sotto livello 6.3: Il Tipo di Dato Option
-  - Sotto livello 6.4: Gestire Errori Personalizzati
-
-### Livello 7: Progetti Pratici
-  - Sotto livello 7.1: Creazione di un Gioco Semplice
-  - Sotto livello 7.2: Automatizzazione di Compiti
-  - Sotto livello 7.3: Risoluzione di Problemi Matematici
-  - Sotto livello 7.4: Progetto Finale: Applicazione Interattiva
-
-### Livello 8: Approfondimenti in Rust
-  - Sotto livello 8.1: Generics e Trait
-  - Sotto livello 8.2: Concorrenza e Multithreading in Rust
-  - Sotto livello 8.3: Uso delle Librerie e dei Framework
-
-### Livello 9: Contribuzione Open Source e Comunità Rust
-  - Sotto livello 9.1: Cos'è l'Open Source
-  - Sotto livello 9.2: Contribuzione a Progetti Rust
-  - Sotto livello 9.3: Partecipazione alla Comunità Rust
-
-### Livello 10: Il Futuro della Programmazione in Rust
-  - Sotto livello 10.1: Opportunità di Carriera
-  - Sotto livello 10.2: Ulteriori Risorse e Approfondimenti
-  - Sotto livello 10.3: Il Vostro Cammino di Apprendimento Continuo
+### Capitolo 4: Funzioni e Modularità
+  - 4.1: Cosa Sono le Funzioni
+  - 4.2: Parametri e Restituzione dei Valori
+  - 4.3: Organizzare il Codice con Funzioni
+  - 4.4: Importare Moduli e Pacchetti Esterni
 
 
-## Grade 3 - *Galaxy Guardian*
-### Livello 11: Etica dell'Hacking e sicurezza informatica con Rust
-  - **Sotto livello 11.1: Introduzione all'Hacking Etico**
+## Livello 2 - *Apprendista* ★★
+### Capitolo 5: Programmazione Orientata agli Oggetti (OOP) in Rust
+  - 5.1: Concetti di Base dell'OOP
+  - 5.2: Creazione di Metodi e Strutture
+  - 5.3: Ereditarietà e Polimorfismo
+
+### Capitolo 6: Gestione degli Errori in Rust
+  - 6.1: Introduzione alla Gestione degli Errori
+  - 6.2: Il Tipo di Dato Result
+  - 6.3: Il Tipo di Dato Option
+  - 6.4: Gestire Errori Personalizzati
+
+### Capitolo 7: Progetti Pratici
+  - 7.1: Creazione di un Gioco Semplice
+  - 7.2: Automatizzazione di Compiti
+  - 7.3: Risoluzione di Problemi Matematici
+  - 7.4: Progetto Finale: Applicazione Interattiva
+
+### Capitolo 8: Approfondimenti in Rust
+  - 8.1: Generics e Trait
+  - 8.2: Concorrenza e Multithreading in Rust
+  - 8.3: Uso delle Librerie e dei Framework
+
+### Capitolo 9: Contribuzione Open Source e Comunità Rust
+  - 9.1: Cos'è l'Open Source
+  - 9.2: Contribuzione a Progetti Rust
+  - 9.3: Partecipazione alla Comunità Rust
+
+### Capitolo 10: Il Futuro della Programmazione in Rust
+  - 10.1: Opportunità di Carriera
+  - 10.2: Ulteriori Risorse e Approfondimenti
+  - 10.3: Il Vostro Cammino di Apprendimento Continuo
+
+
+## Livello 3 - *Artigiano del codice binario* ★★★
+### Capitolo 11: Etica dell'Hacking e sicurezza informatica con Rust
+  - **11.1: Introduzione all'Hacking Etico**
     - Scopo dell'hacking etico
     - Differenza tra hacking etico, white hat e black hat
     - Come diventare un white hat hacker
 
-  - **Sotto livello 11.2: Sicurezza Informatica Fondamentale**
+  - **11.2: Sicurezza Informatica Fondamentale**
     - Concetti di base della sicurezza informatica
     - Come proteggere il tuo computer e i tuoi dati personali
     - Rischi della cattiva sicurezza informatica
 
-  - **Sotto livello 11.3: Utilizzo di Rust per la Sicurezza**
+  - **11.3: Utilizzo di Rust per la Sicurezza**
     - Perché Rust è una scelta solida per la sicurezza informatica
     - Esempi di strumenti di sicurezza scritti in Rust
     - Come sviluppare applicazioni sicure con Rust
 
-  - **Sotto livello 11.4: Hacking Etico con Rust**
+  - **11.4: Hacking Etico con Rust**
     - Etica nell'hacking e nell'analisi di vulnerabilità
     - Metodologie e approcci nell'hacking etico
     - Esempi di progetti di hacking etico con Rust
 
-  - **Sotto livello 11.5: La Tua Responsabilità Etica**
+  - **11.5: La Tua Responsabilità Etica**
     - L'importanza dell'etica nell'uso delle tue abilità di programmazione e hacking
     - Linee guida per un comportamento etico nel mondo digitale
     - Come contribuire alla sicurezza informatica e all'etica online con le tue competenze
 
 
-## Grade 4 - *God walking amongs the mere mortals*
-### Livello 12: Riprogrammazione di una rete neurale con Rust
-  - **Sotto-Capitolo 12.1: Fondamenti delle Reti Neurali**
+## Livello 4 - *Hacker* ★★★★★
+### Capitolo 12: Riprogrammazione di una rete neurale con Rust
+  - **12.1: Fondamenti delle Reti Neurali**
     - Cosa sono le reti neurali artificiali
     - Funzionamento delle reti neurali nell'apprendimento automatico
     - Concetti chiave delle reti neurali
 
-  - **Sotto-Capitolo 12.2: L'Importanza della Sicurezza Informatica**
+  - **12.2: L'Importanza della Sicurezza Informatica**
     - Ruolo della sicurezza informatica nella programmazione di reti neurali
     - Rischi legati alla manipolazione non autorizzata delle reti neurali
     - Come Rust contribuisce alla sicurezza delle reti neurali
 
-  - **Sotto-Capitolo 12.3: Riprogrammare Reti Neurali con Rust**
+  - **12.3: Riprogrammare Reti Neurali con Rust**
     - Approccio alla riprogrammazione di reti neurali
     - Esempi di progetti di riprogrammazione con Rust
     - Vantaggi e sfide della riprogrammazione
 
-  - **Sotto-Capitolo 12.4: Implicazioni Etiche**
+  - **12.4: Implicazioni Etiche**
     - Dibattito sull'etica della riprogrammazione di reti neurali
     - Responsabilità nell'utilizzo delle competenze di programmazione
     - Ruolo dei giovani programmatori nell'etica dell'IA

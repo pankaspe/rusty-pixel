@@ -68,11 +68,11 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/rustypixel-social-card.jpg',
       navbar: {
-        title: 'R.G.',
+        title: 'Rusty Pixel',
         logo: {
-          alt: 'rusty guardians',
+          alt: 'rusty pixel',
           src: 'img/logo-rp.png',
         },
         items: [
