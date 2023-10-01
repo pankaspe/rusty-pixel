@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Rusy Guardians, un corso sulla programmazione con Rust">
+      description="Rusty-pixel, una guida di programmazione in Rust per artisti digitali. Corsi interattivi, progetti pratici, e tecniche avanzate di Arte del Codice.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
