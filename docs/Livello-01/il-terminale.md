@@ -8,15 +8,10 @@ Un computer è una macchina elettronica che può eseguire operazioni complesse i
 ### Componenti di Base di un Computer:
 
 1. **Processore (CPU):** È il "cervello" del computer, esegue istruzioni e processa dati.
-
 2. **Memoria RAM:** È la memoria temporanea del computer, dove vengono memorizzati i dati e i programmi in uso.
-
 3. **Hard Disk o SSD:** È lo spazio di archiviazione permanente del computer, dove vengono conservati i file e i programmi.
-
 4. **Scheda Madre:** È la scheda principale del computer che connette tutti i componenti.
-
 5. **Periferiche di Input:** Come tastiera e mouse, permettono agli utenti di inserire dati nel computer.
-
 6. **Periferiche di Output:** Come monitor e stampante, mostrano informazioni e producono risultati.
 
 ### Come funziona un computer
