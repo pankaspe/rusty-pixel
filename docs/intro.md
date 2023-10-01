@@ -35,7 +35,7 @@ Ogni codice sorgente sarà racchiuso dentro ad una formattazione speciale:
 ```rust
 // esempio di codice formattato
 fn main() {
-    println!("Ciao Rusty Guardians!");
+    println!("Ciao Rusty Pixel!");
 }
 ```
 
@@ -43,5 +43,5 @@ mentre gli eseguibili saranno cosi indicati
 ```shell
 $ rustc main.rs
 $ ./main
-Ciao Rusty Guardians!
+Ciao Rusty Pixel!
 ```

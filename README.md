@@ -1,10 +1,10 @@
-# Benvenuti in Rusty Guardians!
+# Benvenuti in Rusty Pixel!
 
-Rusty Guardians è un progetto educativo dedicato a insegnare ai ragazzi i fondamenti della programmazione in Rust, un linguaggio di programmazione moderno e sicuro. Condividiamo le avventure della programmazione in un ambiente accogliente e divertente!
+Rusty Pixel è un progetto educativo dedicato a insegnare ai ragazzi i fondamenti della programmazione in Rust, un linguaggio di programmazione moderno e sicuro. Condividiamo le avventure della programmazione in un ambiente accogliente e divertente!
 
-## Che cos'è Rusty Guardians?
+## Che cos'è Rusty Pixel?
 
-Rusty Guardians è un corso online progettato per tutte le persone appassionate di informatica, che vogliono imparare un nuovo potente linguaggio di programmazione. Il nostro obiettivo è rendere la programmazione accessibile e divertente. Insegneremo i concetti di base della programmazione usando Rust come linguaggio principale. Che tu sia un principiante assoluto o abbia già qualche esperienza, Rusty Guardians è il posto perfetto per iniziare il tuo viaggio nel mondo della programmazione.
+Rusty Pixel è un corso online progettato per tutte le persone appassionate di informatica, che vogliono imparare un nuovo potente linguaggio di programmazione. Il nostro obiettivo è rendere la programmazione accessibile e divertente. Insegneremo i concetti di base della programmazione usando Rust come linguaggio principale. Che tu sia un principiante assoluto o abbia già qualche esperienza, Rusty Guardians è il posto perfetto per iniziare il tuo viaggio nel mondo della programmazione.
 
 ## Cosa Imparerai:
 
