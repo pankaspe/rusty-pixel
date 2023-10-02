@@ -11,6 +11,16 @@ In Rust, per default, le variabili sono immutabili, il che significa che il loro
 let eta = 30; // Variabile immutabile chiamata "eta" con il valore 30.
 ```
 
+Se proviamo a cambiare il valore della variabile `eta`, cargo ci restituirà un errore:
+
+```rust
+let eta = 30; // Variabile immutabile chiamata "eta" con il valore 30.
+eta = 55;
+```
+```rust
+^^^^^^^^ cannot assign twice to immutable variable
+```
+
 :::tip
 `let` la parola chiave let viene utilizzata per dichiarare variabili. Il termine "let" è un'abbreviazione di "let binding" e rappresenta l'associazione di un nome di variabile a un valore o a un'espressione. Quando usi let per dichiarare una variabile, stai essenzialmente creando un legame (binding) tra un identificatore (il nome della variabile) e un valore. Questo legame ti consente di utilizzare e manipolare quel valore attraverso l'identificatore della variabile.
 :::
