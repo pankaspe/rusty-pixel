@@ -29,11 +29,11 @@ In Rust, i tipi di dati interi possono essere signed (con segno) o unsigned (sen
 fn main() {
     // Tipi di dati con segno
     let intero_con_segno: i32 = -42; // Un intero con segno su 32 bit
-    println!("Intero con segno: {intero_con_segno}");
+    println!("Intero con segno: {}", intero_con_segno);
 
     // Tipi di dati senza segno
     let intero_senza_segno: u64 = 172653; // Un intero senza segno su 64 bit
-    println!("Intero senza segno: {intero_senza_segno}");
+    println!("Intero senza segno: {}", intero_senza_segno);
 }
 ```
 In questo esempio, abbiamo creato variabili di tipo `i32` e `u64`. `i32` rappresenta un intero con segno su 32 bit, mentre `u64` rappresenta un intero senza segno su 64 bit. Puoi vedere come i valori possono variare in base al tipo di dato utilizzato. I tipi di dati con segno possono rappresentare sia numeri positivi che negativi, mentre i tipi senza segno rappresentano solo numeri positivi o zero.
@@ -57,8 +57,8 @@ fn main() {
     let numero_f32: f32 = 3.14; // Numero a virgola mobile a 32 bit
     let numero_f64: f64 = 3.141592653589793; // Numero a virgola mobile a 64 bit
 
-    println!("Numero a virgola mobile a 32 bit: {numero_f32}");
-    println!("Numero a virgola mobile a 64 bit: {numero_f64}");
+    println!("Numero a virgola mobile a 32 bit: {}", numero_f32);
+    println!("Numero a virgola mobile a 64 bit: {}", numero_f64);
 }
 ```
 In questo esempio, `numero_f32` è un numero a virgola mobile a 32 bit e `numero_f64` è un numero a virgola mobile a 64 bit. Quando si lavora con calcoli che richiedono alta precisione, è consigliabile utilizzare `f64`. Tuttavia, se si ha bisogno solo di una precisione limitata e si desidera risparmiare memoria, `f32` può essere utilizzato. La scelta tra i due tipi dipende dalle esigenze specifiche dell'applicazione.
@@ -71,7 +71,7 @@ Ecco come dichiarare una variabile di tipo `char` e assegnarle un valore:
 ```rust
 fn main() {
     let carattere: char = 'A';
-    println!("Il carattere è: {carattere}");
+    println!("Il carattere è: {}", carattere);
 }
 ```
 
@@ -83,8 +83,8 @@ Puoi anche utilizzare caratteri Unicode più complessi, come emoji o caratteri s
 fn main() {
     let cuore: char = '❤';
     let stella: char = '★';
-    println!("Emoji cuore: {cuore}");
-    println!("Stella: {stella}");
+    println!("Emoji cuore: {}", cuore);
+    println!("Stella: {}", stella);
 }
 ```
 
@@ -134,7 +134,7 @@ fn main() {
     // Accesso agli elementi della tupla
     let (x, y, z) = tupla;
 
-    println!("Il valore di y è: {y}");
+    println!("Il valore di y è: {}", y);
 }
 ```
 
@@ -149,7 +149,7 @@ fn main() {
     let numeri: [i32; 5] = [1, 2, 3, 4, 5];
 
     // Accesso agli elementi dell'array
-    println!("Il terzo numero nell'array è: {numeri[2]}");
+    println!("Il terzo numero nell'array è: {}", numeri[2]);
 }
 ```
 
@@ -167,7 +167,7 @@ Rust ha due principali tipi di dati per le stringhe: `String` e `&str`.
 ```rust
 let mut mio_nome = String::from("Alice");
 mio_nome.push_str(" in Wonderland");
-println!("{mio_nome}"); // Output: Alice Wonderland
+println!("{}", mio_nome); // Output: Alice Wonderland
 ```
 In questo esempio, `String::from` crea una nuova stringa di proprietà che può essere modificata con l'aggiunta di più testo usando il metodo `push_str`.
 
@@ -177,7 +177,7 @@ In questo esempio, `String::from` crea una nuova stringa di proprietà che può 
 ##### Esempio:
 ```rust
 let saluto: &str = "Ciao, mondo!";
-println!("{saluto}"); // Output: Ciao, mondo!
+println!("{}", saluto); // Output: Ciao, mondo!
 ```
 In questo esempio, `&str` è un riferimento a una stringa di testo fissa, e non può essere modificato.
 

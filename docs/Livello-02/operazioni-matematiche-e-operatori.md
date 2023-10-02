@@ -24,11 +24,11 @@ fn main() {
     let divisione = a / b;
     let resto = a % b;
 
-    println!("Somma: {somma}");
-    println!("Differenza: {differenza}");
-    println!("Prodotto: {prodotto}");
-    println!("Divisione: {divisione}");
-    println!("Resto: {resto}");
+    println!("Somma: {}", somma);
+    println!("Differenza: {}", differenza);
+    println!("Prodotto: {}", prodotto);
+    println!("Divisione: {}", divisione);
+    println!("Resto: {}", resto);
 }
 ```
 
@@ -62,10 +62,10 @@ Esempio di operatori di confronto in Rust:
 fn main() {
     let a = 5;
     let b = 10;
-    println!("a è uguale a b? {a == b}"); // Stampa: false
-    println!("a è diverso da b? {a != b}"); // Stampa: true
-    println!("a è minore di b? {a < b}"); // Stampa: true
-    println!("a è maggiore o uguale a b? {a >= b}"); // Stampa: false
+    println!("a è uguale a b? {}", a == b); // Stampa: false
+    println!("a è diverso da b? {}", a != b); // Stampa: true
+    println!("a è minore di b? {}", a < b); // Stampa: true
+    println!("a è maggiore o uguale a b? {}", a >= b); // Stampa: false
 }
 ```
 
@@ -83,13 +83,13 @@ fn main() {
     let falso = false;
 
     // Operatore AND
-    println!("AND: {vero && falso}"); // Stampa false perché una delle condizioni è falsa
+    println!("AND: {}", vero && falso); // Stampa false perché una delle condizioni è falsa
 
     // Operatore OR
-    println!("OR: {vero || falso}"); // Stampa true perché almeno una delle condizioni è vera
+    println!("OR: {}", vero || falso); // Stampa true perché almeno una delle condizioni è vera
 
     // Operatore NOT
-    println!("NOT: {!vero}"); // Stampa false perché !vero inverte il valore da true a false
+    println!("NOT: {}", !vero); // Stampa false perché !vero inverte il valore da true a false
 }
 ```
 
