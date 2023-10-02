@@ -15,9 +15,7 @@ function HomepageHeader() {
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <p>
-        <p> 
           Con Rusty Pixel, ti offriamo non solo la possibilità di imparare a programmare, ma anche di crescere come individuo consapevole e pensatore logico. Siamo qui per guidarti nel tuo viaggio verso il mondo della tecnologia in modo accessibile, informativo e coinvolgente.
-        </p>
         </p>
         <div className={styles.buttons}>
           <Link
