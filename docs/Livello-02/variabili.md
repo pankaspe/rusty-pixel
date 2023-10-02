@@ -30,7 +30,7 @@ In Rust, è anche possibile "oscurare" una variabile precedentemente dichiarata 
 fn main() {
     let nome = "Alice";
     let nome = nome.len(); // La variabile "nome" ora contiene la lunghezza della stringa originale.
-    println!("La lunghezza del nome è: {}", nome);
+    println!("La lunghezza del nome è: {nome}");
 }
 ```
 
