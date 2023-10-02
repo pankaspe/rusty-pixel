@@ -2,130 +2,62 @@
 sidebar_position: 1
 ---
 # 2.1 Le variabili
-Le variabili in programmazione sono come scatole o contenitori virtuali che possono memorizzare informazioni. Immagina di avere una scatola etichettata con un nome, ad esempio "età", e all'interno di questa scatola puoi mettere un numero, come "10". Quindi, la variabile "età" contiene il valore "10". Puoi cambiare il valore all'interno della scatola quando ne hai bisogno.  
-Le variabili sono utili perché consentono ai programmi di memorizzare e manipolare dati. Ad esempio, potresti avere una variabile chiamata "punteggio" che tiene traccia del punteggio in un gioco o una variabile chiamata "nome" che memorizza il nome di una persona. Le variabili rendono i programmi flessibili e in grado di adattarsi a diverse situazioni.
+Nel mondo della programmazione, le variabili fungono da contenitori per memorizzare dati. In Rust, una lingua di programmazione moderna, flessibile e sicura, l'uso delle variabili è particolarmente versatile. In questo capitolo, esploreremo in dettaglio i diversi tipi di variabili disponibili in Rust, comprendendo come utilizzarle per manipolare dati nei nostri programmi.
 
-### Le variabili in Rust
-Le variabili sono contenitori che immagazzinano dati nel computer. Puoi creare variabili per memorizzare numeri, testi, strutture di dati e altri tipi di informazioni. Ecco come dichiarare e utilizzare variabili in Rust:
+### Variabili immutabili
+In Rust, per default, le variabili sono immutabili, il che significa che il loro valore non può essere modificato una volta assegnato. Ad esempio:
 
-1. **Dichiarare una variabile:**
-   Per dichiarare una variabile in Rust, usi la parola chiave `let`, seguita dal nome della variabile e dal valore che vuoi memorizzare.
-
-   ```rust
-   let nome = "Alice"; // Dichiarazione di una variabile di tipo stringa
-   let eta = 30; // Dichiarazione di una variabile di tipo intero
-   ```
-   In Rust, le variabili sono **immutabili** per impostazione predefinita, il che significa che, una volta che assegni un valore a una variabile, non puoi modificarlo. Questa caratteristica contribuisce alla sicurezza e alla prevenzione degli errori nel codice.  
-   La variabile `nome` e la variabile `eta` sono immutabili, non puoi assegnare a loro un nuovo valore in un secondo momento. Se provi a farlo, il compilatore di Rust ti darà un errore.
-
-   ```
-   ^^^^^^^^ cannot assign twice to immutable variable
-   ```
-
-2. **Variabili mutabili:**
-   Per rendere una variabile modificabile, devi dichiararla come mutabile utilizzando la parola chiave `mut`.
-
-   ```rust
-   let mut contatore = 0; // Dichiarazione di una variabile mutabile
-   contatore = 1; // Ora puoi modificare il valore di contatore
-   ```
-   Adesso la variabile `contatore` può mutare il suo valore. In questo modo, Rust ti offre un controllo preciso sulla mutabilità delle variabili nel tuo codice, contribuendo a creare programmi più sicuri e affidabili.
+```rust
+let eta = 30; // Variabile immutabile chiamata "eta" con il valore 30.
+```
 
 :::tip
 `let` la parola chiave let viene utilizzata per dichiarare variabili. Il termine "let" è un'abbreviazione di "let binding" e rappresenta l'associazione di un nome di variabile a un valore o a un'espressione. Quando usi let per dichiarare una variabile, stai essenzialmente creando un legame (binding) tra un identificatore (il nome della variabile) e un valore. Questo legame ti consente di utilizzare e manipolare quel valore attraverso l'identificatore della variabile.
 :::
 
-### Lo shadowing in Rust
-Lo shadowing è una tecnica che consente di dichiarare una nuova variabile, utilizzando sempre la parola chiave `let`, con lo stesso nome di una variabile esistente nello stesso scope. Questo processo "ombra" o "copre" la variabile precedente, rendendola inaccessibile fino a quando la nuova variabile non esce dallo scope.
-
-Lo shadowing è utile per diverse ragioni:
-
-1. **Cambiamento del tipo:** Puoi cambiare il tipo di dato di una variabile durante il processo di shadowing. Questo può essere utile se hai bisogno di cambiare il tipo di una variabile ma vuoi mantenere lo stesso nome. (*vedremo nel prossimo livello cosa sono i tipi*)
-
-   ```rust
-   let x = 5; // Variabile di tipo intero
-   let x = "hello"; // Ora x è una stringa
-   ```
-
-2. **Rinominare variabili in modo leggibile:** Puoi usare lo shadowing per rendere i nomi delle variabili più descrittivi all'interno di uno stesso scope.
-
-   ```rust
-   let lunghezza = 5;
-   let lunghezza = lunghezza * 2; // Ombreggia la variabile lunghezza con un nuovo valore
-   ```
-
-In generale, lo shadowing in Rust offre una flessibilità significativa nella gestione delle variabili all'interno di uno stesso scope, consentendo una maggiore chiarezza nel codice e una migliore gestione delle risorse.
-
-:::tip
-In programmazione, lo *scope* (ambito o contesto) si riferisce alla porzione di codice in cui una variabile è definita e può essere utilizzata. In altre parole, lo scope definisce la visibilità e la durata di una variabile all'interno di un programma. Una variabile può essere accessibile solo all'interno del suo scope `{}`.
-:::
-
-### Le costanti in Rust
-
-Le costanti sono dichiarate con la parola chiave `const`. A differenza delle variabili immutabili, le costanti devono sempre avere un tipo annotato e non possono essere derivate da calcoli o funzioni. Inoltre, le costanti possono essere dichiarate in qualsiasi scope, compreso il livello globale. Ecco un esempio:
+### Variabili mutabili
+Tuttavia, se vogliamo la possibilità di modificare il valore di una variabile dopo l'assegnazione, possiamo dichiararla come mutabile utilizzando la parola chiave `mut`:
 
 ```rust
-const PI: f64 = 3.14; // Costante con tipo e valore definiti
+let mut punteggio = 100; // Variabile mutabile chiamata "punteggio" con il valore 100.
+punteggio = 150; // Ora possiamo cambiare il valore di "punteggio" perché è mutabile.
 ```
 
-### Differenze chiave:
-
-1. **Valore durante l'esecuzione:** Le variabili immutabili vengono valutate durante l'esecuzione del programma e possono essere calcolate o ottenute da funzioni. Le costanti devono avere valori noti a tempo di compilazione e non possono essere derivate da funzioni.
-
-2. **Scoping:** Le variabili immutabili hanno uno scope limitato, sono definite all'interno di una funzione o di un blocco di codice. Le costanti possono avere uno scope globale e possono essere accessibili da qualsiasi parte del programma.
-
-3. **Tipo:** Le variabili immutabili possono essere di qualsiasi tipo e il loro tipo può essere inferito dal compilatore. Le costanti devono avere un tipo annotato esplicitamente.
-
-In breve, le variabili immutabili e le costanti in Rust offrono modi diversi per garantire l'immutabilità dei valori, ciascuno con le proprie caratteristiche e applicazioni specifiche nel codice Rust.
-
-### Esempio completo
-Ecco un esempio di calcolo della circonferenza di un cerchio utilizzando variabili e costanti in Rust, creiamo un nuovo progetto con cargo:
+### Variabili shadowed
+In Rust, è anche possibile "oscurare" una variabile precedentemente dichiarata utilizzando nuovamente la parola chiave `let`. Questo è noto come shadowing. Ad esempio:
 
 ```rust
-cargo new calcolo_circonferenza
-```
-Ora, accedi alla cartella del progetto appena creata utilizzando il comando `cd calcolo_circonferenza` e modifica il file `src/main.rs`
-
-```rust
-// Costante globale per il valore di pi greco, posizionata fuori dallo scope main {}
-const PI: f64 = 3.14159;
-
 fn main() {
-
-   // Variabile per il raggio del cerchio
-   let raggio: f64 = 5.0; 
-
-   // Calcolo della circonferenza utilizzando la formula: C = 2 * pi * raggio
-   let circonferenza: f64 = 2.0 * PI * raggio;
-
-    println!("La circonferenza del cerchio con raggio {raggio} è: {circonferenza}");
+    let nome = "Alice";
+    let nome = nome.len(); // La variabile "nome" ora contiene la lunghezza della stringa originale.
+    println!("La lunghezza del nome è: {}", nome);
 }
 ```
-:::tip
-La funzione `main()` in Rust è il punto di ingresso principale di un programma. Quando esegui un programma Rust, il sistema operativo avvia l'esecuzione proprio dalla funzione `main()`. All'interno di `main()`, puoi scrivere il codice che vuoi che il programma esegua. Quindi, è fondamentale perché rappresenta il punto di partenza del tuo programma Rust, definendo cosa farà il programma quando verrà eseguito.
-:::
 
-Eseguite il progetto `calcolo_circonferenza`, sempre posizionati nella directory date il comando:
-```bash
-$ cargo run
+Nell'esempio sopra, la variabile `nome` viene inizialmente assegnata a una stringa ("Alice") e poi viene "oscurata" (shadowed) da un nuovo valore, la lunghezza della stringa. Questo è possibile perché abbiamo dichiarato nuovamente `nome` utilizzando `let`. In questo modo, la variabile `nome` è stata effettivamente riassegnata a un valore diverso, ma con lo stesso nome.
 
-Finished dev [unoptimized + debuginfo] target(s) in 0.00s
-Running `target\debug\calcolo_circonferenza.exe`
-La circonferenza del cerchio con raggio 5 è: 31.4159
+#### Differenza tra variabili shadowed e variabili mutabili:
+- **Variabili Mutabili:** Quando una variabile è dichiarata come mutabile (`let mut variabile`), è possibile modificare direttamente il suo valore. Questo significa che il valore può essere cambiato senza dover dichiarare una nuova variabile.
+- **Variabili Shadowed:** Le variabili shadowed, d'altra parte, creano una nuova variabile con lo stesso nome, permettendoci di cambiare il tipo o il valore della variabile originale. Ogni variabile shadowed è indipendente dalla variabile con lo stesso nome dichiarata in precedenza.
+
+In breve, le variabili shadowed ci permettono di reutilizzare il nome di una variabile per un nuovo scopo all'interno dello stesso `scope{}`, senza dover usare variabili mutabili. Questa tecnica è utile quando vogliamo mantenere il nostro codice leggibile e mantenibile, evitando l'uso eccessivo di variabili mutabili.
+
+### Costanti
+Inoltre, Rust ci permette di definire costanti, il cui valore non può essere cambiato durante l'esecuzione del programma. Le costanti vengono dichiarate utilizzando la parola chiave `const`. Ecco un esempio:
+
+```rust
+const PI: f64 = 3.14159; // Dichiarazione di una costante chiamata "PI" con valore 3.14159.
 ```
-In questo esempio:
 
-- `PI` è una costante dichiarata con il valore approssimato di π (pi greco).
-- `raggio` è una variabile che rappresenta il raggio del cerchio (nel nostro caso, 5.0).
-- `circonferenza` è una variabile che contiene il risultato del calcolo `2 * PI * raggio`.
+### Conclusione
+Le variabili in Rust offrono un'ampia gamma di flessibilità, consentendoci di scegliere tra immutabilità, mutabilità, shadowing e costanti a seconda delle nostre esigenze specifiche. Queste caratteristiche ci permettono di scrivere codice robusto e sicuro, aprendo la strada a un mondo di possibilità nella programmazione con Rust. Nel prossimo capitolo, esploreremo come utilizzare queste variabili in operazioni matematiche e condizioni, espandendo così le nostre capacità nel linguaggio di programmazione Rust.
 
-Il programma calcola la circonferenza del cerchio utilizzando la formula matematica `C = 2 * π * raggio` e stampa il risultato a schermo.  
-Puoi modificare il valore di `raggio` per calcolare la circonferenza per cerchi con raggio diverso. La costante `PI` è utilizzata come una variabile immutabile (costante) nel calcolo, garantendo che non venga modificata accidentalmente durante l'esecuzione del programma.
+:::tip
+In programmazione, uno `scope{}` si riferisce alla parte di un programma in cui una variabile o una funzione può essere utilizzata o è visibile. Immagina uno `scope{}` come una stanza: tutto ciò che si trova dentro la stanza può essere visto e utilizzato da chi è dentro, ma non da chi è fuori.
 
-:::info
-Commentare il codice e usare un'indentazione ordinata è utile per migliorare la comprensibilità del codice. I commenti forniscono spiegazioni sul significato del codice, mentre l'indentazione crea una struttura visuale che facilita la lettura. Entrambi sono pratiche utili perché:
-- **Commenti**: Aggiungono chiarimenti al codice. Quando altri programmatori o anche tu stesso rileggi il codice in futuro, i commenti aiutano a capire cosa fa una certa parte di codice, perché è stata scritta in quel modo o quali sono gli obiettivi di un particolare blocco di codice. I commenti rendono il codice più comprensibile per te e per gli altri.
-- **Indentazione ordinata**: Rende la struttura del codice visivamente chiara. L'indentazione mostra i blocchi di codice annidati e aiuta a capire quale parte del codice è all'interno di un ciclo, di una condizione o di una funzione. Un'indentazione ordinata facilita il riconoscimento delle strutture di controllo del programma e migliora la leggibilità.
+Nel contesto di uno `scope{}`, una variabile definita all'interno di uno scope specifico è detta **variabile locale**. Questo significa che può essere utilizzata solo all'interno di quel determinato blocco di codice o di quella funzione in cui è stata dichiarata. Quando esci da quell'ambito, la variabile non è più disponibile e non può essere utilizzata.
+
+Ad esempio, se hai una variabile chiamata `numero` definita all'interno di una funzione, puoi usarla solo all'interno di quella funzione. Se provi ad accedere a `numero` fuori dalla funzione, otterrai un errore perché quella variabile è limitata allo scope della funzione in cui è stata dichiarata.
+
+Lo scope aiuta a mantenere il tuo codice organizzato e previene l'uso accidentale di variabili da parte di altre parti del programma. In poche parole, è una sorta di confine che delimita l'accesso alle variabili e alle funzioni in un programma, contribuendo a evitare confusione e errori.
 :::
-
-Nel prossimo livello andremo a capire bene cosa sono i tipi di dato (`f64`) in rust e perchè sono importanti

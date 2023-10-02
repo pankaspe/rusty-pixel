@@ -14,12 +14,12 @@ Ho suddiviso il corso in 4 Livelli per cercare di renderlo accessibile a tutti. 
   - 1.2: [Perché Imparare Rust?](./Livello-01/perchè-imparare-rust)
   - 1.3: [Ambiente di Sviluppo per Rust](./Livello-01/ambiente-sviluppo-rust)
   - 1.4: [Funzionamento del computer](./Livello-01/il-terminale)
-  - 1.5: [Installazione di Rust](./Livello-01/installazione)
+  - 1.5: [Iniziamo con Rust](./Livello-01/installazione)
 
 ### Capitolo 2: Fondamenti della Programmazione
   - 2.1: [Le variabili](./Livello-02/variabili)
   - 2.2: [Tipi di Dato](./Livello-02/i-tipi-di-dato)
-  - 2.3: Operazioni Matematiche e Operatori
+  - 2.3: [Operazioni matematiche e operatori](./Livello-02/operazioni-matematiche-e-operatori)
   - 2.4: Input e Output Utente
   - 2.5: Istruzioni Condizionali (if, else)
   - 2.6: Cicli e Looping (while, for)

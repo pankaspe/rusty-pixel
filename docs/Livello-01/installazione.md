@@ -2,208 +2,147 @@
 sidebar_position: 5
 ---
 
-# 1.5 Installazione di Rust
-
+# 1.5 Iniziamo con Rust!
 Ora che abbiamo una chiara comprensione di cosa sia un terminale, è il momento perfetto per mettere le mani in pasta e iniziare a lavorare con Rust!
 
-### Su sistemi Linux
-L'installazione di Rust su un sistema Linux è un processo diretto. Ecco come farlo:
+### Installazione di Rust
+#### Windows:
 
-1. **Apri il Terminale** sul tuo sistema Linux. Puoi farlo premendo `Ctrl + Alt + T` sulla tua tastiera o cercando "Terminal" nel menu delle applicazioni.
+1. **Scarica il Gestore di Pacchetti:** Vai al sito ufficiale di Rust (https://www.rust-lang.org/tools/install) e scarica il file di installazione per Windows.
+2. **Esegui il File di Installazione:** Dopo il download, esegui il file di installazione. Segui le istruzioni guidate per l'installazione.
+3. **Verifica l'installazione:** Apri il prompt dei comandi o PowerShell e digita `rustc --version` seguito da `cargo --version` per assicurarti che Rust e Cargo (il gestore di pacchetti di Rust) siano stati installati correttamente.
 
-2. **Installazione tramite Rustup:** Rust è solitamente installato utilizzando un gestore di versioni chiamato Rustup, che semplifica il processo di gestione delle versioni di Rust. Scrivi il seguente comando nel tuo terminale e premi `Invio`:
-   
+#### macOS e Linux:
+
+1. **Apri il Terminale:** Per macOS, apri Terminal dall'applicazione Utility. Per Linux, apri il terminale.
+2. **Installazione tramite Rustup:** Usa `rustup`, un gestore di versioni per Rust. Digita il seguente comando nel terminale e premi Invio:
+
    ```bash
    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
    ```
-   
-   Questo comando scaricherà e installerà Rustup sul tuo sistema.
 
-3. **Segui le Istruzioni:** Dopo l'esecuzione del comando, Rustup chiederà conferme per procedere con l'installazione. Segui le istruzioni visualizzate sullo schermo. Di solito dovrai premere `1` e `Invio` per confermare l'installazione predefinita, ma le istruzioni potrebbero variare in base alla versione di Rustup.
+   Questo scaricherà ed eseguirà lo script di installazione di Rustup.
+3. **Segui le Istruzioni:** Il processo di installazione ti guiderà attraverso la configurazione di Rust. Di solito, dovrai premere `1` per confermare l'installazione.
+4. **Aggiorna il Percorso:** Alla fine dell'installazione, Rustup ti dirà di aggiornare il percorso di sistema. Esegui il comando suggerito nel terminale. Questo ti consente di eseguire `rustc` e `cargo` da qualsiasi posizione nel terminale.
+5. **Verifica l'installazione:** Nel terminale, digita `rustc --version` e `cargo --version` per assicurarti che Rust e Cargo siano stati installati correttamente.
 
-4. **Configura l'Ambiente:** Dopo l'installazione, Rustup configurerà automaticamente il tuo ambiente di sviluppo. Puoi verificare l'installazione digitando il seguente comando nel terminale:
-   
-   ```bash
-   rustc --version
-   ```
+Ora hai installato Rust con successo sul tuo sistema operativo! Puoi iniziare a scrivere e compilare programmi Rust sul tuo computer.
 
-   Questo comando dovrebbe restituire la versione di Rust installata, confermando che l'installazione è avvenuta con successo.
+### Configurazione dell'Ambiente di Sviluppo
 
-5. **Aggiornamento di Rust:** In futuro, per aggiornare Rust, puoi utilizzare il seguente comando:
-   
-   ```bash
-   rustup update
-   ```
+Certamente! Ecco una guida dettagliata sulla configurazione dell'IDE Visual Studio Code per lo sviluppo in Rust su diversi sistemi operativi:
 
-Questi passaggi ti guideranno attraverso l'installazione di Rust sul tuo sistema Linux. Una volta completata l'installazione, sei pronto per iniziare a sviluppare in Rust sul tuo sistema.
+#### Configurazione di Visual Studio Code per Rust
+**Windows**
+1. **Installazione di Visual Studio Code:**
+   - Scarica e installa Visual Studio Code da [https://code.visualstudio.com/](https://code.visualstudio.com/).
+2. **Estensioni di Visual Studio Code:**
+   - Apri Visual Studio Code.
+   - Vai su Extensions (o premi `Ctrl+Shift+X`), cerca "Rust" e installa l'estensione "Rust" di rust-lang.
+3. **Configurazione del Debugger:**
+   - Installa l'estensione "CodeLLDB" per il supporto al debugging.
+   - Configura il debugger nel file `.vscode/launch.json` del tuo progetto Rust.
 
-### Su sistemi Windows
-Ecco come installare Rust su un sistema Windows:
+```json
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/target/debug/your_project_name",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "preLaunchTask": "build"
+        }
+    ]
+}
+```
+4. **Compilazione e Debugging:**
+   - Apri un terminale in Visual Studio Code.
+   - Usa `cargo build` per compilare il tuo progetto e `cargo run` per eseguirlo.
+   - Usa il debugger per il debugging interattivo.
 
-1. **Scarica ed Esegui il Installer:**
-   - Vai al sito ufficiale di Rust all'indirizzo [https://www.rust-lang.org/tools/install](https://www.rust-lang.org/tools/install).
-   - Clicca sul pulsante "Install Rust" per scaricare l'installer.
-   - Una volta completato il download, esegui il file dell'installer.
+**macOS**
+La configurazione su macOS è simile a quella di Windows, seguendo gli stessi passaggi per l'installazione di Rust, Visual Studio Code e le estensioni necessarie.
 
-2. **Configura l'Installazione:**
-   - Durante l'installazione, verrai guidato attraverso le opzioni di configurazione.
-   - Premi "Enter" per continuare con l'installazione predefinita.
-   - Quando il programma ti chiede "Proceed with installation (default)", premi "1" e poi "Enter".
+**Linux**
+Su Linux, la configurazione è simile a Windows e macOS. Assicurati di seguire gli stessi passaggi per l'installazione di Rust, Visual Studio Code e le relative estensioni.
 
-3. **Accetta le Condizioni:**
-   - Ti verranno mostrate le condizioni di utilizzo di Rust. Premi "Enter" per accettare e continuare.
+### Creazione del progetto "rusty pixel"
+Ecco una guida passo-passo per creare il tuo primo progetto Rust chiamato "rusty pixel" utilizzando Cargo, il gestore di pacchetti e strumento di costruzione di Rust. Inizieremo spiegando i vari file creati da Cargo per un nuovo progetto.
 
-4. **Scegli l'Opzione di Installazione:**
-   - Verrai chiesto se desideri installare Rust. Premi "Enter" per confermare.
+#### 1 Crea un nuovo progetto con Cargo
+Apri il terminale o il prompt dei comandi e naviga nella directory in cui vuoi creare il tuo progetto. Quindi, esegui il seguente comando per creare un nuovo progetto Rust chiamato "rusty_pixel":
 
-5. **Completa l'Installazione:**
-   - L'installer di Rust installerà il compilatore Rust (chiamato `rustc`) e il gestore di pacchetti Cargo.
-   - Una volta completata l'installazione, il terminale mostrerà il messaggio "Rust is installed now".
+```sh
+cargo new rusty_pixel
+```
 
-6. **Verifica l'Installazione:**
-   - Apri una nuova finestra del prompt dei comandi o del terminale.
-   - Digita il comando `rustc --version` e premi "Enter". Dovresti vedere la versione di Rust che hai appena installato.
+Questo comando crea una nuova directory chiamata "rusty_pixel" contenente i file del tuo progetto.
 
-Rust è ora installato sul tuo sistema Windows! Puoi iniziare a scrivere e compilare programmi Rust direttamente dalla riga di comando o utilizzando un ambiente di sviluppo come Visual Studio Code con l'estensione Rust.
+#### 2 Esplora i files creati da Cargo
+Certamente! Ecco una spiegazione dettagliata dei file creati dal comando `cargo new` in Rust:
 
-### Su sistemi macOS
-Installare Rust su un sistema macOS è semplice grazie a Rustup, il gestore ufficiale di Rust. Ecco come farlo:
+**Cargo.toml:**
+`Cargo.toml` è il file di configurazione principale del tuo progetto Rust. Contiene informazioni come il nome del progetto, l'autore, la versione di Rust richiesta e le dipendenze del progetto. Questo file è essenziale per gestire le configurazioni del tuo progetto.
+Esempio di `Cargo.toml`:
+```toml
+[package]
+name = "rusty_pixel"
+version = "0.1.0"
+edition = "2018"
 
-**1. Apri il Terminale:**
-   - Puoi trovarlo nella cartella `Applicazioni > Utility > Terminale`, oppure cercalo usando Spotlight (Cmd + Spazio, poi digita "Terminale").
+# Informazioni sull'autore e la licenza
+[package.metadata.docs.rs]
+rusty_pixel = "0.1.0"
+license = "MIT"
 
-**2. Scarica e Installa Rustup:**
-   - Scrivi il seguente comando nel Terminale e premi Invio:
-     ```bash
-     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-     ```
-   - Questo comando scaricherà ed eseguirà lo script di installazione di Rustup.
+# Dipendenze del progetto (se presenti)
+[dependencies]
+```
 
-**3. Avvia il Processo di Installazione:**
-   - Dopo aver eseguito il comando sopra, ti verranno chieste alcune domande nel Terminale.
-   - Premi Invio per accettare l'installazione predefinita.
-
-**4. Aggiungi Rust al Percorso (opzionale ma consigliato):**
-   - Alla fine dell'installazione, Rustup ti dirà di aggiungere Rust al tuo percorso di sistema. Segui le istruzioni fornite (generalmente è sufficiente eseguire `source $HOME/.cargo/env` nel Terminale).
-
-**5. Verifica l'Installazione:**
-   - Per verificare che Rust sia stato installato correttamente, chiudi e riapri il Terminale, poi digita:
-     ```
-     rustc --version
-     ```
-   - Dovresti vedere la versione di Rust che hai appena installato.
-
-Ora hai Rust installato sul tuo sistema macOS. Puoi iniziare a scrivere e compilare programmi Rust sul tuo computer!
-
-### Creazione del primo progetto in Rust
-Avviamo il nostro [terminale](./il-terminale#come-avviare-il-terminale-in-un-so).
-
-**Cargo** è il sistema di gestione dei pacchetti e il sistema di compilazione per Rust. Per lavorare con Cargo, è utile conoscere alcuni dei suoi comandi principali:
-
-1. **`cargo new nome_progetto`:** Crea un nuovo progetto Rust nella directory specificata. Ad esempio, per creare un progetto chiamato "ciao guardiani", utilizzeremmo:
-   ```rust
-   cargo new ciao_guardiani
-   ```
-   Questo comando crea una nuova cartella chiamata "ciao_guardiani" con la struttura di base di un progetto Rust all'interno.
-
-2. **`cargo build`:** Compila il progetto Rust nella modalità di sviluppo. Verrà creata una cartella `target/debug` contenente l'eseguibile del progetto.
-
-3. **`cargo run`:** Compila ed esegue il progetto. Se il progetto non è stato compilato prima, questo comando compilerà automaticamente il codice prima di eseguirlo.
-
-4. **`cargo test`:** Esegue i test del progetto. Puoi scrivere test per le varie parti del tuo codice e questo comando li eseguirà e mostrerà i risultati.
-
-5. **`cargo build --release`:** Compila il progetto nella modalità di rilascio, ottimizzando il codice per le prestazioni. L'eseguibile risultante si troverà nella cartella `target/release`.
-
-6. **`cargo doc`:** Genera la documentazione del progetto in formato HTML. Questa documentazione è basata su commenti speciali nel tuo codice sorgente, chiamati doc comments.
-
-7. **`cargo clean`:** Elimina i file generati dal processo di compilazione, ripulendo il progetto.
-
-Ricorda che questi comandi devono essere eseguiti nella directory del tuo progetto Rust.
-
-Quindi, dopo aver creato il progetto "ciao_guardiani" con il comando `cargo new ciao_guardiani`, puoi entrare nella cartella del progetto usando il comando `cd ciao_guardiani` e poi eseguire `cargo build` per compilare il progetto o `cargo run` per compilare ed eseguire il tuo programma.
-
-### Struttura della cartella del progetto
-Quando crei un nuovo progetto Rust con il comando `cargo new nome_progetto`, Cargo crea una struttura di base per il tuo progetto. Ecco cosa troverai nella cartella del progetto:
-
-1. **`src/`:** Questa cartella contiene il codice sorgente del tuo progetto Rust. All'interno, troverai un file chiamato `main.rs` che è il punto di ingresso del tuo programma. Puoi creare altri file Rust all'interno di questa cartella per organizzare il tuo codice in moduli separati.
-
-   ```css
-   src/
-   ├── main.rs
-   └── lib.rs (se creato)
-   ```
-
-2. **`Cargo.toml`:** Questo è un file di configurazione TOML (Tom's Obvious, Minimal Language) che contiene le informazioni sul tuo progetto, come il nome, la versione, le dipendenze e altre configurazioni importanti. È fondamentale per gestire le dipendenze del tuo progetto, specificare le librerie necessarie e configurare vari aspetti del processo di compilazione.
-
-   Il file `Cargo.toml` ha un aspetto simile a questo:
-
-   ```toml
-   [package]
-   name = "Ciao_guardiani"
-   version = "0.1.0"
-   edition = "2021"
-
-   # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
-   [dependencies]
-   ```
-
-   Nella sezione `[package]`, puoi specificare il nome del tuo progetto, la versione e l'edizione di Rust che stai utilizzando. Nella sezione `[dependencies]`, puoi elencare le dipendenze esterne del tuo progetto.
-
-3. **`target/`:** Questa cartella viene creata quando compili il tuo progetto usando `cargo build` o `cargo run`. Contiene i file binari generati, sia nella modalità di sviluppo (`target/debug/`) che nella modalità di rilascio (`target/release/`).
-
-   ```css
-   target/
-   ├── debug/
-   └── release/
-   ```
-
-Questi sono i componenti principali della struttura del progetto creato da Cargo. Puoi aggiungere ulteriori file e cartelle al tuo progetto man mano che sviluppi e organizzi il codice in modo più complesso. Il file `Cargo.toml` è particolarmente importante poiché definisce le informazioni chiave del tuo progetto e gestisce le sue dipendenze.
-
-### Il file main.rs
-Il file `main.rs` in un progetto Rust è il punto di ingresso principale del tuo programma. Quando esegui il tuo programma Rust, il codice all'interno di `main.rs` viene eseguito per primo. Ecco cosa potresti trovare all'interno di questo file:
-
-#### Struttura di base di `main.rs`:
-
+**src/main.rs:**
+`main.rs` è il file principale del tuo programma Rust. Contiene il punto di ingresso del programma, cioè la funzione `fn main()`. Quando esegui il tuo programma, Rust inizia l'esecuzione da questa funzione. Puoi scrivere il codice del tuo programma all'interno di questa funzione.
+Esempio di `main.rs`:
 ```rust
 fn main() {
-    // Il codice all'interno di questa funzione verrà eseguito quando avvii il programma
-    println!("Ciao, mondo!"); // Questo stampa "Ciao, mondo!" sulla console
+    println!("Hello, Rusty Pixel!");
 }
 ```
 
-##### Cosa fa `main.rs`:
+**.gitignore:**
+`.gitignore` è un file che indica a Git quali file o cartelle ignorare durante il versionamento. Questo file è utile quando si lavora con un sistema di controllo versione come Git, poiché impedisce l'inclusione di file temporanei o generati automaticamente nel repository.
+Esempio di `.gitignore` preconfigurato per progetti Rust:
+```gitignore
+/target
+**/*.rs.bk
+```
 
-1. **`fn main() { ... }`:** Questo è il punto di ingresso del programma. Tutte le istruzioni all'interno di questa funzione verranno eseguite quando avvii il programma Rust.
+Questi sono i principali file creati da `cargo new` quando si crea un nuovo progetto Rust. Ora sei pronto per iniziare a sviluppare il tuo progetto, scrivendo codice nel file `main.rs` e gestendo le dipendenze nel file `Cargo.toml`. Buona programmazione in Rust!
 
-2. **`println!("Ciao, mondo!");`:** Questa è un'esempio di istruzione di stampa. `println!` è una macro che stampa il testo sulla console. Nel caso sopra, il testo stampato è "Ciao, mondo!". Puoi modificare questo testo per stampare qualsiasi cosa desideri sulla console quando esegui il programma.
+#### 3 Scrivi il codice per "Rusty Pixel"
+Ora puoi iniziare a scrivere il codice nel file `src/main.rs` per il tuo progetto "Rusty Pixel". Ad esempio, puoi iniziare creando una semplice applicazione che stampa "Hello, Rusty Pixel!" a schermo:
 
-Adesso cambiate la frase tra virgolette `"Ciao, mondo!"` con `"Ciao guardiani!"`.
+```rust
+fn main() {
+    println!("Hello, Rusty Pixel!");
+}
+```
 
-### Compilare ed eseguire il progetto
-Per compilare ed eseguire il programma "ciao_guardiani" che hai creato, segui questi passaggi:
+#### 4 Esegui il Progetto
+Per eseguire il tuo progetto, torna nella directory principale del progetto ("rusty_pixel") tramite il terminale o il prompt dei comandi. Quindi esegui il seguente comando:
 
-1. **Apri il Terminale o Prompt dei Comandi:** Apri una finestra del terminale o del prompt dei comandi sul tuo sistema operativo, in **Visual Studio Code** vai nel menù in alto, sotto la voce *Terminal* -> *New Terminal*. Assicurati di essere nella directory del tuo progetto "ciao_guardiani". Se non sei sicuro di quale sia la directory corrente, puoi usar il comando `cd` (su Windows) o `cd` (su macOS/Linux) per spostarti nella directory giusta.
+```sh
+cargo run
+```
 
-2. **Compila il Programma con Cargo:** Assicurati di essere nella directory del progetto e esegui il comando `cargo build`. Questo compilerà il tuo programma Rust. Se ci sono errori nel codice, verranno visualizzati nel terminale.
+Questo comando compilerà e eseguirà il tuo programma Rust, stampando l'output a schermo.
 
-   ```
-   cargo build
-   ```
-
-3. **Esegui il Programma:** Una volta che la compilazione è completata senza errori, puoi eseguire il programma usando il comando `cargo run`.
-
-   ```
-   cargo run
-   ```
-
-   Questo comando compila automaticamente il tuo programma se le modifiche sono state apportate e quindi lo esegue. Vedrai l'output del tuo programma stampato nel terminale:
-
-   ```
-   Ciao guardiani!
-   ```
-
-Ora hai compilato ed eseguito con successo il tuo programma "ciao_guardiani". Puoi modificare il codice all'interno di `main.rs` e quindi eseguire `cargo run` di nuovo per vedere le modifiche apportate al programma. Questo ciclo di sviluppo ti permette di iterare rapidamente durante lo sviluppo del tuo progetto Rust.
+#### 6 Conclusione
+Hai imparato a creare un nuovo progetto Rust chiamato "Rusty Pixel" utilizzando Cargo. Hai esplorato i file creati da Cargo e scritto un semplice programma Rust. Nel prossimo capitolo, esploreremo concetti più avanzati e implementeremo funzionalità aggiuntive per il nostro progetto "Rusty Pixel".
 
 ### Recap e verifica
 Prova a rispondere a queste domande prima di proseguire con le lezioni
