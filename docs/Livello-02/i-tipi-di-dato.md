@@ -145,12 +145,31 @@ fn main() {
 In questo esempio, `numeri` è un array di interi (`i32`) con una lunghezza di 5 elementi. Puoi accedere agli elementi dell'array utilizzando l'indice, ad esempio, `numeri[2]` rappresenta il terzo elemento dell'array (l'indice è 0-based).
 
 ### Stringhe
-Tra tutti i tipi di dati in Rust, le stringhe rappresentano un aspetto particolarmente interessante e complesso. A differenza di molti altri linguaggi di programmazione, le stringhe in Rust sono gestite in modo unico per garantire sia la flessibilità che la sicurezza del programma.
+Tra tutti i tipi di dati in Rust, le stringhe (sequenza di caratteri) rappresentano un aspetto particolarmente interessante e complesso. A differenza di molti altri linguaggi di programmazione, le stringhe in Rust sono gestite in modo unico per garantire sia la flessibilità che la sicurezza del programma.
 
-In Rust, una stringa può essere rappresentata in diverse forme, inclusi i riferimenti a stringhe (str), gli slice di stringhe (`&str`) e il tipo di dato `String`. Ognuno di questi ha scopi specifici e comportamenti distinti.
+Rust ha due principali tipi di dati per le stringhe: `String` e `&str`.
 
-Le stringhe in Rust sono codificate in UTF-8, il che significa che possono rappresentare una vasta gamma di caratteri, inclusi quelli di diversi alfabeti, emoji e caratteri speciali. Questo approccio all'encoding delle stringhe rende Rust adatto per la gestione di dati multilingue e internazionali.
+#### Stringhe di proprietà (`String`):
+- **`String` è un tipo di dato dinamico che rappresenta una stringa di testo modificabile.** Puoi pensarla come una scatola che può contenere e modificare una sequenza di caratteri.
 
-Nel prossimo sottocapitolo (3.2), esploreremo dettagliatamente i vari tipi di dato stringa in Rust, comprese le differenze tra loro e quando è meglio utilizzare uno piuttosto che un altro. Vedremo anche come gestire le operazioni comuni sulle stringhe e affronteremo le sfide associate alla manipolazione delle sequenze di caratteri in un ambiente Rust.
+##### Esempio:
+```rust
+let mut mio_nome = String::from("Alice");
+mio_nome.push_str(" in Wonderland");
+println!("{mio_nome}"); // Output: Alice Wonderland
+```
+In questo esempio, `String::from` crea una nuova stringa di proprietà che può essere modificata con l'aggiunta di più testo usando il metodo `push_str`.
+
+#### Stringhe di riferimento (`&str`):
+- **`&str` è un tipo di dato che rappresenta una stringa di testo immutabile.** Puoi pensarla come un'etichetta che fa riferimento a una sequenza di caratteri. Le stringhe di riferimento sono solitamente utilizzate per puntare a porzioni di stringhe esistenti.
+
+##### Esempio:
+```rust
+let saluto: &str = "Ciao, mondo!";
+println!("{saluto}"); // Output: Ciao, mondo!
+```
+In questo esempio, `&str` è un riferimento a una stringa di testo fissa, e non può essere modificato.
+
+Rust utilizza questi due tipi di stringhe per offrire un equilibrio tra flessibilità e sicurezza. Le `String` consentono la modifica dinamica del testo, mentre le `&str` consentono di riferirsi a porzioni di stringhe esistenti in modo efficiente e sicuro.
 
 *Continua a leggere nel Capitolo 3.2 per esplorare più a fondo il mondo delle stringhe in Rust!*

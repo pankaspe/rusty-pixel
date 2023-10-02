@@ -20,7 +20,7 @@ Ho suddiviso il corso in 4 Livelli per cercare di renderlo accessibile a tutti. 
   - 2.1: [Le variabili](./Livello-02/variabili)
   - 2.2: [Tipi di Dato](./Livello-02/i-tipi-di-dato)
   - 2.3: [Operazioni matematiche e operatori](./Livello-02/operazioni-matematiche-e-operatori)
-  - 2.4: Input e Output Utente
+  - 2.4: [Input e Output](./Livello-02/input-e-output)
   - 2.5: Istruzioni Condizionali (if, else)
   - 2.6: Cicli e Looping (while, for)
 

@@ -5,7 +5,6 @@ sidebar_position: 3
 Nel mondo della programmazione, spesso è necessario eseguire operazioni matematiche per manipolare dati e risolvere problemi. In questo capitolo, esploreremo le varie operazioni matematiche che puoi eseguire in Rust insieme agli operatori utilizzati per eseguirle.
 
 ## Operatori Aritmetici
-
 Gli operatori aritmetici vengono utilizzati per eseguire operazioni matematiche su numeri. Ecco gli operatori aritmetici principali in Rust:
 
 - **`+` (Addizione):** Aggiunge due numeri.
@@ -25,20 +24,19 @@ fn main() {
     let divisione = a / b;
     let resto = a % b;
 
-    println!("Somma: {}", somma);
-    println!("Differenza: {}", differenza);
-    println!("Prodotto: {}", prodotto);
-    println!("Divisione: {}", divisione);
-    println!("Resto: {}", resto);
+    println!("Somma: {somma}");
+    println!("Differenza: {differenza}");
+    println!("Prodotto: {prodotto}");
+    println!("Divisione: {divisione}");
+    println!("Resto: {resto}");
 }
 ```
 
 ## Operatori di Assegnazione
-
 Gli operatori di assegnazione vengono utilizzati per assegnare valori alle variabili. Ecco gli operatori di assegnazione in Rust:
 
 - **`=` (Assegnazione):** Assegna il valore a destra alla variabile a sinistra.
-- **`+=`, `-=`, `*=`, `/=`, `%=` (Operatore di Assegnazione Combinato):** Esegue l'operazione indicata e assegna il risultato alla variabile a sinistra.
+- **`+=`, `-=`, `*=`, `/=`, `%=` (Operatore di assegnazione combinato):** Esegue l'operazione indicata e assegna il risultato alla variabile a sinistra.
 
 Esempio di operatori di assegnazione in Rust:
 ```rust
@@ -53,7 +51,6 @@ fn main() {
 ```
 
 ## Operatori di Confronto
-
 Gli operatori di confronto vengono utilizzati per confrontare valori. Restituiscono un valore booleano che indica se la condizione è vera o falsa. Ecco gli operatori di confronto in Rust:
 
 - **`==` (Uguaglianza):** Restituisce `true` se i due valori sono uguali.
@@ -65,9 +62,9 @@ Esempio di operatori di confronto in Rust:
 fn main() {
     let a = 5;
     let b = 10;
-    println!("a è uguale a b? {}", a == b); // Stampa: false
-    println!("a è diverso da b? {}", a != b); // Stampa: true
-    println!("a è minore di b? {}", a < b); // Stampa: true
-    println!("a è maggiore o uguale a b? {}", a >= b); // Stampa: false
+    println!("a è uguale a b? {a == b}"); // Stampa: false
+    println!("a è diverso da b? {a != b}"); // Stampa: true
+    println!("a è minore di b? {a < b}"); // Stampa: true
+    println!("a è maggiore o uguale a b? {a >= b}"); // Stampa: false
 }
 ```
