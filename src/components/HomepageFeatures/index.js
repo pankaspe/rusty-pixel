@@ -4,32 +4,34 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Facile da usare',
+    title: 'Impara a programmare da subito',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Rusty Guardians è progettato per essere intuitivo e accessibile. 
-        Con un'interfaccia utente semplice e istruzioni chiare, anche i principianti possono imparare facilmente i concetti della programmazione con Rust.
+        Rusty Pixel offre un approccio didattico intuitivo e accessibile alla programmazione. 
+        Imparerai i concetti fondamentali del coding in modo semplice e divertente, senza complicazioni. 
+        Che tu sia un principiante assoluto o un appassionato di tecnologia, qui troverai un ambiente accogliente per coltivare le tue abilità di programmazione.
       </>
     ),
   },
   {
-    title: 'Tutorial',
+    title: 'Sviluppa la capacità del pensiero logico',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        La sezione tutorial offre una guida completa alle fondamenta della programmazione. 
-        Dai concetti di base alle strutture dati avanzate, i tutorial coprono tutto ciò di cui hai bisogno per iniziare a programmare in modo efficace e sicuro.
+        Oltre a imparare a programmare, Rusty Pixel ti aiuta a comprendere il mondo digitale che ti circonda. 
+        Scoprirai come funzionano le tecnologie di base, acquisendo una consapevolezza critica delle sfide e delle opportunità nel mondo tecnologico di oggi. 
+        Sviluppare una comprensione informata è essenziale nell'era digitale in cui viviamo.
       </>
     ),
   },
   {
-    title: 'Powered by ChatGPT & Docusaurus',
+    title: 'Diventa consapevole della Tecnologia',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Ogni testo in Rusty Guardians è stato accuratamente revisionato da ChatGPT seguendo le mie indicazioni, garantendo così contenuti precisi e affidabili.
-        Organizzato come una dettagliata enciclopedia interattiva grazie all'efficiente utilizzo di Docusaurus.
+        La programmazione non riguarda solo il codice, ma anche la capacità di pensare in modo logico e risolvere problemi in modo creativo. 
+        Attraverso esercizi interattivi e progetti stimolanti, Rusty Pixel ti aiuterà a sviluppare un pensiero critico e logico che sarà prezioso in ogni aspetto della tua vita, dalla programmazione al problem solving quotidiano.
       </>
     ),
   },
