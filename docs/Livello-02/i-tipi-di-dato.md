@@ -4,8 +4,9 @@ sidebar_position: 2
 # 2.2 I tipi di Dato
 I tipi di dati in Rust definiscono il tipo di valore che una variabile può contenere. Sono fondamentali per comprendere come i dati vengono memorizzati e manipolati nel tuo programma. In questo capitolo, esploreremo i diversi tipi di dati disponibili in Rust.
 
-## Numerici interi
+C'è da sottolineare che in Rust, quando dichiari una variabile, il compilatore è in grado di *inferire automaticamente* il tipo di dato in base al valore che gli assegni. Questo è noto come "*type inference*" o inferenza del tipo. Grazie a questa caratteristica, non è sempre necessario specificare esplicitamente il tipo di dato quando dichiari una variabile, ma vediamo nel dettaglio quali sono i tipi di dato.
 
+## Numerici interi
 In Rust, i tipi di dati interi possono essere signed (con segno) o unsigned (senza segno). Vediamo cosa significa e fornisco un esempio per chiarire meglio.
 1. **Signed (Con Segno):**
    - `i8`: Rappresenta un intero con segno su 8 bit.
@@ -97,14 +98,10 @@ Ecco un esempio di come puoi utilizzare i tipi di dato booleani in Rust:
 
 ```rust
 fn main() {
-    // Definizione di variabili booleane
-    let vero = true;
-    let falso = false;
-
     // Esempio di confronto che restituisce un valore booleano
-    let numero1 = 10;
-    let numero2 = 5;
-    let maggiore = numero1 > numero2; // maggiore conterrà il valore booleano true
+    let numero1: i32 = 10;
+    let numero2: i32 = 5;
+    let maggiore: bool = numero1 > numero2; // maggiore conterrà il valore booleano true
 
     // Esempio di espressione condizionale basata su un valore booleano
     if maggiore {
@@ -165,9 +162,11 @@ Rust ha due principali tipi di dati per le stringhe: `String` e `&str`.
 
 ##### Esempio:
 ```rust
-let mut mio_nome = String::from("Alice");
-mio_nome.push_str(" in Wonderland");
-println!("{}", mio_nome); // Output: Alice Wonderland
+fn main() {
+    let mut mio_nome = String::from("Alice");
+    mio_nome.push_str(" in Wonderland");
+    println!("{}", mio_nome); // Output: Alice Wonderland
+}
 ```
 In questo esempio, `String::from` crea una nuova stringa di proprietà che può essere modificata con l'aggiunta di più testo usando il metodo `push_str`.
 
@@ -176,8 +175,10 @@ In questo esempio, `String::from` crea una nuova stringa di proprietà che può 
 
 ##### Esempio:
 ```rust
-let saluto: &str = "Ciao, mondo!";
-println!("{}", saluto); // Output: Ciao, mondo!
+fn main() {
+    let saluto: &str = "Ciao, mondo!";
+    println!("{}", saluto); // Output: Ciao, mondo!
+}
 ```
 In questo esempio, `&str` è un riferimento a una stringa di testo fissa, e non può essere modificato.
 

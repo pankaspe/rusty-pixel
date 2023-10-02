@@ -16,13 +16,13 @@ Gli operatori aritmetici vengono utilizzati per eseguire operazioni matematiche 
 Esempio di operazioni aritmetiche in Rust:
 ```rust
 fn main() {
-    let a = 10;
-    let b = 3;
-    let somma = a + b;
-    let differenza = a - b;
-    let prodotto = a * b;
-    let divisione = a / b;
-    let resto = a % b;
+    let a: i32 = 10;
+    let b: i32 = 3;
+    let somma: i32 = a + b;
+    let differenza: i32 = a - b;
+    let prodotto: i32 = a * b;
+    let divisione: i32 = a / b;
+    let resto: i32 = a % b;
 
     println!("Somma: {}", somma);
     println!("Differenza: {}", differenza);
@@ -41,7 +41,7 @@ Gli operatori di assegnazione vengono utilizzati per assegnare valori alle varia
 Esempio di operatori di assegnazione in Rust:
 ```rust
 fn main() {
-    let mut x = 5;
+    let mut x: i32 = 5;
     x += 3; // Ora x è 8
     x -= 2; // Ora x è 6
     x *= 4; // Ora x è 24
@@ -60,8 +60,8 @@ Gli operatori di confronto vengono utilizzati per confrontare valori. Restituisc
 Esempio di operatori di confronto in Rust:
 ```rust
 fn main() {
-    let a = 5;
-    let b = 10;
+    let a: i32 = 5;
+    let b: i32 = 10;
     println!("a è uguale a b? {}", a == b); // Stampa: false
     println!("a è diverso da b? {}", a != b); // Stampa: true
     println!("a è minore di b? {}", a < b); // Stampa: true
@@ -79,8 +79,8 @@ Gli operatori logici sono usati per combinare condizioni e valutare l'espression
 Ecco un esempio di come vengono utilizzati gli operatori logici in Rust:
 ```rust
 fn main() {
-    let vero = true;
-    let falso = false;
+    let vero: bool = true;
+    let falso: bool = false;
 
     // Operatore AND
     println!("AND: {}", vero && falso); // Stampa false perché una delle condizioni è falsa
