@@ -38,6 +38,16 @@ fn main() {
 ```
 In questo esempio, abbiamo creato variabili di tipo `i32` e `u64`. `i32` rappresenta un intero con segno su 32 bit, mentre `u64` rappresenta un intero senza segno su 64 bit. Puoi vedere come i valori possono variare in base al tipo di dato utilizzato. I tipi di dati con segno possono rappresentare sia numeri positivi che negativi, mentre i tipi senza segno rappresentano solo numeri positivi o zero.
 
+:::info
+In informatica, i **bit** sono l'unità fondamentale di informazione e rappresentano il valore più piccolo in un sistema di numerazione binario. Il termine **bit** deriva dalla contrazione di "*binary digit*" (cifra binaria in italiano) e può essere in uno dei due stati: 0 o 1.
+
+Ogni dispositivo informatico, dal tuo computer al tuo smartphone, manipola e archivia dati utilizzando combinazioni di **bit**. Queste sequenze di **bit** vengono interpretate per rappresentare numeri, caratteri, istruzioni di programma e molto altro. Il concetto di **bit** è alla base di tutta l'informatica moderna e della rappresentazione digitale dei dati.
+
+Le combinazioni di **bit** possono rappresentare valori numerici utilizzando il sistema di numerazione binario, in cui ogni posizione rappresenta una potenza di 2. Ad esempio, il numero binario "1010" rappresenta il numero 10 in decimale, poiché corrisponde a 1x2^3 + 0x2^2 + 1x2^1 + 0x2^0.
+
+I **bit** sono fondamentali anche per l'aritmetica booleana, un'area della logica matematica che gestisce operazioni logiche come *AND, OR e NOT*. Queste operazioni sono alla base del funzionamento dei circuiti digitali e dei calcoli logici nei computer.
+:::
+
 ## Numerici a virgola mobile
 I tipi di dati a virgola mobile in Rust sono utilizzati per rappresentare numeri con decimali. Ci sono due tipi principali di dati a virgola mobile in Rust: `f32` e `f64`, che rappresentano numeri in virgola mobile a 32 bit e 64 bit rispettivamente. La differenza principale tra loro è la precisione: `f64` ha una maggiore precisione rispetto a `f32`, ma occupa più spazio in memoria.
 
@@ -110,7 +120,8 @@ In questo esempio, `vero` e `falso` sono variabili booleane che possono essere `
 I tipi di dato booleani sono ampiamente utilizzati nelle espressioni condizionali, nei loop e in molte altre situazioni in cui è necessario valutare le condizioni nel tuo programma.
 
 ## Dati composti
-I tipi di dati composti in Rust sono strutture dati che possono contenere più valori di tipi diversi. Le due principali forme di dati composti in Rust sono le tuple e gli array.
+I tipi di dati composti in Rust sono strutture dati che possono contenere più valori di tipi diversi.  
+Le due principali forme di dati composti in Rust sono le *tuple* e gli *array*. Ma una menzione va fatta alle *stringhe*, approfondiremo nel dettaglio nel paragrafo 3.2.
 
 ### Tuple
 Una tupla è una sequenza ordinata di elementi, che possono essere di tipi diversi. Le tuple consentono di raggruppare variabili in un unico valore.

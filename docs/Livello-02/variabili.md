@@ -21,7 +21,7 @@ eta = 55;
 ^^^^^^^^ cannot assign twice to immutable variable
 ```
 
-:::tip
+:::info
 `let` la parola chiave let viene utilizzata per dichiarare variabili. Il termine "let" è un'abbreviazione di "let binding" e rappresenta l'associazione di un nome di variabile a un valore o a un'espressione. Quando usi let per dichiarare una variabile, stai essenzialmente creando un legame (binding) tra un identificatore (il nome della variabile) e un valore. Questo legame ti consente di utilizzare e manipolare quel valore attraverso l'identificatore della variabile.
 :::
 
@@ -62,7 +62,7 @@ const PI: f64 = 3.14159; // Dichiarazione di una costante chiamata "PI" con valo
 ### Conclusione
 Le variabili in Rust offrono un'ampia gamma di flessibilità, consentendoci di scegliere tra immutabilità, mutabilità, shadowing e costanti a seconda delle nostre esigenze specifiche. Queste caratteristiche ci permettono di scrivere codice robusto e sicuro, aprendo la strada a un mondo di possibilità nella programmazione con Rust. Nel prossimo capitolo, esploreremo come utilizzare queste variabili in operazioni matematiche e condizioni, espandendo così le nostre capacità nel linguaggio di programmazione Rust.
 
-:::tip
+:::info
 In programmazione, uno `scope{}` si riferisce alla parte di un programma in cui una variabile o una funzione può essere utilizzata o è visibile. Immagina uno `scope{}` come una stanza: tutto ciò che si trova dentro la stanza può essere visto e utilizzato da chi è dentro, ma non da chi è fuori.
 
 Nel contesto di uno `scope{}`, una variabile definita all'interno di uno scope specifico è detta **variabile locale**. Questo significa che può essere utilizzata solo all'interno di quel determinato blocco di codice o di quella funzione in cui è stata dichiarata. Quando esci da quell'ambito, la variabile non è più disponibile e non può essere utilizzata.

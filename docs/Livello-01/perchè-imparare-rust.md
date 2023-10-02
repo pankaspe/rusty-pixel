@@ -28,10 +28,8 @@ Rust è noto per la sua capacità di sviluppare una profonda conoscenza dell'har
 
 In sostanza, Rust offre un livello di controllo sulla memoria, sicurezza e affidabilità che è fondamentale quando si sviluppano applicazioni che richiedono una profonda comprensione dell'hardware di un computer o di un dispositivo. Queste caratteristiche fanno di Rust una scelta ideale per progetti che richiedono una programmazione di sistema precisa e robusta.
 
-:::tip
-
+:::info
 1. I *dispositivi embedded* sono piccoli computer incorporati in oggetti quotidiani come telefoni, auto o elettrodomestici. Sono progettati per fare lavori specifici, come gestire il riscaldamento di un forno a microonde. In breve, sono il cervello nascosto di molti dispositivi che usiamo ogni giorno.
-
 :::
 
 ### Differenze con il C e C++
@@ -71,3 +69,9 @@ fn main() {
     println!("Hello, World!");
 }
 ```
+
+:::info
+L'**indentazione del codice** è importante perché rende il codice più leggibile. Organizzando il codice in modo gerarchico, con blocchi di codice indentati correttamente, è più facile per gli sviluppatori comprendere la struttura e la logica del programma. Un codice ben indentato migliora la chiarezza e riduce gli errori dovuti alla confusione della struttura.
+
+I **commenti** sono essenziali perché forniscono spiegazioni aggiuntive sul codice. Possono aiutare gli altri programmatori (o anche te stesso in futuro) a capire cosa fa una parte specifica del codice, soprattutto se è complessa o non immediatamente ovvia. Inoltre, i commenti possono servire come annotazioni per te stesso, ricordandoti il motivo per cui hai scritto una determinata sezione di codice in un certo modo. Utilizzando commenti, è possibile documentare intenzioni, procedure e decisioni di progettazione, migliorando la manutenibilità del codice nel tempo.
+:::

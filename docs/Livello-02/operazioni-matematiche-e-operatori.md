@@ -4,7 +4,7 @@ sidebar_position: 3
 # 2.3 Operazioni matematiche e operatori
 Nel mondo della programmazione, spesso è necessario eseguire operazioni matematiche per manipolare dati e risolvere problemi. In questo capitolo, esploreremo le varie operazioni matematiche che puoi eseguire in Rust insieme agli operatori utilizzati per eseguirle.
 
-## Operatori Aritmetici
+## Operatori aritmetici
 Gli operatori aritmetici vengono utilizzati per eseguire operazioni matematiche su numeri. Ecco gli operatori aritmetici principali in Rust:
 
 - **`+` (Addizione):** Aggiunge due numeri.
@@ -32,7 +32,7 @@ fn main() {
 }
 ```
 
-## Operatori di Assegnazione
+## Operatori di assegnazione
 Gli operatori di assegnazione vengono utilizzati per assegnare valori alle variabili. Ecco gli operatori di assegnazione in Rust:
 
 - **`=` (Assegnazione):** Assegna il valore a destra alla variabile a sinistra.
@@ -50,7 +50,7 @@ fn main() {
 }
 ```
 
-## Operatori di Confronto
+## Operatori di confronto
 Gli operatori di confronto vengono utilizzati per confrontare valori. Restituiscono un valore booleano che indica se la condizione è vera o falsa. Ecco gli operatori di confronto in Rust:
 
 - **`==` (Uguaglianza):** Restituisce `true` se i due valori sono uguali.
@@ -68,3 +68,29 @@ fn main() {
     println!("a è maggiore o uguale a b? {a >= b}"); // Stampa: false
 }
 ```
+
+## Operatori logici
+Gli operatori logici sono usati per combinare condizioni e valutare l'espressione complessiva come vera o falsa. Ci sono tre principali operatori logici:
+
+- **`&&` (AND)**: Questo operatore restituisce `true` solo se entrambe le condizioni a sinistra e a destra dell'operatore sono vere. Ad esempio, `condizione1 && condizione2` sarà vero solo se sia `condizione1` che `condizione2` sono vere.
+- **`||` (OR)**: Questo operatore restituisce `true` se almeno una delle condizioni a sinistra o a destra dell'operatore è vera. Ad esempio, `condizione1 || condizione2` sarà vero se almeno una tra `condizione1` o `condizione2` è vera.
+- **`!` (NOT)**: Questo operatore viene utilizzato per invertire il valore di verità di una condizione. Se una condizione è vera, `!condizione` sarà falsa e viceversa.
+
+Ecco un esempio di come vengono utilizzati gli operatori logici in Rust:
+```rust
+fn main() {
+    let vero = true;
+    let falso = false;
+
+    // Operatore AND
+    println!("AND: {vero && falso}"); // Stampa false perché una delle condizioni è falsa
+
+    // Operatore OR
+    println!("OR: {vero || falso}"); // Stampa true perché almeno una delle condizioni è vera
+
+    // Operatore NOT
+    println!("NOT: {!vero}"); // Stampa false perché !vero inverte il valore da true a false
+}
+```
+
+In questo esempio, `&&` e `||` sono usati per combinare condizioni, mentre `!` inverte il valore di verità di una condizione. Questi operatori logici sono fondamentali per controllare il flusso del programma in base a condizioni specifiche.

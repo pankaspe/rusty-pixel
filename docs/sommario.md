@@ -20,15 +20,15 @@ Ho suddiviso il corso in 4 Livelli per cercare di renderlo accessibile a tutti. 
   - 2.1: [Le variabili](./Livello-02/variabili)
   - 2.2: [Tipi di Dato](./Livello-02/i-tipi-di-dato)
   - 2.3: [Operazioni matematiche e operatori](./Livello-02/operazioni-matematiche-e-operatori)
-  - 2.4: [Input e Output](./Livello-02/input-e-output)
-  - 2.5: Istruzioni Condizionali (if, else)
-  - 2.6: Cicli e Looping (while, for)
+  - 2.4: [Istruzioni Condizionali (if, else, else if, match)](./Livello-02/istruzioni-condizionali)
+  - 2.5: Cicli e Looping (while, for)
 
 ### Capitolo 3: Strutture Dati in Rust
   - 3.1: Array e Vettori
   - 3.2: Stringhe
-  - 3.3: Tuple
-  - 3.4: Strutture (Structs) e Enumerazioni (Enums)
+  - 3.3: Input e Output
+  - 3.4: Tuple
+  - 3.5: Strutture (Structs) e Enumerazioni (Enums)
 
 ### Capitolo 4: Funzioni e Modularità
   - 4.1: Cosa Sono le Funzioni
