@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Impara a programmare da subito',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/impara-a-programmare.svg').default,
     description: (
       <>
         Rusty Pixel offre un approccio didattico intuitivo e accessibile alla programmazione. 
@@ -16,7 +16,7 @@ const FeatureList = [
   },
   {
     title: 'Sviluppa la capacità del pensiero logico',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/pensiero-logico.svg').default,
     description: (
       <>
         Oltre a imparare a programmare, Rusty Pixel ti aiuta a comprendere il mondo digitale che ti circonda. 
@@ -27,7 +27,7 @@ const FeatureList = [
   },
   {
     title: 'Diventa consapevole della Tecnologia',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/consapevolezza.svg').default,
     description: (
       <>
         La programmazione non riguarda solo il codice, ma anche la capacità di pensare in modo logico e risolvere problemi in modo creativo. 
