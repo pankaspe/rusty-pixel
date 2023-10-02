@@ -31,7 +31,7 @@ fn main() {
     if eta >= 18 {
         println!("Accesso consentito alle funzionalità riservate agli adulti.");
     } else {
-        println!("Mi dispiace, devi avere almeno 18 anni per accedere a questa funzionalità. Ti mancano {18 - eta} anni.");
+        println!("Mi dispiace, devi avere almeno 18 anni per accedere a questa funzionalità. Ti mancano {} anni.", 18 - eta);
     }
 }
 ```
