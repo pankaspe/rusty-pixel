@@ -6,16 +6,9 @@ description: introduzione ai contenuti, sommario
 ---
 
 # Sommario
-Ho suddiviso il corso in 4 Livelli per cercare di renderlo accessibile a tutti, o quasi.
+Ho suddiviso il corso in 4 livelli differenti, dal più semplice al più complesso, da far invidia persino a *Pennywise*, perché, diciamocelo, imparare a programmare è solo un modo per coltivare quella sottile forma di "follia" che tutti noi segretamente desideriamo.
 
-1. **Eccentricità ★**: In questo stadio, mostrate comportamenti strani, ma ancora nel regno della normalità. Siete solo un po' eccentrici.
-2. **Mania ★★**: Adesso siete ossessionati da idee fisse. Le allucinazioni rendono la vostra vita più interessante, vero?
-3. **Delirio ★★★**: Siete completamente persi nelle vostre illusioni, a tal punto da non distinguere più la realtà dai codici binari.
-4. **Follia ★★★★**: Benvenuti nel regno del caos e della follia. Dove la tua realtà si dissolve come un errore di programmazione e persino le persone diventano meri bit nell'universo dei tuoi deliri.
-
-*Si scherza eh*. Questa struttura a livelli è stata pensata per garantire un apprendimento graduale, i nomi sono scelti a caso (o quasi), partendo dalle basi e progredendo verso concetti più avanzati. In ogni livello (con la stellina di difficoltà), affronteremo argomenti specifici legati alla programmazione in Rust, fornendo esempi pratici e progetti che vi aiuteranno a consolidare le vostre competenze.
-
-## Livello 1 - *Eccentricità * ★
+## Livello 1 - *Novizio* ★
 ### Capitolo 1: Introduzione alla programmazione e Rust
   - 1.1: [Cos'è la Programmazione?](./Capitolo-01/la-programmazione)
   - 1.2: [Perché Imparare Rust?](./Capitolo-01/perchè-imparare-rust)
@@ -44,7 +37,7 @@ Ho suddiviso il corso in 4 Livelli per cercare di renderlo accessibile a tutti, 
   - 4.4: Tuple
   - 4.5: Strutture (Structs) e Enumerazioni (Enums)
 
-## Livello 2 - *Mania* ★★
+## Livello 2 - *Maniaco del codice* ★★
 ### Capitolo 5: Programmazione Orientata agli Oggetti (OOP) in Rust
   - 5.1: Concetti di Base dell'OOP
   - 5.2: Creazione di Metodi e Strutture
