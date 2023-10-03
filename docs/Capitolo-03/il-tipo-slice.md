@@ -4,7 +4,7 @@ sidebar_position: 4
 # 3.4 Il tipo Slice
 In Rust, lo **slice** è un *riferimento* a una parte contigua di una struttura dati come un array o una stringa. Gli **slice** consentono di lavorare con una porzione specifica di dati senza dover copiare tutto l'array o la stringa originale. Questo è utile per operazioni che richiedono solo una parte dei dati, come l'analisi di sottostringhe o l'ordinamento di parti di un array.
 
-### Creare uno Slice:
+### Creare uno Slice
 Per creare un **slice**, specifica l'indice iniziale e quello finale della sequenza che desideri estrarre. Ad esempio, se abbiamo un array di numeri:
 
 ```rust
@@ -14,7 +14,7 @@ let mio_slice = &numeri[1..4];
 
 In questo esempio, `mio_slice` è un riferimento a una porzione dell'array `numeri` che va dall'indice 1 (incluso) all'indice 4 (escluso), quindi contiene `[2, 3, 4]`.
 
-### Utilizzo degli Slice:
+### Utilizzo degli Slice
 I **slice** possono essere utilizzati in funzioni per operare solo su parti specifiche dei dati senza dover passare l'intera sequenza. Ad esempio, se vogliamo calcolare la somma degli elementi di un certo intervallo in un array:
 
 ```rust

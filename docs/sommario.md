@@ -6,9 +6,16 @@ description: introduzione ai contenuti, sommario
 ---
 
 # Sommario
-Ho suddiviso il corso in 4 Livelli per cercare di renderlo accessibile a tutti. Questa struttura a livelli è stata pensata per garantire un apprendimento graduale, partendo dalle basi e progredendo verso concetti più avanzati. In ogni livello, affronteremo argomenti specifici legati alla programmazione in Rust, fornendo esempi pratici e progetti che vi aiuteranno a consolidare le vostre competenze.
+Ho suddiviso il corso in 4 Livelli per cercare di renderlo accessibile a tutti, o quasi.
 
-## Livello 1 - *Novizio* ★
+1. **Eccentricità ★**: In questo stadio, mostrate comportamenti strani, ma ancora nel regno della normalità. Siete solo un po' eccentrici.
+2. **Mania ★★**: Adesso siete ossessionati da idee fisse. Le allucinazioni rendono la vostra vita più interessante, vero?
+3. **Delirio ★★★**: Siete completamente persi nelle vostre illusioni, a tal punto da non distinguere più la realtà dai codici binari.
+4. **Follia ★★★★**: Benvenuti nel regno del caos e della follia. Dove la tua realtà si dissolve come un errore di programmazione e persino le persone diventano meri bit nell'universo dei tuoi deliri.
+
+*Si scherza eh*. Questa struttura a livelli è stata pensata per garantire un apprendimento graduale, i nomi sono scelti a caso (o quasi), partendo dalle basi e progredendo verso concetti più avanzati. In ogni livello (con la stellina di difficoltà), affronteremo argomenti specifici legati alla programmazione in Rust, fornendo esempi pratici e progetti che vi aiuteranno a consolidare le vostre competenze.
+
+## Livello 1 - *Eccentricità * ★
 ### Capitolo 1: Introduzione alla programmazione e Rust
   - 1.1: [Cos'è la Programmazione?](./Capitolo-01/la-programmazione)
   - 1.2: [Perché Imparare Rust?](./Capitolo-01/perchè-imparare-rust)
@@ -37,7 +44,7 @@ Ho suddiviso il corso in 4 Livelli per cercare di renderlo accessibile a tutti. 
   - 4.4: Tuple
   - 4.5: Strutture (Structs) e Enumerazioni (Enums)
 
-## Livello 2 - *Apprendista* ★★
+## Livello 2 - *Mania* ★★
 ### Capitolo 5: Programmazione Orientata agli Oggetti (OOP) in Rust
   - 5.1: Concetti di Base dell'OOP
   - 5.2: Creazione di Metodi e Strutture
@@ -71,7 +78,7 @@ Ho suddiviso il corso in 4 Livelli per cercare di renderlo accessibile a tutti. 
   - 10.3: Il Vostro Cammino di Apprendimento Continuo
 
 
-## Livello 3 - *Artigiano del codice binario* ★★★
+## Livello 3 - *Delirio* ★★★
 ### Capitolo 11: Etica dell'Hacking e sicurezza informatica con Rust
   - **11.1: Introduzione all'Hacking Etico**
     - Scopo dell'hacking etico
@@ -99,7 +106,7 @@ Ho suddiviso il corso in 4 Livelli per cercare di renderlo accessibile a tutti. 
     - Come contribuire alla sicurezza informatica e all'etica online con le tue competenze
 
 
-## Livello 4 - *Hacker* ★★★★★
+## Livello 4 - *Follia* ★★★★★
 ### Capitolo 12: Riprogrammazione di una rete neurale con Rust
   - **12.1: Fondamenti delle Reti Neurali**
     - Cosa sono le reti neurali artificiali
