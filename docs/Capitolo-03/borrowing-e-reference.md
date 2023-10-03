@@ -28,7 +28,7 @@ Ci sono due tipi di prestito:
 - **Prestito mutabile**: Permette a una sola parte del codice di modificare il valore.
 
 ### Riferimento
-In Rust, un **riferimento** (reference in inglese) **è una forma di prestito**, è un tipo di variabile che contiene l'**indirizzo di memoria** di un'altra variabile. I reference permettono di accedere ai dati senza prendere pieno possesso di essi, rispettando le regole dell'**ownership** di Rust.  
+In Rust, un **riferimento** (reference in inglese) **è una forma di prestito**, è un tipo di variabile che contiene l'**indirizzo di memoria** di un'altra variabile. I **riferimenti** permettono di accedere ai dati senza prendere pieno possesso di essi, rispettando le regole dell'**ownership** di Rust.  
 Ci sono due tipi principali di reference: i riferimenti immutabili (immutable references) e i riferimenti mutabili (mutable references).
 
 #### Riferimenti immutabili (`&`):
