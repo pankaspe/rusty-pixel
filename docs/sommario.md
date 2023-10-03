@@ -10,23 +10,23 @@ Ho suddiviso il corso in 4 Livelli per cercare di renderlo accessibile a tutti. 
 
 ## Livello 1 - *Novizio* ★
 ### Capitolo 1: Introduzione alla programmazione e Rust
-  - 1.1: [Cos'è la Programmazione?](./Livello-01/la-programmazione)
-  - 1.2: [Perché Imparare Rust?](./Livello-01/perchè-imparare-rust)
-  - 1.3: [Ambiente di Sviluppo per Rust](./Livello-01/ambiente-sviluppo-rust)
-  - 1.4: [Funzionamento del computer](./Livello-01/il-terminale)
-  - 1.5: [Iniziamo con Rust](./Livello-01/installazione)
+  - 1.1: [Cos'è la Programmazione?](./Capitolo-01/la-programmazione)
+  - 1.2: [Perché Imparare Rust?](./Capitolo-01/perchè-imparare-rust)
+  - 1.3: [Ambiente di Sviluppo per Rust](./Capitolo-01/ambiente-sviluppo-rust)
+  - 1.4: [Funzionamento del computer](./Capitolo-01/il-terminale)
+  - 1.5: [Iniziamo con Rust](./Capitolo-01/installazione)
 
 ### Capitolo 2: Fondamenti della Programmazione
-  - 2.1: [Le variabili](./Livello-02/variabili)
-  - 2.2: [Tipi di Dato](./Livello-02/i-tipi-di-dato)
-  - 2.3: [Operazioni matematiche e operatori](./Livello-02/operazioni-matematiche-e-operatori)
-  - 2.4: [Istruzioni Condizionali (if, else, else if, match)](./Livello-02/istruzioni-condizionali)
-  - 2.5: [Cicli di looping (loop, while, for)](./Livello-02/cicli-di-looping)
+  - 2.1: [Le variabili](./Capitolo-02/variabili)
+  - 2.2: [Tipi di Dato](./Capitolo-02/i-tipi-di-dato)
+  - 2.3: [Operazioni matematiche e operatori](./Capitolo-02/operazioni-matematiche-e-operatori)
+  - 2.4: [Istruzioni Condizionali (if, else, else if, match)](./Capitolo-02/istruzioni-condizionali)
+  - 2.5: [Cicli di looping (loop, while, for)](./Capitolo-02/cicli-di-looping)
 
 ### Capitolo 3: Il concetto di Ownership
-  - 3.1: [Cos'è l'Ownership?](./Livello-03/cosa-e-ownership)
-  - 3.2: Le regole dell'Ownership
-  - 3.3: I vantaggi dell'Ownership
+  - 3.1: [Cos'è l'Ownership? (proprietario)](./Capitolo-03/cosa-e-ownership)
+  - 3.2: [Le regole dell'Ownership](./Capitolo-03/le-regole-dell-ownership)
+  - 3.3: [Prestiti e Riferimenti (Borrowing & References)](./Capitolo-03/borrowing-e-reference)
 
 ### Capitolo 4: Strutture Dati in Rust
   - 4.1: Array e Vettori

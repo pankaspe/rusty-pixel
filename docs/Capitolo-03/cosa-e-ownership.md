@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 ---
-# Cos'è l'Ownership?
+# 3.1 Cos'è l'Ownership?
 L'ownership è uno dei concetti fondamentali di Rust ed è essenziale per capire come Rust gestisce la memoria e previene i problemi come i data race. 
 
 :::info
@@ -26,29 +26,3 @@ Tuttavia, se decidi di vendere la bicicletta a qualcun altro, quella persona div
 
 Nel contesto della programmazione Rust, puoi pensare alla variabile che contiene un valore come al **proprietario** di quel valore. Solo il **proprietario** può modificarlo o decidere cosa farne. Quando la variabile esce dallo scope o viene *deallocata*, il valore torna libero per essere utilizzato da altre parti del programma, proprio come quando vendi o presti la tua bicicletta.  
 Questa idea di **ownership** è un elemento chiave della sicurezza e della gestione della memoria in Rust.
-
-### Un solo proprietario alla volta
-Devi pensare alla variabile come al proprietario del suo valore. Puoi avere più variabili che contengono lo stesso valore, ma solo una di esse è il proprietario.
-
-```rust
-let mio_numero = 42; // "mio_numero" è il proprietario del valore 42.
-let altro_numero = mio_numero; // "altro_numero" ora è il proprietario del valore 42.
-```
-In questo esempio, `mio_numero` cede il suo valore a `altro_numero`.
-
-### Deallocazione automatica
-Quando il proprietario esce dallo scope (la porzione di codice in cui è dichiarato), Rust *dealloca* automaticamente il valore.   
-È come quando lasci una stanza: tutto ciò che possedevi all'interno rimane lì, ma quando esci, è libero per chiunque altro.
-
-```rust
-fn main() {
-    let mio_nome = String::from("Alice"); // "mio_nome" è il proprietario della stringa "Alice".
-    // Il blocco di codice termina qui.
-} // Quando il blocco termina, la stringa viene deallocata automaticamente.
-```
-
-In questo esempio, quando `main()` termina, la stringa "Alice" viene deallocata automaticamente.
-
-L'ownership in Rust ci aiuta a scrivere codice più sicuro. Sapendo chi è il **proprietario** di un valore, Rust può evitare situazioni come la *doppia deallocazione* (tentativo di deallocare lo stesso valore due volte) o l'uso di valori *deallocati*, garantendo così la sicurezza del nostro programma.
-
-Continueremo ad esplorare l'ownership in modo più dettagliato, ma questa è una panoramica di base che ci aiuta a capire come Rust gestisce i valori e la memoria in modo sicuro e affidabile.
