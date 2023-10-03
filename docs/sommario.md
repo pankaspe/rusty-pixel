@@ -22,11 +22,13 @@ Ho suddiviso il corso in 4 Livelli per cercare di renderlo accessibile a tutti. 
   - 2.3: [Operazioni matematiche e operatori](./Capitolo-02/operazioni-matematiche-e-operatori)
   - 2.4: [Istruzioni Condizionali (if, else, else if, match)](./Capitolo-02/istruzioni-condizionali)
   - 2.5: [Cicli di looping (loop, while, for)](./Capitolo-02/cicli-di-looping)
+  - 2.6: [Le funzioni](./Capitolo-02/le-funzioni)
 
 ### Capitolo 3: Il concetto di Ownership
   - 3.1: [Cos'è l'Ownership? (proprietario)](./Capitolo-03/cosa-e-ownership)
   - 3.2: [Le regole dell'Ownership](./Capitolo-03/le-regole-dell-ownership)
   - 3.3: [Prestiti e Riferimenti (Borrowing & References)](./Capitolo-03/borrowing-e-reference)
+  - 3.4: [Il tipo Slice](./Capitolo-03/il-tipo-slice)
 
 ### Capitolo 4: Strutture Dati in Rust
   - 4.1: Array e Vettori
@@ -35,98 +37,90 @@ Ho suddiviso il corso in 4 Livelli per cercare di renderlo accessibile a tutti. 
   - 4.4: Tuple
   - 4.5: Strutture (Structs) e Enumerazioni (Enums)
 
-### Capitolo 5: Funzioni e Modularità
-  - 5.1: Cosa Sono le Funzioni
-  - 5.2: Parametri e Restituzione dei Valori
-  - 5.3: Organizzare il Codice con Funzioni
-  - 5.5: Importare Moduli e Pacchetti Esterni
-
-
 ## Livello 2 - *Apprendista* ★★
-### Capitolo 6: Programmazione Orientata agli Oggetti (OOP) in Rust
-  - 6.1: Concetti di Base dell'OOP
-  - 6.2: Creazione di Metodi e Strutture
-  - 6.3: Ereditarietà e Polimorfismo
+### Capitolo 5: Programmazione Orientata agli Oggetti (OOP) in Rust
+  - 5.1: Concetti di Base dell'OOP
+  - 5.2: Creazione di Metodi e Strutture
+  - 5.3: Ereditarietà e Polimorfismo
 
-### Capitolo 7: Gestione degli Errori in Rust
-  - 7.1: Introduzione alla Gestione degli Errori
-  - 7.2: Il Tipo di Dato Result
-  - 7.3: Il Tipo di Dato Option
-  - 7.4: Gestire Errori Personalizzati
+### Capitolo 6: Gestione degli Errori in Rust
+  - 6.1: Introduzione alla Gestione degli Errori
+  - 6.2: Il Tipo di Dato Result
+  - 6.3: Il Tipo di Dato Option
+  - 6.4: Gestire Errori Personalizzati
 
-### Capitolo 8: Progetti Pratici
-  - 8.1: Creazione di un Gioco Semplice
-  - 8.2: Automatizzazione di Compiti
-  - 8.3: Risoluzione di Problemi Matematici
-  - 8.4: Progetto Finale: Applicazione Interattiva
+### Capitolo 7: Progetti Pratici
+  - 7.1: Creazione di un Gioco Semplice
+  - 7.2: Automatizzazione di Compiti
+  - 7.3: Risoluzione di Problemi Matematici
+  - 7.4: Progetto Finale: Applicazione Interattiva
 
-### Capitolo 9: Approfondimenti in Rust
-  - 9.1: Generics e Trait
-  - 9.2: Concorrenza e Multithreading in Rust
-  - 9.3: Uso delle Librerie e dei Framework
+### Capitolo 8: Approfondimenti in Rust
+  - 8.1: Generics e Trait
+  - 8.2: Concorrenza e Multithreading in Rust
+  - 8.3: Uso delle Librerie e dei Framework
 
-### Capitolo 10: Contribuzione Open Source e Comunità Rust
-  - 10.1: Cos'è l'Open Source
-  - 10.2: Contribuzione a Progetti Rust
-  - 10.3: Partecipazione alla Comunità Rust
+### Capitolo 9: Contribuzione Open Source e Comunità Rust
+  - 9.1: Cos'è l'Open Source
+  - 9.2: Contribuzione a Progetti Rust
+  - 9.3: Partecipazione alla Comunità Rust
 
-### Capitolo 11: Il Futuro della Programmazione in Rust
-  - 11.1: Opportunità di Carriera
-  - 11.2: Ulteriori Risorse e Approfondimenti
-  - 11.3: Il Vostro Cammino di Apprendimento Continuo
+### Capitolo 10: Il Futuro della Programmazione in Rust
+  - 10.1: Opportunità di Carriera
+  - 10.2: Ulteriori Risorse e Approfondimenti
+  - 10.3: Il Vostro Cammino di Apprendimento Continuo
 
 
 ## Livello 3 - *Artigiano del codice binario* ★★★
-### Capitolo 12: Etica dell'Hacking e sicurezza informatica con Rust
-  - **12.1: Introduzione all'Hacking Etico**
+### Capitolo 11: Etica dell'Hacking e sicurezza informatica con Rust
+  - **11.1: Introduzione all'Hacking Etico**
     - Scopo dell'hacking etico
     - Differenza tra hacking etico, white hat e black hat
     - Come diventare un white hat hacker
 
-  - **12.2: Sicurezza Informatica Fondamentale**
+  - **11.2: Sicurezza Informatica Fondamentale**
     - Concetti di base della sicurezza informatica
     - Come proteggere il tuo computer e i tuoi dati personali
     - Rischi della cattiva sicurezza informatica
 
-  - **12.3: Utilizzo di Rust per la Sicurezza**
+  - **11.3: Utilizzo di Rust per la Sicurezza**
     - Perché Rust è una scelta solida per la sicurezza informatica
     - Esempi di strumenti di sicurezza scritti in Rust
     - Come sviluppare applicazioni sicure con Rust
 
-  - **12.4: Hacking Etico con Rust**
+  - **11.4: Hacking Etico con Rust**
     - Etica nell'hacking e nell'analisi di vulnerabilità
     - Metodologie e approcci nell'hacking etico
     - Esempi di progetti di hacking etico con Rust
 
-  - **12.5: La Tua Responsabilità Etica**
+  - **11.5: La Tua Responsabilità Etica**
     - L'importanza dell'etica nell'uso delle tue abilità di programmazione e hacking
     - Linee guida per un comportamento etico nel mondo digitale
     - Come contribuire alla sicurezza informatica e all'etica online con le tue competenze
 
 
 ## Livello 4 - *Hacker* ★★★★★
-### Capitolo 13: Riprogrammazione di una rete neurale con Rust
-  - **13.1: Fondamenti delle Reti Neurali**
+### Capitolo 12: Riprogrammazione di una rete neurale con Rust
+  - **12.1: Fondamenti delle Reti Neurali**
     - Cosa sono le reti neurali artificiali
     - Funzionamento delle reti neurali nell'apprendimento automatico
     - Concetti chiave delle reti neurali
 
-  - **13.2: L'Importanza della Sicurezza Informatica**
+  - **12.2: L'Importanza della Sicurezza Informatica**
     - Ruolo della sicurezza informatica nella programmazione di reti neurali
     - Rischi legati alla manipolazione non autorizzata delle reti neurali
     - Come Rust contribuisce alla sicurezza delle reti neurali
 
-  - **13.3: Riprogrammare Reti Neurali con Rust**
+  - **12.3: Riprogrammare Reti Neurali con Rust**
     - Approccio alla riprogrammazione di reti neurali
     - Esempi di progetti di riprogrammazione con Rust
     - Vantaggi e sfide della riprogrammazione
 
-  - **13.4: Implicazioni Etiche**
+  - **12.4: Implicazioni Etiche**
     - Dibattito sull'etica della riprogrammazione di reti neurali
     - Responsabilità nell'utilizzo delle competenze di programmazione
     - Ruolo dei giovani programmatori nell'etica dell'IA
     
-
 Questo livello rappresenta un passaggio fondamentale nel nostro viaggio attraverso la programmazione con Rust. Qui, mettiamo in primo piano aspetti essenziali come l'etica e la sicurezza informatica.
 
 È il momento di approfondire la tua comprensione su come utilizzare le tue abilità in modo responsabile nel mondo digitale. Imparerai a diventare un cittadino digitale responsabile e consapevole, contribuendo a rendere Internet un luogo più sicuro e etico per tutti.

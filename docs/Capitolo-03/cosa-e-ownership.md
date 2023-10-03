@@ -17,7 +17,7 @@ Rust è progettato per prevenire data race fornendo meccanismi di sicurezza come
 In Rust, ogni valore ha una variabile chiamata **proprietario**. Un valore può avere **un solo proprietario** alla volta. Quando il **proprietario** esce dallo `scope` (ovvero, quando il suo blocco di codice termina), il valore viene automaticamente *deallocato*, liberando la memoria.
 
 :::info
-Immagina la memoria del computer come una serie di caselle. Quando il tuo programma ha bisogno di memorizzare qualcosa, ottiene una casella (cioè, una porzione di memoria) e la riempie con i dati di cui ha bisogno. Quando non ha più bisogno di quella casella di memoria, deve liberarla in modo che possa essere utilizzata per altre cose. Questo atto di "liberare" o "restituire" la casella di memoria è ciò che intendiamo per deallocazione della memoria.
+La memoria del computer, fantasticando, è come una serie di caselle. Quando il tuo programma ha bisogno di memorizzare qualcosa, ottiene una casella (cioè, una porzione di memoria) e la riempie con i dati di cui ha bisogno. Quando non ha più bisogno di quella casella di memoria, deve liberarla in modo che possa essere utilizzata per altre cose. Questo atto di "liberare" o "restituire" la casella di memoria è ciò che intendiamo per deallocazione della memoria.
 :::
 
 Immagina di avere una bicicletta. Quella bicicletta è *tua*, quindi sei il **proprietario**. Puoi usarla per andare in giro, parcheggiarla dove vuoi e farci quello che desideri. Se decidi di prestare la bicicletta a un amico, sei ancora tu il **proprietario**, ma stai condividendo *temporaneamente* l'uso di essa con il tuo amico.

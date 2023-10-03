@@ -29,7 +29,7 @@ Ci sono due tipi di prestito:
 
 ### Riferimento
 In Rust, un **riferimento** (reference in inglese) **è una forma di prestito**, è un tipo di variabile che contiene l'**indirizzo di memoria** di un'altra variabile. I **riferimenti** permettono di accedere ai dati senza prendere pieno possesso di essi, rispettando le regole dell'**ownership** di Rust.  
-Ci sono due tipi principali di reference: i riferimenti immutabili (immutable references) e i riferimenti mutabili (mutable references).
+Ci sono due tipi principali di riferimenti: quelli immutabili (immutable references) e i quelli mutabili (mutable references).
 
 #### Riferimenti immutabili (`&`):
 I riferimenti immutabili permettono di leggere i dati ma non di modificarli. Più riferimenti immutabili possono esistere contemporaneamente, ma non possono coesistere con un riferimento mutabile.
@@ -43,7 +43,7 @@ fn main() {
 }
 ```
 
-In questo esempio, `riferimento_immutabile` è un **reference immutabile** a `numero` (grazie al simbolo `&`) quindi può essere utilizzato solo per leggere il valore di `numero`.
+In questo esempio, `riferimento_immutabile` è un **riferimento immutabile** a `numero` (grazie al simbolo `&`) quindi può essere utilizzato solo per leggere il valore di `numero`.
 
 #### Riferimenti mutabili (`&mut`):
 I riferimenti mutabili permettono di modificare i dati, ma può esistere **solo un riferimento** mutabile alla volta per evitare *data races*.
@@ -58,7 +58,7 @@ fn main() {
 }
 ```
 
-In questo esempio, `riferimento_mutabile` è un reference mutabile a `numero` (grazie alla parola chiave `&mut`) consentendo così la modifica diretta del valore.
+In questo esempio, `riferimento_mutabile` è un **riferimento mutabile** a `numero` (grazie alla parola chiave `&mut`) consentendo così la modifica diretta del valore.
 
 :::info
 L'asterisco (`*`) è chiamato **operatore di dereferenziazione**.  
