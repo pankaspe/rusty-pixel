@@ -4,7 +4,7 @@ sidebar_position: 4
 # 2.4 Istruzioni condizionali
 Nella programmazione, le istruzioni condizionali sono fondamentali per prendere decisioni basate su condizioni specifiche. In Rust, ci sono diverse istruzioni condizionali che consentono di controllare il flusso del programma. Comprendere come utilizzare `if`, `else`, `else if` e `match` è essenziale per scrivere codice flessibile e reattivo.
 
-### Istruzione `if`
+## Istruzione `if`
 L'istruzione `if` permette di eseguire un blocco di codice solo se una determinata condizione è vera.  
 Ad esempio, immaginiamo di dover gestire un'app in cui gli utenti devono avere almeno 18 anni per accedere a determinate funzionalità:
 
@@ -20,7 +20,7 @@ fn main() {
 }
 ```
 
-### Istruzione `else`
+## Istruzione `else`
 L'istruzione `else` viene utilizzata in combinazione con `if` per gestire il caso in cui la condizione dell'`if` non è vera.  
 Ad esempio, possiamo modificare l'esempio precedente per fornire un messaggio di errore più specifico:
 
@@ -36,7 +36,7 @@ fn main() {
 }
 ```
 
-### Istruzione `else if`
+## Istruzione `else if`
 L'istruzione `else if` permette di gestire più condizioni in modo sequenziale. Supponiamo di dover gestire diverse fasce d'età:
 
 ```rust
@@ -55,7 +55,7 @@ fn main() {
 }
 ```
 
-### Istruzione `match`
+## Istruzione `match`
 L'istruzione `match` è potente perché consente di confrontare un valore con una serie di pattern, offrendo un modo conciso per gestire diverse condizioni:
 
 ```rust
@@ -93,5 +93,5 @@ In quest'ultimo esempio, se `giorno` è diverso da Sabato `OR` Domenica, verrà 
 Nel capitolo 3.5, esploreremo un concetto potente di Rust chiamato "enum". Un enum, abbreviazione di "enumeration" (enumerazione), è un tipo di dato personalizzato che ci permette di definire un tipo che può avere diversi valori specifici. Gli enum in Rust sono particolarmente utili quando abbiamo un insieme limitato di valori possibili.
 :::
 
-### Conclusione
+## Conclusione
 Le istruzioni condizionali sono un pilastro della programmazione, consentendo ai programmatori di scrivere codice che può adattarsi dinamicamente a diverse situazioni. Saper utilizzare `if`, `else`, `else if` e `match` in modo efficace è cruciale per creare applicazioni robuste e flessibili.

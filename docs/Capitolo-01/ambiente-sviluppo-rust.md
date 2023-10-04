@@ -3,7 +3,7 @@ sidebar_position: 3
 ---
 
 # 1.3 L'ambiente di sviluppo di Rust
-### Cargo
+## Cargo
 Cargo è il sistema di gestione dei pacchetti e il sistema di compilazione ufficiale per il linguaggio di programmazione Rust. È una delle caratteristiche distintive di Rust e semplifica notevolmente il processo di sviluppo fornendo una serie di strumenti integrati per la gestione del progetto.
 
 Ecco cosa fa Cargo:
@@ -22,14 +22,14 @@ Ecco cosa fa Cargo:
 
 In breve, Cargo semplifica molti aspetti dello sviluppo in Rust, permettendoti di concentrarti sul codice invece di preoccuparti della gestione delle dipendenze, della compilazione e della documentazione. È uno strumento essenziale per chiunque sviluppi in Rust.
 
-### Rustup
+## Rustup
 **Rustup** è uno strumento fondamentale per gli sviluppatori Rust. Si tratta di un **gestore di toolchain Rust ufficiale** che semplifica l'installazione e la gestione delle diverse versioni del compilatore Rust. In poche parole, Rustup consente agli sviluppatori di installare, aggiornare e gestire facilmente le versioni di Rust sul proprio sistema.
 
 Con Rustup, puoi **passare senza sforzo tra diverse versioni di Rust** a seconda delle esigenze del tuo progetto. Questo è particolarmente utile perché Rust è in continua evoluzione e diversi progetti possono richiedere versioni specifiche del compilatore.
 
 Inoltre, Rustup facilita anche l'installazione di **strumenti e componenti aggiuntivi correlati a Rust**, come librerie e strumenti di sviluppo. Questa versatilità rende Rustup uno strumento essenziale per chiunque stia lavorando con il linguaggio di programmazione Rust.
 
-### IDE
+## IDE
 Un **IDE (Integrated Development Environment)** è un ambiente di sviluppo integrato che offre un insieme completo di strumenti per gli sviluppatori software. Questi strumenti sono progettati per semplificare il processo di sviluppo, consentendo agli sviluppatori di scrivere, testare e debuggare il loro codice in un'unica applicazione. Gli IDE sono particolarmente utili perché offrono funzionalità integrate come editor di testo, compilatore, debugger e altre utility, tutto in un unico ambiente di lavoro.
 
 Ecco alcune caratteristiche chiave di un IDE:

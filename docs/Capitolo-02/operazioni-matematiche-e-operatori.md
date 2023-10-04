@@ -1,8 +1,8 @@
 ---
 sidebar_position: 3
 ---
-# 2.3 Operazioni matematiche e operatori
-Nel mondo della programmazione, spesso è necessario eseguire operazioni matematiche per manipolare dati e risolvere problemi. In questo capitolo, esploreremo le varie operazioni matematiche che puoi eseguire in Rust insieme agli operatori utilizzati per eseguirle.
+# 2.3 Operatori e operazioni
+Nel mondo della programmazione, spesso è necessario eseguire **operazioni matematiche** per manipolare dati e risolvere problemi. In questo capitolo, esploreremo le varie operazioni matematiche che puoi eseguire in Rust insieme agli **operatori** utilizzati per eseguirle.
 
 ## Operatori aritmetici
 Gli operatori aritmetici vengono utilizzati per eseguire operazioni matematiche su numeri. Ecco gli operatori aritmetici principali in Rust:

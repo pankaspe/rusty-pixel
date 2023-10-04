@@ -5,8 +5,7 @@ sidebar_position: 4
 # 1.4 Funzionamento del computer
 Un computer è una macchina elettronica che può eseguire operazioni complesse in modo veloce ed efficiente. Ecco come è generalmente composto:
 
-### Componenti di Base di un Computer:
-
+## Componenti di Base di un Computer
 1. **Processore (CPU):** È il "cervello" del computer, esegue istruzioni e processa dati.
 2. **Memoria RAM:** È la memoria temporanea del computer, dove vengono memorizzati i dati e i programmi in uso.
 3. **Hard Disk o SSD:** È lo spazio di archiviazione permanente del computer, dove vengono conservati i file e i programmi.
@@ -14,7 +13,7 @@ Un computer è una macchina elettronica che può eseguire operazioni complesse i
 5. **Periferiche di Input:** Come tastiera e mouse, permettono agli utenti di inserire dati nel computer.
 6. **Periferiche di Output:** Come monitor e stampante, mostrano informazioni e producono risultati.
 
-### Come funziona un computer
+## Come funziona un computer
 Quando accendi un computer, il processore esegue istruzioni di un programma chiamato *sistema operativo*, che è un software speciale, scritto con un *linguaggio di programmazione*, che gestisce le risorse del computer e permette agli utenti di interagire con esso. Il *sistema operativo* si trova solitamente sull'hard disk o SSD del computer.
 
 Il *sistema operativo* avvia il computer e fornisce un'interfaccia grafica (come Windows, macOS o Linux) o una shell (come il **Terminale**) che consente agli utenti di avviare programmi, navigare su Internet, creare documenti e molto altro. Inoltre, il *sistema operativo* gestisce la memoria, il file system, i driver hardware e altre funzionalità essenziali del computer.
@@ -24,7 +23,7 @@ Un file system, è come l'organizzatore di un grande archivio in un computer. Pe
 Quando salvi un documento o crei una nuova foto, il file system decide dove immagazzinarlo, assegnandogli un posto specifico sulla memoria del computer. Questo rende più facile per il computer e per te trovare e accedere ai tuoi file quando ne hai bisogno. In sostanza, il file system è come un organizzatore digitale che aiuta a tenere in ordine tutti i tuoi dati.
 :::
 
-### Perché un computer ha bisogno di un *sistema operativo*? (S.O.)
+## Perché un computer ha bisogno di un *sistema operativo*? (S.O.)
 Un *sistema operativo* è essenziale perché coordina tutte le operazioni del computer. Senza di esso, sarebbe difficile per gli utenti interagire direttamente con l'hardware del computer. Il *S.O.* fornisce un'interfaccia utente intuitiva e facilita l'esecuzione di programmi, il salvataggio e il recupero dei file, la connessione a Internet e molte altre attività.
 
 Immagina un *sistema operativo* come il direttore d'orchestra invisibile di un grande concerto. In questo concerto, gli strumenti musicali rappresentano i vari componenti del computer: la tastiera, il mouse, il monitor e molti altri. Il *sistema operativo*, come il direttore d'orchestra, coordina armoniosamente questi strumenti, consentendo al computer di eseguire una vasta gamma di attività, da quelle semplici come scrivere un documento, alle complesse come elaborare calcoli scientifici.
@@ -33,12 +32,12 @@ Ora, immagina il **Terminale** come una sorta di bacchetta per dirigere l'orches
 
 In termini informatici, il terminale è un'**interfaccia a riga di comando**. Invece di fare clic su icone o finestre, puoi digitare comandi di testo direttamente nel terminale. Questi comandi possono eseguire una varietà di operazioni: navigare tra le cartelle, creare, spostare o eliminare file, installare software, e molto altro ancora.
 
-### Il Terminale di un S.O.?
+## Il Terminale di un S.O.?
 Il terminale è come una chiave magica che sblocca il pieno potenziale del *sistema operativo*. Perché? Perché consente un controllo dettagliato e flessibile del computer. Gli utenti avanzati, come sviluppatori di software, amministratori di sistema e appassionati di tecnologia, usano il terminale per automatizzare compiti complessi, diagnosticare problemi, e personalizzare il loro ambiente di lavoro.
 
 In breve, il terminale è una finestra speciale che consente agli utenti di comunicare direttamente con il *sistema operativo*, aprendo la porta a un mondo di possibilità e controllo sul proprio computer.
 
-### I sistemi operativi più diffusi includono
+## I sistemi operativi più diffusi includono
 1. **Windows:** Sviluppato da Microsoft, è ampiamente utilizzato nei computer desktop e laptop.
 2. **macOS:** Creato da Apple, è specifico per i computer Mac, noto per il suo design elegante e l'integrazione con l'hardware Apple.
 3. **Linux:** Un *sistema operativo* open source ampiamente utilizzato sia per i server che per i computer desktop. Esistono numerose distribuzioni Linux, come Ubuntu e Fedora.
@@ -48,7 +47,7 @@ In breve, il terminale è una finestra speciale che consente agli utenti di comu
 
 Questi sistemi operativi coprono una vasta gamma di dispositivi, dai computer tradizionali ai dispositivi mobili, soddisfacendo le esigenze di una varietà di utenti in tutto il mondo.
 
-### Perchè mi serve sapere cos'è un terminale?
+## Perchè mi serve sapere cos'è un terminale?
 Nel contesto del nostro corso di programmazione con **Rust**, il terminale sarà un potente alleato, ecco come:
 
 1. **Far funzionare il vostro codice:** Potrete vedere come il vostro codice prende vita direttamente nel terminale. Sarà qui che compilerete e eseguirete i vostri programmi Rust, e vedrete i risultati apparire proprio davanti a voi.
@@ -58,10 +57,10 @@ Nel contesto del nostro corso di programmazione con **Rust**, il terminale sarà
 
 In sostanza, il terminale sarà il vostro compagno di viaggio nel mondo della programmazione Rust. Sarà un modo per sperimentare, imparare e diventare più competenti nella scrittura del codice. Anche se all'inizio potrebbe sembrare complicato, con la pratica, diventerà un vostro alleato affidabile durante il vostro percorso di programmazione!
 
-### Come avviare il terminale in un S.O.
+## Come avviare il terminale in un S.O.
 Ecco come aprire il terminale sui sistemi operativi (S.O.) più comuni:
 
-#### **Windows:**
+### **Windows:**
 1. **Utilizzando il Menu Start:**
    - Clicca sul pulsante **Start** nella barra delle applicazioni.
    - Digita "cmd" o "Command Prompt" o "Powershell" nella barra di ricerca.
@@ -71,13 +70,13 @@ Ecco come aprire il terminale sui sistemi operativi (S.O.) più comuni:
    - Di' "Command Prompt" o "Prompt dei Comandi".
    - Fai clic sull'applicazione "Command Prompt" nei risultati vocali.
 
-#### **Linux:**
+### **Linux:**
 1. **Utilizzando la Tastiera:**
    - Premi **Ctrl + Alt + T** sulla tastiera. Questa combinazione di tasti dovrebbe aprire una nuova finestra di terminale.
 2. **Utilizzando il Menu Applicazioni:**
    - Cercate un'applicazione chiamata "Terminal" o "Terminale" nel menu delle applicazioni. L'icona solitamente assomiglia a uno schermo nero con un cursore lampeggiante.
 
-#### **macOS:**
+### **macOS:**
 1. **Utilizzando Spotlight (macOS Spotlight Search):**
    - Premi **Cmd + Barra Spaziatrice** sulla tastiera per aprire Spotlight.
    - Digita "Terminal" nella barra di ricerca.

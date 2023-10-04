@@ -8,7 +8,6 @@ Una funzione è un *blocco di codice* che ha un nome e può essere richiamato in
 ## Sintassi
 In Rust sono come le istruzioni dettagliate in una ricetta. Pensa a una **funzione** come una piccola istruzione o una serie di passaggi specifici che puoi eseguire nel tuo programma. Le **funzioni** rendono il tuo codice più organizzato e facilmente comprensibile. 
 
-### Esempio:
 ```rust
 fn nome_funzione(parametro1: Tipo, parametro2: Tipo) -> TipoRitorno {
     // Corpo della funzione
@@ -23,52 +22,41 @@ fn nome_funzione(parametro1: Tipo, parametro2: Tipo) -> TipoRitorno {
 - `Tipo`: Specifica il tipo di dato per ciascun parametro e per il valore di ritorno.
 - `TipoRitorno`: Questo specifica quale tipo di dato la tua funzione restituirà.
 
-:::info
-I **valori di ritorno** in una *funzione* in Rust sono i dati che la *funzione* restituisce quando viene chiamata. Quando crei una *funzione*, puoi specificare quale tipo di dato restituirà quando verrà eseguita. Questo tipo di dato è il **valore di ritorno**.  
-Quando la *funzione* termina l'esecuzione, può inviare un valore di ritorno al punto del programma in cui è stata chiamata. Questo **valore di ritorno** può essere utilizzato per ulteriori operazioni nel programma principale.
-:::
 
-### Esempio concreto
-Immaginiamo di voler scrivere una funzione che somma due numeri interi:
+## Valori di ritorno 
+In Rust, il valore di ritorno in una funzione rappresenta il risultato che la funzione restituirà quando viene chiamata. Quando definisci una funzione in Rust, puoi specificare il tipo di dato del valore di ritorno utilizzando la freccia (`->`). Questo tipo di dato definisce il tipo di valore che la funzione produrrà. Ad esempio, una funzione che calcola la somma di due numeri potrebbe restituire un valore di tipo `i32` (integer a 32 bit).
+
+Definire un tipo di ritorno è importante perché aiuta a indicare chiaramente cosa aspettarsi quando si chiama la funzione e consente al compilatore di Rust di eseguire controlli di tipo accurati durante la compilazione del codice.
+
+## Esempi
+### Funzione somma
+Ecco un esempio di una funzione in Rust che calcola la `somma` tra due numeri interi
 
 ```rust
-// Definiamo una funzione chiamata "somma" 
-// che accetta due parametri di tipo intero (i32) e restituisce un valore intero (i64).
-fn somma(a: i32, b: i32) -> i64 {
-
-    // All'interno della funzione, 
-    // dichiariamo una variabile chiamata "risultato" 
-    // e calcoliamo la somma dei parametri "a" e "b".
+// Definiamo una funzione chiamata somma che prende due parametri di tipo i32 e restituisce un i32.
+fn somma(a: i32, b: i32) -> i32 {
+    // Calcoliamo la somma di a e b.
     let risultato = a + b;
-
-    // Restituiamo il valore della variabile "risultato". 
-    // In Rust, l'ultima espressione in una funzione viene considerata come il valore di ritorno implicito.
-    risultato
+    // Restituiamo il risultato della somma.
+    risultato // La parola chiave "return" non è necessaria in Rust.
 }
 
-// Funzione main
 fn main() {
-    
-    // Dichiarazione di due variabili intere: "numero1" e "numero2".
-    let numero1 = 5;
-    let numero2 = 10;
+    // Chiamiamo la funzione somma e assegniamo il risultato alla variabile risultato.
+    let risultato = somma(5, 3);
 
-    // Chiamiamo la funzione "somma" passando le variabili "numero1" e "numero2" come argomenti 
-    // e memorizziamo il risultato nella variabile "risultato".
-    let risultato = somma(numero1, numero2);
-
-    // Stampiamo il risultato utilizzando println!, 
-    // inserendo i valori delle variabili "numero1", "numero2" e "risultato" nel messaggio di output.
-    println!("La somma di {} e {} è: {}", numero1, numero2, risultato);
+    // Stampiamo il risultato.
+    println!("La somma è: {}", risultato);
 }
-
 ```
 
-In questo esempio, la funzione `somma` accetta due numeri interi come input, li somma e restituisce il risultato.
+**Spiegazione del Codice:**
+1. `fn somma(a: i32, b: i32) -> i32 { ... }`: Qui definiamo una funzione chiamata `somma` che prende due parametri `a` e `b` di tipo `i32` e restituisce un valore di tipo `i32`.
+2. `let risultato = a + b;`: Dentro la funzione, calcoliamo la somma di `a` e `b` e assegniamo il risultato alla variabile `risultato`.
+3. `risultato`: Poiché Rust è un linguaggio di espressioni, l'ultima espressione in una funzione è implicitamente considerata il valore di ritorno. Quindi, `risultato` è il valore di ritorno della funzione `somma`.
+4. Nella funzione `main()`, chiamiamo `somma(5, 3)` e assegniamo il risultato alla variabile `risultato`. Successivamente, stampiamo il risultato, che sarà "La somma è: 8".
 
-Le funzioni in Rust sono un modo potente per organizzare il tuo codice e renderlo riutilizzabile. Con queste istruzioni, puoi creare compiti specifici nel tuo programma senza dover ripetere lo stesso codice più volte. Buon divertimento a esplorare il mondo delle funzioni in Rust!
-
-## Esempio funzione PreparaPasta:
+### Funzione PreparaPasta
 Ecco un esempio più completo della nostra cara funzione `PreparaPasta` in Rust:
 
 ```rust

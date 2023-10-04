@@ -4,7 +4,7 @@ sidebar_position: 1
 # 2.1 Le variabili
 Nel mondo della programmazione, le variabili fungono da contenitori per memorizzare dati. In Rust, una lingua di programmazione moderna, flessibile e sicura, l'uso delle variabili è particolarmente versatile. In questo capitolo, esploreremo in dettaglio i diversi tipi di variabili disponibili in Rust, comprendendo come utilizzarle per manipolare dati nei nostri programmi.
 
-### Variabili immutabili
+## Variabili immutabili
 In Rust, per default, le variabili sono immutabili, il che significa che il loro valore non può essere modificato una volta assegnato. Ad esempio:
 
 ```rust
@@ -25,7 +25,7 @@ eta = 55;
 `let` la parola chiave let viene utilizzata per dichiarare variabili. Il termine "let" è un'abbreviazione di "let binding" e rappresenta l'associazione di un nome di variabile a un valore o a un'espressione. Quando usi let per dichiarare una variabile, stai essenzialmente creando un legame (binding) tra un identificatore (il nome della variabile) e un valore. Questo legame ti consente di utilizzare e manipolare quel valore attraverso l'identificatore della variabile.
 :::
 
-### Variabili mutabili
+## Variabili mutabili
 Tuttavia, se vogliamo la possibilità di modificare il valore di una variabile dopo l'assegnazione, possiamo dichiararla come mutabile utilizzando la parola chiave `mut`:
 
 ```rust
@@ -33,7 +33,7 @@ let mut punteggio = 100; // Variabile mutabile chiamata "punteggio" con il valor
 punteggio = 150; // Ora possiamo cambiare il valore di "punteggio" perché è mutabile.
 ```
 
-### Variabili shadowed
+## Variabili shadowed
 In Rust, è anche possibile "oscurare" una variabile precedentemente dichiarata utilizzando nuovamente la parola chiave `let`. Questo è noto come shadowing. Ad esempio:
 
 ```rust
@@ -46,20 +46,20 @@ fn main() {
 
 Nell'esempio sopra, la variabile `nome` viene inizialmente assegnata a una stringa ("Alice") e poi viene "oscurata" (shadowed) da un nuovo valore, la lunghezza della stringa. Questo è possibile perché abbiamo dichiarato nuovamente `nome` utilizzando `let`. In questo modo, la variabile `nome` è stata effettivamente riassegnata a un valore diverso, ma con lo stesso nome.
 
-#### Differenza tra variabili shadowed e variabili mutabili:
+## Differenza tra variabili shadowed e variabili mutabili
 - **Variabili Mutabili:** Quando una variabile è dichiarata come mutabile (`let mut variabile`), è possibile modificare direttamente il suo valore. Questo significa che il valore può essere cambiato senza dover dichiarare una nuova variabile.
 - **Variabili Shadowed:** Le variabili shadowed, d'altra parte, creano una nuova variabile con lo stesso nome, permettendoci di cambiare il tipo o il valore della variabile originale. Ogni variabile shadowed è indipendente dalla variabile con lo stesso nome dichiarata in precedenza.
 
 In breve, le variabili shadowed ci permettono di reutilizzare il nome di una variabile per un nuovo scopo all'interno dello stesso `scope{}`, senza dover usare variabili mutabili. Questa tecnica è utile quando vogliamo mantenere il nostro codice leggibile e mantenibile, evitando l'uso eccessivo di variabili mutabili.
 
-### Costanti
+## Costanti
 Inoltre, Rust ci permette di definire costanti, il cui valore non può essere cambiato durante l'esecuzione del programma. Le costanti vengono dichiarate utilizzando la parola chiave `const`. Ecco un esempio:
 
 ```rust
 const PI: f64 = 3.14159; // Dichiarazione di una costante chiamata "PI" con valore 3.14159.
 ```
 
-### Conclusione
+## Conclusione
 Le variabili in Rust offrono un'ampia gamma di flessibilità, consentendoci di scegliere tra immutabilità, mutabilità, shadowing e costanti a seconda delle nostre esigenze specifiche. Queste caratteristiche ci permettono di scrivere codice robusto e sicuro, aprendo la strada a un mondo di possibilità nella programmazione con Rust. Nel prossimo capitolo, esploreremo come utilizzare queste variabili in operazioni matematiche e condizioni, espandendo così le nostre capacità nel linguaggio di programmazione Rust.
 
 :::info

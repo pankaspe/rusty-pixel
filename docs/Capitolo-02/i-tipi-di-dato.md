@@ -24,8 +24,6 @@ In Rust, i tipi di dati interi possono essere signed (con segno) o unsigned (sen
    - `u128`: Rappresenta un intero senza segno su 128 bit.
    - `usize`: Numero intero senza segno che può rappresentare l'indice di un'area di memoria (architettura-specifico). 
 
-**Esempio:**
-
 ```rust
 fn main() {
     // Tipi di dati con segno
@@ -52,7 +50,6 @@ I **bit** sono fondamentali anche per l'aritmetica booleana, un'area della logic
 ## Numerici a virgola mobile
 I tipi di dati a virgola mobile in Rust sono utilizzati per rappresentare numeri con decimali. Ci sono due tipi principali di dati a virgola mobile in Rust: `f32` e `f64`, che rappresentano numeri in virgola mobile a 32 bit e 64 bit rispettivamente. La differenza principale tra loro è la precisione: `f64` ha una maggiore precisione rispetto a `f32`, ma occupa più spazio in memoria.
 
-**Esempio:**
 ```rust
 fn main() {
     let numero_f32: f32 = 3.14; // Numero a virgola mobile a 32 bit

@@ -5,15 +5,13 @@ sidebar_position: 5
 # 1.5 Iniziamo con Rust!
 Ora che abbiamo una chiara comprensione di cosa sia un terminale, è il momento perfetto per mettere le mani in pasta e iniziare a lavorare con Rust!
 
-### Installazione di Rust
-#### Windows:
-
+## Installazione di Rust
+### Windows
 1. **Scarica il Gestore di Pacchetti:** Vai al sito ufficiale di Rust (https://www.rust-lang.org/tools/install) e scarica il file di installazione per Windows.
 2. **Esegui il File di Installazione:** Dopo il download, esegui il file di installazione. Segui le istruzioni guidate per l'installazione.
 3. **Verifica l'installazione:** Apri il prompt dei comandi o PowerShell e digita `rustc --version` seguito da `cargo --version` per assicurarti che Rust e Cargo (il gestore di pacchetti di Rust) siano stati installati correttamente.
 
-#### macOS e Linux:
-
+### macOS e Linux
 1. **Apri il Terminale:** Per macOS, apri Terminal dall'applicazione Utility. Per Linux, apri il terminale.
 2. **Installazione tramite Rustup:** Usa `rustup`, un gestore di versioni per Rust. Digita il seguente comando nel terminale e premi Invio:
 
@@ -28,11 +26,11 @@ Ora che abbiamo una chiara comprensione di cosa sia un terminale, è il momento 
 
 Ora hai installato Rust con successo sul tuo sistema operativo! Puoi iniziare a scrivere e compilare programmi Rust sul tuo computer.
 
-### Configurazione dell'Ambiente di Sviluppo
+## Configurazione dell'Ambiente di Sviluppo
 
 Certamente! Ecco una guida dettagliata sulla configurazione dell'IDE Visual Studio Code per lo sviluppo in Rust su diversi sistemi operativi:
 
-#### Configurazione di Visual Studio Code per Rust
+### Configurazione di Visual Studio Code per Rust
 **Windows**
 1. **Installazione di Visual Studio Code:**
    - Scarica e installa Visual Studio Code da [https://code.visualstudio.com/](https://code.visualstudio.com/).
@@ -71,10 +69,10 @@ La configurazione su macOS è simile a quella di Windows, seguendo gli stessi pa
 **Linux**
 Su Linux, la configurazione è simile a Windows e macOS. Assicurati di seguire gli stessi passaggi per l'installazione di Rust, Visual Studio Code e le relative estensioni.
 
-### Creazione del progetto "rusty pixel"
+## Creazione del progetto "rusty pixel"
 Ecco una guida passo-passo per creare il tuo primo progetto Rust chiamato "rusty pixel" utilizzando Cargo, il gestore di pacchetti e strumento di costruzione di Rust. Inizieremo spiegando i vari file creati da Cargo per un nuovo progetto.
 
-#### 1 Crea un nuovo progetto con Cargo
+### 1 Crea un nuovo progetto con Cargo
 Apri il terminale o il prompt dei comandi e naviga nella directory in cui vuoi creare il tuo progetto. Quindi, esegui il seguente comando per creare un nuovo progetto Rust chiamato "rusty_pixel":
 
 ```sh
@@ -83,7 +81,7 @@ cargo new rusty_pixel
 
 Questo comando crea una nuova directory chiamata "rusty_pixel" contenente i file del tuo progetto.
 
-#### 2 Esplora i files creati da Cargo
+### 2 Esplora i files creati da Cargo
 Certamente! Ecco una spiegazione dettagliata dei file creati dal comando `cargo new` in Rust:
 
 **Cargo.toml:**
@@ -123,7 +121,7 @@ Esempio di `.gitignore` preconfigurato per progetti Rust:
 
 Questi sono i principali file creati da `cargo new` quando si crea un nuovo progetto Rust. Ora sei pronto per iniziare a sviluppare il tuo progetto, scrivendo codice nel file `main.rs` e gestendo le dipendenze nel file `Cargo.toml`. Buona programmazione in Rust!
 
-#### 3 Scrivi il codice per "Rusty Pixel"
+### 3 Scrivi il codice per "Rusty Pixel"
 Ora puoi iniziare a scrivere il codice nel file `src/main.rs` per il tuo progetto "Rusty Pixel". Ad esempio, puoi iniziare creando una semplice applicazione che stampa "Hello, Rusty Pixel!" a schermo:
 
 ```rust
@@ -132,7 +130,7 @@ fn main() {
 }
 ```
 
-#### 4 Esegui il Progetto
+### 4 Esegui il Progetto
 Per eseguire il tuo progetto, torna nella directory principale del progetto ("rusty_pixel") tramite il terminale o il prompt dei comandi. Quindi esegui il seguente comando:
 
 ```sh
@@ -141,10 +139,10 @@ cargo run
 
 Questo comando compilerà e eseguirà il tuo programma Rust, stampando l'output a schermo.
 
-#### 6 Conclusione
+## Conclusione
 Hai imparato a creare un nuovo progetto Rust chiamato "Rusty Pixel" utilizzando Cargo. Hai esplorato i file creati da Cargo e scritto un semplice programma Rust. Nel prossimo capitolo, esploreremo concetti più avanzati e implementeremo funzionalità aggiuntive per il nostro progetto "Rusty Pixel".
 
-### Recap e verifica
+## Recap e verifica
 Prova a rispondere a queste domande prima di proseguire con le lezioni
 
 1. Come si crea un nuovo progetto Rust utilizzando Cargo?

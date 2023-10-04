@@ -13,7 +13,7 @@ Differenza tra Linguaggi Compilati e Interpretati:
 
 In breve, imparare Rust ti dà una solida comprensione della programmazione di sistema, ti insegna a scrivere codice robusto e sicuro, e ti offre la flessibilità e il controllo che sono essenziali per gli sviluppatori professionisti. È un linguaggio che ti equipaggia con conoscenze preziose e competenze che possono essere applicate in una vasta gamma di scenari di sviluppo software.
 
-### Una profonda conoscenza dell'hardware
+## Una profonda conoscenza dell'hardware
 Rust è noto per la sua capacità di sviluppare una profonda conoscenza dell'hardware di un computer o di un dispositivo grazie al suo controllo preciso sulla memoria e alla gestione degli accessi.
 
  1. **Controllo diretto sulla memoria**: Rust ti permette di accedere direttamente alla memoria del computer in modo sicuro. Puoi gestire manualmente l'allocazione e la deallocazione della memoria, il che è essenziale quando si lavora a livello di sistema o con *dispositivi embedded* ¹. Questo controllo diretto sulla memoria è fondamentale per la programmazione a basso livello e permette di ottimizzare le prestazioni in modo efficace.
@@ -32,7 +32,7 @@ In sostanza, Rust offre un livello di controllo sulla memoria, sicurezza e affid
 1. I *dispositivi embedded* sono piccoli computer incorporati in oggetti quotidiani come telefoni, auto o elettrodomestici. Sono progettati per fare lavori specifici, come gestire il riscaldamento di un forno a microonde. In breve, sono il cervello nascosto di molti dispositivi che usiamo ogni giorno.
 :::
 
-### Differenze con il C e C++
+## Differenze con il C e C++
 Se conosci questi due linguaggi, immagina di essere nella vasta terra della programmazione, circondato da diversi sentieri, ognuno rappresentante un linguaggio di programmazione diverso. In questa terra, ci sono due sentieri ben battuti chiamati "C" e "C++", che sono conosciuti da generazioni di programmatori. Sono come antiche strade di pietra, robuste e affidabili, e sono stati i pilastri della programmazione per molto tempo.
 
 Ora, in mezzo a queste strade familiari, si apre un nuovo sentiero chiamato "Rust". Rust è come una moderna autostrada a più corsie. Ha ereditato la solidità e l'affidabilità di C e C++, ma ha anche una marcia in più. Mentre i vecchi sentieri richiedono ai viaggiatori di fare molta attenzione per evitare insidie come buffer overflow e accesso a memoria non valido, la moderna autostrada di Rust ha delle protezioni incorporate contro questi pericoli. È come un sentiero ben illuminato e sicuro che ti permette di viaggiare più veloce e in modo più sicuro.

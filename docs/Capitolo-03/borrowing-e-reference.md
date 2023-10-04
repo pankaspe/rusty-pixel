@@ -27,14 +27,13 @@ Ci sono due tipi di prestito:
 - **Prestito immutabile**: Permette a una parte del codice di leggere il valore, ma non di modificarlo.
 - **Prestito mutabile**: Permette a una sola parte del codice di modificare il valore.
 
-### Riferimento
+## Riferimento
 In Rust, un **riferimento** (reference in inglese) **è una forma di prestito**, è un tipo di variabile che contiene l'**indirizzo di memoria** di un'altra variabile. I **riferimenti** permettono di accedere ai dati senza prendere pieno possesso di essi, rispettando le regole dell'**ownership** di Rust.  
 Ci sono due tipi principali di riferimenti: quelli immutabili (immutable references) e i quelli mutabili (mutable references).
 
-#### Riferimenti immutabili (`&`):
+### Riferimenti immutabili (`&`):
 I riferimenti immutabili permettono di leggere i dati ma non di modificarli. Più riferimenti immutabili possono esistere contemporaneamente, ma non possono coesistere con un riferimento mutabile.
 
-#### Esempio Pratico:
 ```rust
 fn main() {
     let numero = 42;
@@ -45,10 +44,9 @@ fn main() {
 
 In questo esempio, `riferimento_immutabile` è un **riferimento immutabile** a `numero` (grazie al simbolo `&`) quindi può essere utilizzato solo per leggere il valore di `numero`.
 
-#### Riferimenti mutabili (`&mut`):
+### Riferimenti mutabili (`&mut`):
 I riferimenti mutabili permettono di modificare i dati, ma può esistere **solo un riferimento** mutabile alla volta per evitare *data races*.
 
-#### Esempio Pratico:
 ```rust
 fn main() {
     let mut numero = 42;
@@ -70,7 +68,7 @@ Questo riferimento mutabile ti dà l'accesso al valore, ma per accedere effettiv
 L'asterisco (`*`) è come una chiave che sblocca la casella in cui sono conservati i dati. Senza l'asterisco, il riferimento sarebbe solo un numero (l'indirizzo di memoria) che non ti permetterebbe di vedere o modificare ciò che c'è dentro.
 :::
 
-#### Limitazioni dei Riferimenti:
+## Limitazioni dei Riferimenti:
 - Un riferimento mutabile non può coesistere con altri riferimenti (mutabili o immutabili) nello stesso scope per evitare situazioni di concorrenza non sicure.
 - Un riferimento immutabile non permette modifiche dirette ai dati.
 

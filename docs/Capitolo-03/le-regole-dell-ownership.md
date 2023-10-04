@@ -2,12 +2,10 @@
 sidebar_position: 2
 ---
 # 3.2 Le regole dell'Ownership
-### 1. Ogni valore ha un proprietario
+## 1. Ogni valore ha un proprietario
 In Rust, come abbiamo detto nel capitolo precedente, il concetto chiave di ownership implica che ogni dato ha un'unica variabile associata, nota come "proprietario". Il proprietario è responsabile del ciclo di vita del dato, incluso il suo rilascio quando non è più necessario. Questa regola fondamentale aiuta a evitare situazioni di accesso concorrente non sicuro ai dati e assicura che la memoria venga gestita in modo coerente e affidabile.
 
-#### Esempio
-Considera una stringa di testo in Rust:
-
+### Esempio
 ```rust
 fn main() {
     let nome = String::from("Alice"); // "nome" è il proprietario della stringa.
@@ -18,13 +16,12 @@ fn main() {
 Nell'esempio sopra, la variabile `nome` è il proprietario della stringa `"Alice"`. Può utilizzare la stringa come desidera. Quando il blocco di codice della funziona `main() {...}` termina, la variabile `nome` esce dallo scope e la stringa viene deallocata automaticamente.  
 Se cercassimo di utilizzare la stringa dopo che `nome` è uscito dallo scope, otterremmo un errore. Questo è un comportamento voluto di Rust per evitare bug comuni come l'uso di dati deallocati.
 
-### 2. Un solo proprietario alla volta
+## 2. Un solo proprietario alla volta
 Questo è uno dei concetti fondamentali nell'ownership di Rust e sottolinea come un valore può avere solo un proprietario in un dato momento. Questo principio è cruciale per evitare situazioni complesse e problematiche di gestione della memoria. 
 
 Quando un valore è assegnato a una variabile, quella variabile diventa il suo proprietario. Il proprietario è responsabile per la deallocazione del valore quando non è più necessario. In Rust, questa regola garantisce che ci sia sempre chiaramente definito quale parte del codice è responsabile del rilascio di un valore dalla memoria. Questo controllo rigoroso impedisce l'accesso simultaneo e non sicuro ai dati, contribuendo così alla sicurezza del linguaggio.
 
-#### Esempio
-
+### Esempio
 ```rust
 fn main() {
     // Stringa "Alice" è assegnata a "nome", quindi "nome" è il proprietario.
@@ -57,15 +54,14 @@ Tuttavia, a differenza dei puntatori in C o C++, i riferimenti in Rust sono sott
 *Studieremo i riferimenti nel prossimo capitolo, 3.3*
 :::
 
-### 3. La deallocazione della memoria
+## 3. La deallocazione della memoria
 La "*deallocazione automatica*" in Rust è uno dei principali vantaggi del sistema di ownership. Questo significa che non è necessario preoccuparsi di liberare manualmente la memoria quando non serve più. Rust si occupa di deallocare automaticamente la memoria quando il suo proprietario esce dallo scope (il blocco di codice in cui è dichiarato). Questa caratteristica impedisce la perdita di memoria, un problema comune in altri linguaggi di programmazione.
 
 Immagina di avere una scatola. In Rust, questa scatola è un *valore*, e quando non hai più bisogno del *valore* all'interno, la scatola (cioè, la variabile) la butti (esce dallo scope).
 
 Quando ciò accade, Rust si assicura che il valore dentro la scatola venga automaticamente deallocato, rendendo lo spazio di memoria disponibile per altri scopi.
 
-#### Esempio
-
+### Esempio
 ```rust
 fn main() {
     let frase = String::from("Ciao, mondo!"); // Rust alloca memoria per la stringa.
@@ -85,7 +81,7 @@ I "**dangling references**" sono riferimenti a memoria che continuano ad esister
 Per esempio, immagina di avere un riferimento a una variabile o a un'area di memoria, ma poi quella variabile viene deallocata perché esce dallo scope o viene liberata esplicitamente. Se rimane un riferimento che punta a quell'area di memoria deallocata, quel riferimento è un "dangling reference". Usare un dangling reference può portare a comportamenti imprevedibili nel programma, come valori errati, crash o altri errori.
 :::
 
-### Riassumento i vantaggi dell'Ownership:
+## Riassumento i vantaggi dell'Ownership
 - **Prevenzione di Memory Leak:** Grazie alla deallocazione automatica, Rust previene i memory leak (perdite di memoria) assicurandosi che la memoria non venga mai lasciata senza deallocare.
 - **Prevenzione di Dangling References:** Rust previene i dangling references (riferimenti a memoria non valida) garantendo che i valori siano sempre deallocati in modo sicuro prima di essere utilizzati.
 - **Sicurezza e concorrenza:** Queste regole assicurano che non ci siano accessi concorrenti non sicuri ai dati, migliorando la sicurezza e facilitando la scrittura di codice concorrente affidabile.
