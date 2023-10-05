@@ -19,7 +19,7 @@ Ho suddiviso il corso in 4 livelli differenti, dal più semplice al più comples
 ### Capitolo 2: Fondamenti della Programmazione
   - 2.1: [Le variabili](./Capitolo-02/variabili)
   - 2.2: [Tipi di Dato](./Capitolo-02/i-tipi-di-dato)
-  - 2.3: [Operazioni matematiche e operatori](./Capitolo-02/operazioni-matematiche-e-operatori)
+  - 2.3: [Operatori e operazioni](./Capitolo-02/operatori-e-operazioni)
   - 2.4: [Istruzioni Condizionali (if, else, else if, match)](./Capitolo-02/istruzioni-condizionali)
   - 2.5: [Cicli di looping (loop, while, for)](./Capitolo-02/cicli-di-looping)
   - 2.6: [Le funzioni](./Capitolo-02/le-funzioni)
