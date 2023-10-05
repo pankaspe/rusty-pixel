@@ -182,4 +182,4 @@ In questo esempio, `&str` è un riferimento a una stringa di testo fissa, e non 
 
 Rust utilizza questi due tipi di stringhe per offrire un equilibrio tra flessibilità e sicurezza. Le `String` consentono la modifica dinamica del testo, mentre le `&str` consentono di riferirsi a porzioni di stringhe esistenti in modo efficiente e sicuro.
 
-*Continua a leggere nel [Capitolo 3.4](../Capitolo-03/il-tipo-slice) per esplorare più a fondo il mondo delle stringhe in Rust!*
+*Continua a leggere nel [Capitolo 4.1](../Capitolo-04/il-tipo-slice) per esplorare più a fondo il mondo delle stringhe in Rust!*
