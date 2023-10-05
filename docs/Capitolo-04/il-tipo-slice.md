@@ -1,7 +1,7 @@
 ---
-sidebar_position: 4
+sidebar_position: 1
 ---
-# 3.4 Lavorare con Slice in Rust
+# 4.1 Lo Slice
 Le slice in Rust rappresentano una parte essenziale della manipolazione dei dati. Quando si tratta di gestire porzioni di una sequenza di elementi, come caratteri in una stringa, Rust offre concetti potenti chiamati "slice". 
 
 Una **slice** è una vista immutabile su una sequenza di elementi. Nel nostro contesto, ci concentreremo sulle slice di stringhe, ma la filosofia è la stessa per altre sequenze come vettori e array. Le slice consentono di lavorare con parti specifiche dei dati senza copiare l'intera sequenza. Questo significa risparmio di memoria e tempo, rendendo le operazioni più veloci ed efficienti.

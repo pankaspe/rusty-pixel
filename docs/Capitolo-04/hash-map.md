@@ -2,14 +2,20 @@
 sidebar_position: 3
 ---
 # 4.3 Hash Map
-Le **Hash Map** sono una delle strutture dati più utilizzate in programmazione, in quanto consentono di memorizzare dati in forma di coppie chiave-valore. In Rust, le Hash Map sono implementate attraverso il tipo `HashMap` fornito dalla libreria standard. Questo capitolo esplorerà cosa sono le Hash Map, come crearle e come utilizzarle efficacemente nei tuoi programmi Rust.
+Le **Hash Map** sono una delle strutture dati più utilizzate in programmazione, in quanto consentono di memorizzare dati in forma di coppie **chiave-valore**.   
+n Rust, le Hash Map sono implementate attraverso il tipo `HashMap` fornito dalla libreria standard. Questo capitolo esplorerà cosa sono le Hash Map, come crearle e come utilizzarle efficacemente nei tuoi programmi Rust.
 
 ## Creare una Hash Map
-Per utilizzare le Hash Map in Rust, è necessario importare la libreria `std::collections`. Ecco come farlo:
+Per utilizzare le Hash Map in Rust, è necessario importare la libreria `std::collections`.
 
 ```rust
 use std::collections::HashMap;
 ```
+:::info
+In Rust, `std::collections` è un modulo che fa parte della libreria standard (`std`) del linguaggio. Contiene diverse strutture dati utili per organizzare e manipolare i dati nel tuo programma. Uno di questi è `HashMap`, che è una struttura dati di tipo tabella hash che associa chiavi a valori.
+
+La riga di codice `use std::collections::HashMap;` sta importando la struttura dati `HashMap` dal modulo `std::collections` in modo che possiamo utilizzarla nel nostro programma senza dover sempre specificare il percorso completo del modulo.
+:::
 
 Una volta importata la libreria, puoi creare una nuova Hash Map vuota con la seguente sintassi:
 
@@ -18,10 +24,14 @@ fn main() {
     let mut mia_hashmap: HashMap<&str, i32> = HashMap::new();
 }
 ```
+Qui, stiamo dichiarando una nuova variabile chiamata `mia_hashmap` e stiamo assegnando ad essa una nuova Hash Map.   
+La `HashMap`, come abbiamo detto, è una struttura dati che associa le **chiavi** ai **valori**. In questo caso, le **chiavi** saranno di tipo `&str` (riferimenti a stringhe) e i **valori** saranno di tipo `i32` (numeri interi a 32 bit).
 
-In questo esempio, `&str` è il tipo delle chiavi e `i32` è il tipo dei valori all'interno della Hash Map. La parola chiave `mut` indica che `mia_hashmap` è una variabile mutabile, il che significa che possiamo aggiungere, modificare o rimuovere elementi dall'Hash Map.
+La parola chiave `mut` prima del nome della variabile (`mia_hashmap`) indica che la Hash Map può essere modificata. Possiamo aggiungere, rimuovere o modificare elementi all'interno della Hash Map perché è mutabile.
 
-### Inserire Elementi in una Hash Map
+`HashMap::new()` è un metodo che crea una nuova Hash Map vuota. Stiamo usando questo metodo per inizializzare la nostra `mia_hashmap` in modo che sia pronta per l'uso.
+
+### Inserire elementi
 Puoi inserire coppie chiave-valore all'interno di una Hash Map utilizzando il metodo `insert()`. Ecco un esempio:
 
 ```rust
@@ -37,12 +47,14 @@ fn main() {
 
 In questo esempio, abbiamo inserito tre coppie chiave-valore nella Hash Map `mia_hashmap`. La chiave è una stringa (`&str`) e il valore è un intero (`i32`).
 
-### Accedere agli Elementi di una Hash Map
-Puoi accedere ai valori all'interno di una Hash Map utilizzando le chiavi. Se conosci la chiave, puoi ottenere il valore associato. Ecco un esempio:
+### Accedere agli elementi
+Puoi accedere ai valori all'interno di una Hash Map utilizzando le chiavi. Se conosci la chiave, puoi ottenere il valore associato.+
 
 ```rust
 fn main() {
     let mut mia_hashmap: HashMap<&str, i32> = HashMap::new();
+
+    // Inserire coppie chiave-valore nella Hash Map
     mia_hashmap.insert("uno", 1);
     mia_hashmap.insert("due", 2);
     
@@ -57,12 +69,13 @@ fn main() {
 
 In questo esempio, stiamo utilizzando il metodo `get("uno")` per ottenere il valore associato alla chiave `"uno"`. Il metodo restituirà `Some(valore)` se la chiave è presente nella Hash Map e `None` se non lo è.
 
-### Rimuovere Elementi da una Hash Map
+### Rimuovere elementi
 Puoi rimuovere elementi da una Hash Map utilizzando il metodo `remove()`. Ecco come farlo:
 
 ```rust
 fn main() {
     let mut mia_hashmap: HashMap<&str, i32> = HashMap::new();
+
     mia_hashmap.insert("uno", 1);
     mia_hashmap.insert("due", 2);
     
@@ -70,20 +83,32 @@ fn main() {
     mia_hashmap.remove("due");
 }
 ```
-
 In questo esempio, stiamo utilizzando il metodo `remove("due")` per rimuovere l'elemento con chiave `"due"` dalla Hash Map `mia_hashmap`. Dopo la rimozione, l'elemento associato alla chiave `"due"` non sarà più presente nella Hash Map.
 
-## Iterare sugli Elementi di una Hash Map
-Puoi iterare sugli elementi di una Hash Map utilizzando un ciclo `for`. Ecco come farlo:
+## Iterare sugli elementi `for` & `iter()`
+Puoi iterare sugli elementi di una Hash Map utilizzando un ciclo `for` ma è possibiler farlo, come per i Vettori, anche con la funzione `iter()`.
+Questo codice accorpa entrambe i metodi
 
 ```rust
+use std::collections::HashMap;
+
 fn main() {
+    // Creare una nuova HashMap vuota con chiavi di tipo &str e valori di tipo i32
     let mut mia_hashmap: HashMap<&str, i32> = HashMap::new();
+
+    // Inserire coppie chiave-valore nella HashMap
     mia_hashmap.insert("uno", 1);
     mia_hashmap.insert("due", 2);
-    
-    // Iterare sugli elementi della Hash Map
+
+    // Iterare sugli elementi della HashMap utilizzando un ciclo for
+    println!("Iterazione con ciclo for:");
     for (chiave, valore) in &mia_hashmap {
+        println!("Chiave: {}, Valore: {}", chiave, valore);
+    }
+
+    // Iterare sugli elementi della HashMap utilizzando il metodo iter()
+    println!("Iterazione con il metodo iter():");
+    for (chiave, valore) in mia_hashmap.iter() {
         println!("Chiave: {}, Valore: {}", chiave, valore);
     }
 }

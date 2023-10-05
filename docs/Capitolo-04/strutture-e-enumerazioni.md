@@ -1,7 +1,7 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
-# 4.1 Strutture e Enumerazioni
+# 4.2 Strutture e Enumerazioni
 Nel vasto mondo della programmazione, le informazioni vengono spesso organizzate e manipolate attraverso dati strutturati. In Rust, due costrutti fondamentali per questa organizzazione dei dati sono le **strutture** e le **enumerazioni**. In questo capitolo, esploreremo questi concetti in dettaglio.
 
 ## Strutture (Structs)
