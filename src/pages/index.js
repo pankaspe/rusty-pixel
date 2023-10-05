@@ -15,7 +15,9 @@ function HomepageHeader() {
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <p>
-          Con Rusty Pixel, ti offriamo non solo la possibilità di imparare a programmare, ma anche di crescere come individuo consapevole e pensatore logico. Siamo qui per guidarti nel tuo viaggio verso il mondo della tecnologia in modo accessibile, informativo e coinvolgente.
+          Benvenuto in <strong>Rusty Pixel</strong>, dove esplorerai il criptico universo della programmazione e a diventare un genio tecnologico... o forse solo a camminare sull'orlo della follia. <br/>
+          Qui imparerai a scrivere codici, e di conseguenza a sviluppare il pensiero critico/logico del programmatore, che ti porterà ad acquisire consapevolezza nel mondo dell'informatica. 
+          Abbandona ogni speranza, o audace esploratore, e preparati a unirti alla nostra squadra di <em>pensatori logici</em>... o forse di folli programmatori! 🚀        
         </p>
         <div className={styles.buttons}>
           <Link

@@ -23,6 +23,7 @@ Ho suddiviso il corso in 4 livelli differenti, dal più semplice al più comples
   - 2.4: [Istruzioni Condizionali (if, else, else if, match)](./Capitolo-02/istruzioni-condizionali)
   - 2.5: [Cicli di looping (loop, while, for)](./Capitolo-02/cicli-di-looping)
   - 2.6: [Le funzioni](./Capitolo-02/le-funzioni)
+  - 2.7: [I commenti e l'indentazione](./Capitolo-02/commenti-e-indentazione)
 
 ### Capitolo 3: Il concetto di Ownership
   - 3.1: [Cos'è l'Ownership? (proprietario)](./Capitolo-03/cosa-e-ownership)
@@ -30,12 +31,12 @@ Ho suddiviso il corso in 4 livelli differenti, dal più semplice al più comples
   - 3.3: [Prestiti e Riferimenti (Borrowing & References)](./Capitolo-03/borrowing-e-reference)
   - 3.4: [Il tipo Slice](./Capitolo-03/il-tipo-slice)
 
-### Capitolo 4: Strutture Dati in Rust
-  - 4.1: Array e Vettori
+### Capitolo 4: Strutture dati in Rust
+  - 4.1: [Strutture (Structs) e Enumerazioni (Enums)](./Capitolo-04/strutture-e-enumerazioni)
   - 4.2: Stringhe
   - 4.4: Input e Output
   - 4.4: Tuple
-  - 4.5: Strutture (Structs) e Enumerazioni (Enums)
+  - 4.5: Array e Vettori
 
 ## Livello 2 - *Maniaco del codice* ★★
 ### Capitolo 5: Programmazione Orientata agli Oggetti (OOP) in Rust

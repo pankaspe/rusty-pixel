@@ -1,0 +1,8 @@
+{
+  "label": "Capitolo 4 - Strutture dati",
+  "position": 6,
+  "link": {
+    "type": "generated-index",
+    "description": "In Rust, le strutture dati sono tipi di dati personalizzati che consentono di organizzare e memorizzare dati in modi specifici. Queste strutture possono essere utilizzate per rappresentare oggetti complessi, raggruppando diversi tipi di dati sotto un'unica unità."
+  }
+}

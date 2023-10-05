@@ -27,7 +27,7 @@ const FeatureList = [
   },
   {
     title: 'Diventa consapevole della Tecnologia',
-    Svg: require('@site/static/img/consapevolezza.svg').default,
+    Svg: require('@site/static/img/consapevolezza-tecnologica.svg').default,
     description: (
       <>
         La programmazione non riguarda solo il codice, ma anche la capacità di pensare in modo logico e risolvere problemi in modo creativo. 
