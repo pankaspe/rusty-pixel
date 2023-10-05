@@ -83,4 +83,4 @@ Ecco perché gli algoritmi sono importanti: permettono di scomporre problemi com
 Ma non è solo per i computer! La capacità di creare algoritmi può essere applicata nella vita di tutti i giorni.  
 Dovete pianificare un percorso per raggiungere un luogo sconosciuto: questo è un algoritmo di navigazione. O se volete preparare una lista delle cose da fare per la giornata, state creando un algoritmo per organizzare il vostro tempo. Gli algoritmi sono come le istruzioni che guidano molte delle nostre azioni quotidiane e, imparando a scriverli, potrete risolvere problemi in modo più efficiente e creativo in varie situazioni.
 
-Bene, non so più cosa scrivcere qui. Che aspettiamo allora? **Iniziamo**!
+Bene, non so più cosa scrivere qui. Che aspettiamo allora? **Iniziamo**!
