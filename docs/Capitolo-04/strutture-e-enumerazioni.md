@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 ---
-# Strutture e Enumerazioni
+# 4.1 Strutture e Enumerazioni
 Nel vasto mondo della programmazione, le informazioni vengono spesso organizzate e manipolate attraverso dati strutturati. In Rust, due costrutti fondamentali per questa organizzazione dei dati sono le **strutture** e le **enumerazioni**. In questo capitolo, esploreremo questi concetti in dettaglio.
 
 ## Strutture (Structs)
@@ -137,7 +137,6 @@ Nel codice sopra:
 3. `fn mostra_info(&self) { ... }` è un metodo che accetta un riferimento immutabile (`&self`) all'istanza di `Auto` chiamante. Questo metodo stampa il modello e la velocità dell'auto.
 4. Nel blocco `main()`, creiamo un'istanza di `Auto` chiamata `mia_auto` con un modello "SUV" e velocità 120 km/h.
 5. `mia_auto.mostra_info();` chiama il metodo `mostra_info()` sull'istanza `mia_auto` per visualizzare le informazioni dell'auto.
-```
 
 In questo esempio, `&self` rappresenta un riferimento all'istanza dell'oggetto chiamante. Quando chiamiamo il metodo `mostra_info()` su `mia_auto`, `&self` diventa un riferimento all'istanza di `mia_auto`.
 

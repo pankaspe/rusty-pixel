@@ -115,7 +115,8 @@ I tipi di dato booleani sono ampiamente utilizzati nelle espressioni condizional
 
 ## Dati composti
 I tipi di dati composti in Rust sono strutture dati che possono contenere più valori di tipi diversi.  
-Le due principali forme di dati composti in Rust sono le *tuple* e gli *array*. Ma una menzione va fatta alle *stringhe*, approfondiremo nel dettaglio nel paragrafo 3.2.
+Le due principali forme di dati composti in Rust sono le *tuple*, *array* e *stringhe*.
+*Vettori* e *Hash map* li vedremo nel dettaglio nel [capitolo 4 - Strutture dati in Rust](../category/capitolo-4---strutture-dati)
 
 ### Tuple
 Una tupla è una sequenza ordinata di elementi, che possono essere di tipi diversi. Le tuple consentono di raggruppare variabili in un unico valore.

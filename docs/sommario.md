@@ -34,8 +34,8 @@ Ho suddiviso il corso in 4 livelli differenti, dal più semplice al più comples
 
 ### Capitolo 4: Strutture dati in Rust
   - 4.1: [Strutture (Structs) e Enumerazioni (Enums)](./Capitolo-04/strutture-e-enumerazioni)
-  - 4.2: Tuple
-  - 4.3: Array e Vettori
+  - 4.2: [Vettori](./Capitolo-04/vettori)
+  - 4.4: [Hash map](./Capitolo-04/hash-map)
 
 ## Livello 2 - *Maniaco del codice* ★★
 ### Capitolo 5: Programmazione Orientata agli Oggetti (OOP) in Rust
