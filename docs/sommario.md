@@ -26,7 +26,7 @@ Ho suddiviso il corso in 6 livelli differenti, dal più semplice al più comples
   - 2.7: [Input e Output](./Capitolo-02/input-e-output)
   - 2.8: [I commenti e l'indentazione](./Capitolo-02/commenti-e-indentazione)
 
-## Livello 2 - *L'audace* ★★
+## Livello 2 - *L'audace programmatore* ★★
 ### Capitolo 3: Il concetto di Ownership
   - 3.1: [Cos'è l'Ownership? (proprietario)](./Capitolo-03/cosa-e-ownership)
   - 3.2: [Le regole dell'Ownership](./Capitolo-03/le-regole-dell-ownership)
