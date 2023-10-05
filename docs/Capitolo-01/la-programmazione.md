@@ -13,7 +13,7 @@ Queste istruzioni sono come comandi magici che dirigeranno il tuo amico digitale
 Ah, e non dimentichiamoci del sistema di controllo del tuo forno che, per incanto, sa quando hai bruciato qualcosa e decide di farsi sentire. Sì, tutto questo è solo frutto del puro caso, ovviamente. Chi avrebbe mai pensato che quei semplici 0 e 1 potessero fare tanto?
 :::
 
-Per fare ciò, devi pensare come in modo logico e dettagliato, proprio come quando scrivi una ricetta (*e la metti nel forno...*).  
+Per fare ciò, devi pensare in modo logico e dettagliato, proprio come quando scrivi una ricetta (*e metti la pietanza nel forno...*).  
 Se immagini di preparare una torta, devi specificare ogni passaggio: "*prendi un uovo, aggiungi zucchero, mescola bene...*", altrimenti il risultato potrebbe non essere quello che desideri. Nella programmazione, è lo stesso concetto. Ogni **istruzione** che scrivi deve essere chiara e accurata, altrimenti il computer potrebbe non capirti correttamente.
 
 Così, la **programmazione** ti dà il potere di creare, di dare vita a idee digitali e di far svolgere al computer compiti incredibili. È un po' come imparare una nuova lingua, solo che questa volta stai imparando a comunicare con i computer per realizzare cose sorprendenti nel mondo digitale!
@@ -67,7 +67,7 @@ Ma il **pensiero logico** non si ferma qui. Quando scrivi il codice, incontri sp
 In sintesi, imparare a programmare è come avere un superpotere per il tuo cervello. Ti dà il potere di creare, di essere un inventore digitale e di capire meglio il mondo digitale che ti circonda. Ti rende un mago digitale e un supereroe del pensiero logico.
 
 ## Come funziona la programmazione?
-I *programmi* o *codici sorgenti* sono scritti con dei linguaggi di programmazione, come il linguaggio **Rust** (ne esistono tantissimi, come Python, Ruby, Perl, C, C++, ecc... se mi citi il Javascript sei un hipster.). Questi linguaggi sono come il *vostro assistente* digitale e comprendono istruzioni molto specifiche che il computer può seguire alla lettera. Pensate a queste istruzioni come comandi magici che dirigeranno il vostro assistente digitale su come svolgere compiti specifici in modo preciso.
+I *programmi* o *codici sorgenti* sono scritti con dei linguaggi di programmazione, come il linguaggio **Rust** (ne esistono tantissimi, come Python, Ruby, Perl, C, C++, ecc... se mi citi il Javascript sei un hipster). Questi linguaggi sono come il *vostro assistente* digitale e comprendono istruzioni molto specifiche che il computer può seguire alla lettera. Pensate a queste istruzioni come comandi magici che dirigeranno il vostro assistente digitale su come svolgere compiti specifici in modo preciso.
 
 Per esempio, immaginate di dare istruzioni a un robot. Potreste dirgli: "*Vai avanti per 5 passi, gira a destra di 90 gradi, cammina altri 3 passi, fai lo sgambetto alla nonna, poi gira a sinistra di 45 gradi e lanciati dal balcone...*" Queste istruzioni dettagliate consentono al robot di seguire un percorso specifico. Nel mondo della programmazione, scrivete un codice simile per dire al computer cosa fare, passo dopo passo. Ad esempio, potreste scrivere un codice che dice al computer di disegnare una figura geometrica o di risolvere un puzzle matematico. Le possibilità sono infinite e dipendono dalla vostra creatività, abilità di scrivere codice e, chiaramente, pazzia!
 
@@ -83,4 +83,4 @@ Ecco perché gli algoritmi sono importanti: permettono di scomporre problemi com
 Ma non è solo per i computer! La capacità di creare algoritmi può essere applicata nella vita di tutti i giorni.  
 Dovete pianificare un percorso per raggiungere un luogo sconosciuto: questo è un algoritmo di navigazione. O se volete preparare una lista delle cose da fare per la giornata, state creando un algoritmo per organizzare il vostro tempo. Gli algoritmi sono come le istruzioni che guidano molte delle nostre azioni quotidiane e, imparando a scriverli, potrete risolvere problemi in modo più efficiente e creativo in varie situazioni.
 
-Bene, non so più cosa scrivere qui. Che aspettiamo allora? **Iniziamo**!
+Bene, non so più cosa scrivere qui. Andiamo al prossimo capitolo!
