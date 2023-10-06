@@ -8,7 +8,7 @@ description: introduzione ai contenuti, sommario
 # Sommario
 Ho suddiviso il corso in 6 livelli differenti, dal più semplice al più complesso, da far invidia persino a *Pennywise*, perché, diciamocelo, imparare a programmare è solo un modo per coltivare quella sottile forma di "follia" che tutti noi segretamente desideriamo.
 
-## Livello 1 - *L'iniziato* ★
+## Livello 1 - *L'iniziato scettico* ★
 ### Capitolo 1: Introduzione alla programmazione e Rust
   - 1.1: [Cos'è la Programmazione?](./Capitolo-01/la-programmazione)
   - 1.2: [Perché Imparare Rust?](./Capitolo-01/perchè-imparare-rust)
@@ -28,7 +28,7 @@ Ho suddiviso il corso in 6 livelli differenti, dal più semplice al più comples
 
 ## Livello 2 - *L'audace programmatore* ★★
 ### Capitolo 3: Il concetto di Ownership
-  - 3.1: [Cos'è l'Ownership? (proprietario)](./Capitolo-03/cosa-e-ownership)
+  - 3.1: [Cos'è l'Ownership?](./Capitolo-03/cosa-e-ownership)
   - 3.2: [Le regole dell'Ownership](./Capitolo-03/le-regole-dell-ownership)
   - 3.3: [Prestiti e Riferimenti (Borrowing & References)](./Capitolo-03/borrowing-e-reference)
 
@@ -38,68 +38,75 @@ Ho suddiviso il corso in 6 livelli differenti, dal più semplice al più comples
   - 4.3: [Vettori](./Capitolo-04/vettori)
   - 4.4: [Hash map](./Capitolo-04/hash-map)
 
+### Capitolo 5: Crates, Moduli e Pacchetti
+  - 5.1 [Intruduzione](./Capitolo-05/introduzione)
+  - 5.2 [Pacchetti & Crates](./Capitolo-05/pacchetti-e-crates)
+  - 5.3 Moduli e organizzazione del codice
+  - 5.4 Gestione delle Dipendenze
+  - 5.5 Best Practices e Consigli
+
 ## Livello 3 - *Il maniaco del codice* ★★★
-### Capitolo 5: Programmazione Orientata agli Oggetti (OOP) in Rust
-  - 5.1: Concetti di Base dell'OOP
-  - 5.2: Creazione di Metodi e Strutture
-  - 5.3: Ereditarietà e Polimorfismo
+### Capitolo 6: Programmazione Orientata agli Oggetti (OOP) in Rust
+  - 6.1: Concetti di Base dell'OOP
+  - 6.2: Creazione di Metodi e Strutture
+  - 6.3: Ereditarietà e Polimorfismo
 
-### Capitolo 6: Gestione degli Errori in Rust
-  - 6.1: Introduzione alla Gestione degli Errori
-  - 6.2: Il Tipo di Dato Result
-  - 6.3: Il Tipo di Dato Option
-  - 6.4: Gestire Errori Personalizzati
+### Capitolo 7: Gestione degli Errori in Rust
+  - 7.1: Introduzione alla Gestione degli Errori
+  - 7.2: Il Tipo di Dato Result
+  - 7.3: Il Tipo di Dato Option
+  - 7.4: Gestire Errori Personalizzati
 
-### Capitolo 7: Progetti Pratici
-  - 7.1: Creazione di un Gioco Semplice
-  - 7.2: Automatizzazione di Compiti
-  - 7.3: Risoluzione di Problemi Matematici
-  - 7.4: Progetto Finale: Applicazione Interattiva
+### Capitolo 8: Progetti Pratici
+  - 8.1: Creazione di un Gioco Semplice
+  - 8.2: Automatizzazione di Compiti
+  - 8.3: Risoluzione di Problemi Matematici
+  - 8.4: Progetto Finale: Applicazione Interattiva
 
-## Livello 4 - *il Paranoico* ★★★★
-### Capitolo 8: Approfondimenti in Rust
-  - 8.1: Generics e Trait
-  - 8.2: Concorrenza e Multithreading in Rust
-  - 8.3: Uso delle Librerie e dei Framework
+## Livello 4 - *il Paranoico dei Bit* ★★★★
+### Capitolo 9: Approfondimenti in Rust
+  - 9.1: Generics e Trait
+  - 9.2: Concorrenza e Multithreading in Rust
+  - 9.3: Uso delle Librerie e dei Framework
 
-### Capitolo 9: Contribuzione Open Source e Comunità Rust
-  - 9.1: Cos'è l'Open Source
-  - 9.2: Contribuzione a Progetti Rust
-  - 9.3: Partecipazione alla Comunità Rust
+### Capitolo 10: Contribuzione Open Source e Comunità Rust
+  - 10.1: Cos'è l'Open Source
+  - 10.2: Contribuzione a Progetti Rust
+  - 10.3: Partecipazione alla Comunità Rust
 
-### Capitolo 10: Il Futuro della Programmazione in Rust
-  - 10.1: Opportunità di Carriera
-  - 10.2: Ulteriori Risorse e Approfondimenti
-  - 10.3: Il Vostro Cammino di Apprendimento Continuo
+### Capitolo 11: Il Futuro della Programmazione in Rust
+  - 11.1: Opportunità di Carriera
+  - 11.2: Ulteriori Risorse e Approfondimenti
+  - 11.3: Il Vostro Cammino di Apprendimento Continuo
 
 ## Livello 5 - *Il Delirante* ★★★★
-### Capitolo 11: Etica dell'Hacking e sicurezza informatica con Rust
-  - 11.1 Scopo dell'hacking etico
-  - 11.2 Differenza tra white hat e black hat
-  - 11.3 Esempi di progetti di hacking etico con Rust
-  - 11.4 Concetti di base della sicurezza informatica
-  - 11.5 Come proteggere il tuo computer e i tuoi dati personali
-  - 11.6 Rischi della cattiva sicurezza informatica
+### Capitolo 12: Etica dell'Hacking e sicurezza informatica con Rust
+  - 12.1 Scopo dell'hacking etico
+  - 12.2 Differenza tra white hat e black hat
+  - 12.3 Esempi di progetti di hacking etico con Rust
+  - 12.4 Concetti di base della sicurezza informatica
+  - 12.5 Come proteggere il tuo computer e i tuoi dati personali
+  - 12.6 Rischi della cattiva sicurezza informatica
 
-### Capitolo 12: La Tua responsabilità rtica
-  - 12.1 L'importanza dell'etica nell'uso delle tue abilità di programmazione e hacking
-  - 12.2 Linee guida per un comportamento etico nel mondo digitale
-  - 12.3 Come contribuire alla sicurezza informatica e all'etica online con le tue competenze
+### Capitolo 13: La Tua responsabilità rtica
+  - 13.1 L'importanza dell'etica nell'uso delle tue abilità di programmazione e hacking
+  - 13.2 Linee guida per un comportamento etico nel mondo digitale
+  - 13.3 Come contribuire alla sicurezza informatica e all'etica online con le tue competenze
 
-## Livello 4 - *la Follia* ★★★★★
-### Capitolo 13: Le Reti Neurali
-  - 13.1 Cosa sono le reti neurali artificiali
-  - 13.2 Funzionamento delle reti neurali nell'apprendimento automatico
-  - 13.3 Concetti chiave delle reti neurali
-  - 13.4 Rischi legati alla manipolazione non autorizzata delle reti neurali
-  - 13.5 Come Rust contribuisce alla sicurezza delle reti neurali
+## Livello 4 - *il Tessitore di Follia* ★★★★★
+### Capitolo 14: Le Reti Neurali
+  - 14.1 Cosa sono le reti neurali artificiali
+  - 14.2 Funzionamento delle reti neurali nell'apprendimento automatico
+  - 14.3 Concetti chiave delle reti neurali
+  - 14.4 Rischi legati alla manipolazione non autorizzata delle reti neurali
+  - 14.5 Come Rust contribuisce alla sicurezza delle reti neurali
 
-### Capitolo 14: Riprogrammare Reti Neurali con Rust
-  - 14.1 Approccio alla riprogrammazione di reti neurali
-  - 14.2 Esempi di progetti di riprogrammazione con Rust
-  - 14.3 Vantaggi e sfide della riprogrammazione
+### Capitolo 15: Riprogrammare Reti Neurali con Rust
+  - 15.1 Approccio alla riprogrammazione di reti neurali
+  - 15.2 Esempi di progetti di riprogrammazione con Rust
+  - 15.3 Vantaggi e sfide della riprogrammazione
 
-### Capitolo 15: Implicazioni Etiche
-  - 15.1 Dibattito sull'etica della riprogrammazione di reti neurali
-  - 15.2 Responsabilità nell'utilizzo delle competenze di programmazione
-  - 15.3 Ruolo dei giovani programmatori nell'etica dell'IA
+### Capitolo 16: Implicazioni Etiche
+  - 16.1 Dibattito sull'etica della riprogrammazione di reti neurali
+  - 16.2 Responsabilità nell'utilizzo delle competenze di programmazione
+  - 16.3 Ruolo dei giovani programmatori nell'etica dell'IA

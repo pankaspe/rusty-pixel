@@ -1,0 +1,8 @@
+{
+  "label": "Capitolo 5 - Crates, Moduli e Pacchetti",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "In Rust, i Crates sono unità di compilazione, mentre i Moduli organizzano il codice internamente. I Pacchetti combinano Crates correlati per distribuire software. Queste strutture favoriscono la modularità e semplificano la gestione del codice, essenziali per lo sviluppo Rust scalabile e robusto."
+  }
+}
