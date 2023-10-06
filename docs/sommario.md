@@ -41,9 +41,8 @@ Ho suddiviso il corso in 6 livelli differenti, dal più semplice al più comples
 ### Capitolo 5: Crates, Moduli e Pacchetti
   - 5.1 [Intruduzione](./Capitolo-05/introduzione)
   - 5.2 [Pacchetti & Crates](./Capitolo-05/pacchetti-e-crates)
-  - 5.3 Moduli e organizzazione del codice
-  - 5.4 Gestione delle Dipendenze
-  - 5.5 Best Practices e Consigli
+  - 5.3 [Moduli e organizzazione del codice](./Capitolo-05/moduli)
+  - 5.4 [Gestione delle Dipendenze](./Capitolo-05/dipendenze)
 
 ## Livello 3 - *Il maniaco del codice* ★★★
 ### Capitolo 6: Programmazione Orientata agli Oggetti (OOP) in Rust

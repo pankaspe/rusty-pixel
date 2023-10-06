@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 ---
-# 5.1 Pacchetti & Crates
+# 5.2 Pacchetti & Crates
 ## Crates
 Come abbiamo detto in precedenza, in Rust, un **crate** è un'unità di compilazione. Può contenere *moduli*, che a loro volta contengono *variabili, funzioni, e strutture dati*. Un **crate** può essere sia una libreria riutilizzabile che un'applicazione completa.
 
@@ -46,6 +46,35 @@ I pacchetti in Rust rappresentano un modo efficiente per organizzare e distribui
 ### Struttura del Pacchetto
 Un pacchetto Rust segue una struttura ben definita. Contiene un file `Cargo.toml` che descrive le dipendenze e la configurazione del progetto. All'interno del pacchetto, ci sono directories contenenti i crates e i relativi moduli. Questa organizzazione modulare facilita la manutenzione del codice.
 
+Ecco un esempio di struttura di un pacchetto Rust:
+
+```
+my_package
+├── Cargo.toml
+├── src
+│   ├── main.rs
+│   ├── lib.rs
+│   └── utils.rs
+├── tests
+│   ├── integration_test.rs
+│   └── unit_test.rs
+└── examples
+    └── example.rs
+```
+
+- **`Cargo.toml`**: Il file di configurazione del pacchetto, contenente le informazioni sul progetto e le dipendenze.
+- **`src`**: La directory principale che contiene il codice sorgente.
+  - **`main.rs`**: Il file principale del programma (per gli eseguibili).
+  - **`lib.rs`**: Il file principale della libreria (per le crate).
+  - **`utils.rs`**: Un modulo separato con funzioni di utilità.
+- **`tests`**: La directory contenente i test del pacchetto.
+  - **`integration_test.rs`**: Test di integrazione.
+  - **`unit_test.rs`**: Test delle singole unità di codice.
+- **`examples`**: La directory contenente esempi d'uso del pacchetto.
+  - **`example.rs`**: Un esempio di utilizzo del pacchetto.
+
+In questo esempio, il pacchetto è organizzato in modo modulare, consentendo una migliore gestione del codice e dei test. Questa struttura facilita anche la collaborazione con altri sviluppatori e la pubblicazione del pacchetto su Crates.io.
+
 ### Creazione di un Pacchetto
 Per creare un pacchetto, si inizia creando una nuova directory contenente il file `Cargo.toml`. All'interno di questa directory, si possono aggiungere crates e moduli come necessario. Usando comandi come `cargo build` e `cargo publish`, è possibile compilare il pacchetto e condividerlo sulla piattaforma di gestione dei pacchetti di Rust, Crates.io.
 
@@ -54,3 +83,9 @@ Un aspetto chiave dei pacchetti sono le dipendenze. Utilizzando il file `Cargo.t
 
 ### Vantaggi dei Pacchetti
 L'utilizzo di pacchetti offre diversi vantaggi. Promuove la modularità, consentendo la separazione del codice in componenti gestibili. Inoltre, semplifica la distribuzione del software, permettendo agli sviluppatori di condividere facilmente il proprio lavoro con la community. Questo approccio favorisce anche l'ecosistema Rust nel suo complesso, incoraggiando la creazione di librerie riutilizzabili.
+
+:::info
+In Rust, i concetti di "crates" e "pacchetti" sono fondamentali ma distinti. Una "crate" rappresenta un'unità di compilazione in Rust, che può contenere moduli, funzioni e tipi di dati. Una crate può essere un'applicazione, una libreria o un modulo, e viene compilata separatamente dal compilatore Rust. Una "pacchetto" (package) si riferisce invece all'intero progetto Rust, che può includere una o più crates, insieme ai file di configurazione necessari come Cargo.toml. Un pacchetto può consistere in una singola crate (ad esempio, un'applicazione) o in più crates (per esempio, una libreria principale e varie sottocrates). 
+
+La differenza principale è che una crate è un'unità compilabile, mentre un pacchetto è un progetto complessivo che può comprendere più crates. La gestione delle dipendenze, la configurazione di compilazione e altre informazioni cruciali sono specificate nel file Cargo.toml del pacchetto. 
+:::
