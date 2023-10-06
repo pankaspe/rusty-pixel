@@ -83,7 +83,16 @@ const config = {
             label: 'Tutorial',
           },
           /* {to: '/blog', label: 'Blog', position: 'left'}, */
-          {to: '/about', label: 'il Progetto', position: 'left'},
+          {
+            to: '/contribute', 
+            label: 'Contribuisci', 
+            position: 'left'
+          },
+          {
+            to: '/about', 
+            label: 'il Progetto', 
+            position: 'left'
+          },
           {
             href: 'https://github.com/pankaspe/rusty-pixel',
             label: 'GitHub',
@@ -113,6 +122,10 @@ const config = {
               {
                 label: 'Stack Overflow',
                 href: 'https://stackoverflow.com/questions/tagged/rust',
+              },
+              {
+                label: 'Contribuisci',
+                to: '/contribute', 
               },
             ],
           },
