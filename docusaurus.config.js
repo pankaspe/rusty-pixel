@@ -84,11 +84,6 @@ const config = {
           },
           /* {to: '/blog', label: 'Blog', position: 'left'}, */
           {
-            to: '/contribute', 
-            label: 'Contribuisci', 
-            position: 'left'
-          },
-          {
             to: '/about', 
             label: 'il Progetto', 
             position: 'left'
@@ -122,10 +117,6 @@ const config = {
               {
                 label: 'Stack Overflow',
                 href: 'https://stackoverflow.com/questions/tagged/rust',
-              },
-              {
-                label: 'Contribuisci',
-                to: '/contribute', 
               },
             ],
           },
