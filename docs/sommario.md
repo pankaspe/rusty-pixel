@@ -38,6 +38,8 @@ Ho suddiviso il corso in 6 livelli differenti, dal più semplice al più comples
   - 4.2: [Strutture (Structs) e Enumerazioni (Enums)](./Capitolo-04/strutture-e-enumerazioni)
   - 4.3: [Vettori](./Capitolo-04/vettori)
   - 4.4: [Hash map](./Capitolo-04/hash-map)
+  - 4.4: [Option](./Capitolo-04/option)
+
 
 ### Capitolo 5: Crates, Moduli e Pacchetti
   - 5.1 [Intruduzione](./Capitolo-05/introduzione)
