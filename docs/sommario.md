@@ -35,7 +35,7 @@ Ho suddiviso il corso in 6 livelli differenti, dal più semplice al più comples
 
 ### Capitolo 4: Strutture dati in Rust
   - 4.1: [Lo Slice](./Capitolo-04/il-tipo-slice)
-  - 4.2: [Strutture (Structs) e Enumerazioni (Enums)](./Capitolo-04/strutture-e-enumerazioni)
+  - 4.2: [Strutture e Enumerazioni](./Capitolo-04/strutture-e-enumerazioni)
   - 4.3: [Vettori](./Capitolo-04/vettori)
   - 4.4: [Hash map](./Capitolo-04/hash-map)
   - 4.4: [Option](./Capitolo-04/option)
@@ -49,9 +49,10 @@ Ho suddiviso il corso in 6 livelli differenti, dal più semplice al più comples
 
 ## Livello 3 - *Il maniaco del codice* ★★★
 ### Capitolo 6: Programmazione Orientata agli Oggetti (OOP) in Rust
-  - 6.1: Concetti di Base dell'OOP
-  - 6.2: Creazione di Metodi e Strutture
-  - 6.3: Ereditarietà e Polimorfismo
+  - 6.1: [Concetti di Base dell'OOP](./Capitolo-06/concetti-base-oop)
+  - 6.2: Traits
+  - 6.3: Polimorfismo
+  - 6.4: Traits avanzati
 
 ### Capitolo 7: Gestione degli Errori in Rust
   - 7.1: Introduzione alla Gestione degli Errori
