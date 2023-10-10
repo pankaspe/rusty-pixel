@@ -89,6 +89,11 @@ const config = {
             position: 'left'
           },
           {
+            to: '/commit', 
+            label: 'Roadmap', 
+            position: 'left'
+          },
+          {
             href: 'https://github.com/pankaspe/rusty-pixel',
             label: 'GitHub',
             position: 'right',
