@@ -7,7 +7,7 @@ const CommitHistory = () => {
 
   useEffect(() => {
     const apiUrl = 'https://api.github.com/repos/pankaspe/rusty-pixel/commits';
-    const accessToken = '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';
+    const accessToken = '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';
 
     // Effettua la richiesta GET utilizzando fetch
     fetch(apiUrl, {
@@ -37,13 +37,15 @@ const CommitHistory = () => {
   return (
     <div>
       <h2>Ultimi 20 commit</h2>
-        <ul className={styles.commitList}>
-          {ultimi20Commit.map(commit => (
-            <li key={commit.sha}>
-              <span className={styles.message}>{commit.commit.message}</span> - <span className={styles.dateLabel}>{new Date(commit.commit.author.date).toLocaleDateString('it-IT', { day: '2-digit', month: '2-digit', year: 'numeric' })}</span>
-            </li>
-          ))}
-        </ul>
+        <pre>
+          <ul className={styles.commitList}>
+            {ultimi20Commit.map(commit => (
+              <li key={commit.sha}>
+                <span className={styles.message}>{commit.commit.message}</span> - <span className={styles.dateLabel}>{new Date(commit.commit.author.date).toLocaleDateString('it-IT', { day: '2-digit', month: '2-digit', year: 'numeric' })}</span>
+              </li>
+            ))}
+          </ul>
+        </pre>
     </div>
   );
 };

@@ -1,17 +1,5 @@
 /* CommitHistory.css */
 
-:root {
-  --primaryColor: var(--ifm-color-primary); /* Colore principale */
-  --secondaryColor: var(--ifm-color-secondary); /* Colore secondario */
-  --tertiaryColor: var(--ifm-color-tertiary); /* Colore terziario */
-  --linkColor: var(--ifm-link-color); /* Colore dei link */
-  --successColor: var(--ifm-success-color); /* Colore di successo */
-  --warningColor: var(--ifm-warning-color); /* Colore di avviso */
-  --errorColor: var(--ifm-error-color); /* Colore di errore */
-  --infoColor: var(--ifm-info-color); /* Colore informativo */
-}
-
-
 .commitList {
   list-style-type: none;
   padding: 0;
