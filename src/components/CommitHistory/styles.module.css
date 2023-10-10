@@ -1,0 +1,62 @@
+/* CommitHistory.css */
+
+:root {
+  --primaryColor: var(--ifm-color-primary); /* Colore principale */
+  --secondaryColor: var(--ifm-color-secondary); /* Colore secondario */
+  --tertiaryColor: var(--ifm-color-tertiary); /* Colore terziario */
+  --linkColor: var(--ifm-link-color); /* Colore dei link */
+  --successColor: var(--ifm-success-color); /* Colore di successo */
+  --warningColor: var(--ifm-warning-color); /* Colore di avviso */
+  --errorColor: var(--ifm-error-color); /* Colore di errore */
+  --infoColor: var(--ifm-info-color); /* Colore informativo */
+}
+
+
+.commitList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.commitList li {
+  margin-bottom: 10px;
+}
+
+.message {
+  font-size: 16px; /* Dimensione del font per desktop */
+  font-style: italic;
+}
+
+.dateLabel {
+  background-color: #ffedd5;
+  color: #333;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 13px; /* Dimensione del font per desktop */
+}
+
+/* Media query per dispositivi con larghezza massima di 768px */
+@media (max-width: 768px) {
+
+  .message {
+    font-size: 16px; /* Dimensione del font per dispositivi più piccoli */
+  }
+
+  .dateLabel {
+    font-size: 12px; /* Dimensione del font per dispositivi più piccoli */
+  }
+}
+
+/* Media query per dispositivi con larghezza massima di 480px */
+@media (max-width: 480px) {
+  .username {
+    font-size: 12px; /* Dimensione del font per dispositivi ancora più piccoli */
+  }
+
+  .message {
+    font-size: 14px; /* Dimensione del font per dispositivi ancora più piccoli */
+  }
+
+  .dateLabel {
+    font-size: 10px; /* Dimensione del font per dispositivi ancora più piccoli */
+  }
+}
