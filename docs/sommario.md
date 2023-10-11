@@ -30,7 +30,7 @@ Ho suddiviso il corso in 6 livelli differenti, dal più semplice al più comples
 ### Capitolo 3: Il concetto di Ownership
   - 3.1: [Cos'è l'Ownership?](./Capitolo-03/cosa-e-ownership)
   - 3.2: [Le regole dell'Ownership](./Capitolo-03/le-regole-dell-ownership)
-  - 3.3: [Prestiti e Riferimenti (Borrowing & References)](./Capitolo-03/borrowing-e-reference)
+  - 3.3: [Prestiti e Riferimenti](./Capitolo-03/borrowing-e-reference)
   - 3.4: [Lifetime](./Capitolo-03/lifetime)
 
 ### Capitolo 4: Strutture dati in Rust

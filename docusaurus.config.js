@@ -58,7 +58,7 @@ const config = {
         },
         */
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/css/custom.css')
         },
       }),
     ],
@@ -142,6 +142,11 @@ const config = {
         additionalLanguages: ['rust'],
       },
     }),
+    customFields: {
+      // ... altre configurazioni ...
+      // Imposta il componente root
+      root: 'src/theme/Root',
+    },
 };
 
 module.exports = config;
