@@ -96,7 +96,7 @@ Ho suddiviso il corso in 6 livelli differenti, dal più semplice al più comples
   - 13.2 Linee guida per un comportamento etico nel mondo digitale
   - 13.3 Come contribuire alla sicurezza informatica e all'etica online con le tue competenze
 
-## Livello 4 - *il Tessitore di Follia* ★★★★★
+## Livello 6 - *il Tessitore di Follia* ★★★★★
 ### Capitolo 14: Le Reti Neurali
   - 14.1 Cosa sono le reti neurali artificiali
   - 14.2 Funzionamento delle reti neurali nell'apprendimento automatico
