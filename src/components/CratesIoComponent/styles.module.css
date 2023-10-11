@@ -1,0 +1,91 @@
+/* src/components/CratesIoComponent/styles.module.css */
+
+:root {
+    --ifm-color-primary: #e67e22;
+    --ifm-color-primary-dark: #d2731c;
+    --ifm-color-primary-darker: #bd6418;
+    --ifm-color-primary-darkest: #a65612;
+    --ifm-color-primary-light: #f39c12;
+    --ifm-color-primary-lighter: #f5ab38;
+    --ifm-color-primary-lightest: #fcbe74;
+    --ifm-code-font-size: 95%;
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+    --card-bg-color: rgb(0 0 0 / 5%)
+}
+  
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+    --ifm-color-primary: #e67e22;
+    --ifm-color-primary-dark: #d2731c;
+    --ifm-color-primary-darker: #bd6418;
+    --ifm-color-primary-darkest: #a65612;
+    --ifm-color-primary-light: #f39c12;
+    --ifm-color-primary-lighter: #f5ab38;
+    --ifm-color-primary-lightest: #fcbe74;
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+    --card-bg-color: rgb(255 255 255 / 5%)
+}
+  
+  
+.searchContainer {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+  
+.searchInput {
+    width: 200px;
+    padding: 8px;
+    font-size: 16px;
+    margin-right: 10px;
+    border: 1px solid var(--ifm-color-primary);
+    border-radius: 4px;
+    background-color: #fff;
+    color: #000;
+}
+  
+.searchButton {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--ifm-color-primary);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+  
+.searchButton:hover {
+    background-color: var(--ifm-color-primary-light);
+}
+  
+.card {
+    background-color: var(--card-bg-color);
+    border-radius: 10px; /* Bordo smussato */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra per effetto sollevato */
+    margin-top: 20px;
+    margin-bottom: 12x;
+}
+
+.title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.resultItem {
+    margin-bottom: 10px;
+}
+  
+.resultItem label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+  
+.resultItem p {
+    margin: 0;
+}
+  
+.resultItem a {
+    color: var(--ifm-color-primary);
+    text-decoration: none;
+}
