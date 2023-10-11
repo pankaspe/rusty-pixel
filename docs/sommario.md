@@ -50,8 +50,8 @@ Ho suddiviso il corso in 6 livelli differenti, dal più semplice al più comples
 ## Livello 3 - *Il maniaco del codice* ★★★
 ### Capitolo 6: Programmazione Orientata agli Oggetti (OOP) in Rust
   - 6.1: [Concetti di Base dell'OOP](./Capitolo-06/concetti-base-oop)
-  - 6.2: Traits
-  - 6.3: Polimorfismo
+  - 6.2: [Traits](./Capitolo-06/traits)
+  - 6.3: [Polimorfismo](./Capitolo-06/polimorfismo)
   - 6.4: Traits avanzati
 
 ### Capitolo 7: Gestione degli Errori in Rust

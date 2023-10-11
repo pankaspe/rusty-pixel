@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 ---
-# 6.1 Concetti di Base dell'OOP
+# 6.1 Concetti di Base
 La Programmazione Orientata agli Oggetti (OOP) è un paradigma di programmazione che si basa sul concetto di "oggetti". Questi oggetti contengono dati (conosciuti come attributi o proprietà) e comportamenti (conosciuti come metodi). L'OOP aiuta a organizzare il codice in modo più chiaro e modulare, migliorando la manutenibilità e la riusabilità del software.
 
 ## Concetti Fondamentali
