@@ -36,7 +36,7 @@ const CratesIoComponent = () => {
         </button>
       </div>
 
-      {loading && <p>Sto cercando...</p>} {/* Visualizza "Sto cercando..." durante la ricerca */}
+      {loading && <p>Eseguo la ricerca...</p>} {/* Visualizza "Sto cercando..." durante la ricerca */}
 
       {data && data.length > 0 ? (
         <div className={styles.resultList}>
