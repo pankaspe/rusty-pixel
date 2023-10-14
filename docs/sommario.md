@@ -52,7 +52,7 @@ Ho suddiviso il corso in 6 livelli differenti, dal più semplice al più comples
   - 6.1: [Concetti di Base dell'OOP](./Capitolo-06/concetti-base-oop)
   - 6.2: [Traits](./Capitolo-06/traits)
   - 6.3: [Polimorfismo](./Capitolo-06/polimorfismo)
-  - 6.4: Traits avanzati
+  - 6.4: [Tipi Generici](./Capitolo-06/generics)
 
 ### Capitolo 7: Gestione degli Errori in Rust
   - 7.1: Introduzione alla Gestione degli Errori

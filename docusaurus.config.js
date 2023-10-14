@@ -84,13 +84,13 @@ const config = {
           },
           /* {to: '/blog', label: 'Blog', position: 'left'}, */
           {
-            to: '/crates', 
-            label: 'Crates.io', 
+            to: '/about', 
+            label: 'il Progetto', 
             position: 'left'
           },
           {
-            to: '/about', 
-            label: 'il Progetto', 
+            to: '/crates', 
+            label: 'Crates.io', 
             position: 'left'
           },
           {

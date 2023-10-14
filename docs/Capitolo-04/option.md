@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 # 4.4 Option
-Certamente! `Option<T>` è un *tipo di dato* in Rust che rappresenta la possibilità di avere o non avere un valore. Questo è particolarmente utile quando si lavora con situazioni in cui il valore può essere assente o non ancora definito. In Rust, `Option<T>` è un **enum** che può avere uno di due valori:
+`Option<T>` è un *tipo di dato* in Rust che rappresenta la possibilità di avere o non avere un valore. Questo è particolarmente utile quando si lavora con situazioni in cui il valore può essere assente o non ancora definito. In Rust, `Option<T>` è un **enum** che può avere uno di due valori:
 
 - `Some(T)`: Rappresenta un valore di tipo `T`.
 - `None`: Rappresenta l'assenza di un valore, simile a un valore nullo in altri linguaggi di programmazione.

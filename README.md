@@ -22,4 +22,4 @@ Rusty Pixel è un corso online progettato per tutte le persone appassionate di i
 
 Siamo aperti alle contribuzioni! Se vuoi migliorare i tutorial esistenti o aggiungere nuovi progetti, fai una pull request.
 
-**Divertiti a programmare con Rusty Guardians!** 🚀
+**Divertiti a programmare con Rusty Pixel!** 🚀

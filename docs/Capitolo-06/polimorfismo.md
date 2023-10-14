@@ -1,7 +1,7 @@
 ---
 sidebar_position: 3
 ---
-# Polimorfismo
+# 6.3 Polimorfismo
 Il polimorfismo è un concetto cruciale nella programmazione orientata agli oggetti, consentendo a oggetti di tipi diversi di essere trattati in modo uniforme. In Rust, il polimorfismo è raggiunto attraverso l'uso dei traits.
 
 Immagina un ambiente di lavoro dove persone con diverse competenze possono assumere ruoli diversi in base alle esigenze del progetto. Questo concetto si avvicina al polimorfismo nella vita quotidiana. Nel nostro mondo, le persone possono essere polimorfe, adattandosi a svariate situazioni e compiti. Una persona potrebbe essere un insegnante di giorno, un cuoco appassionato di sera e un volontario in un rifugio per animali nel fine settimana. Questa versatilità è simile al polimorfismo, dove oggetti di diverse classi possono essere trattati in modo uniforme, a seconda del contesto.
