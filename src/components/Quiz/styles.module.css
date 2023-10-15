@@ -11,6 +11,16 @@ ul li {
   margin-bottom: 10px; /* Spazio tra gli elementi dell'elenco */
 }
 
+/* Aggiungi spazio tra il radio button e l'etichetta */
+ul li input[type="radio"] {
+  margin-right: 10px; /* Spazio tra il radio button e l'etichetta */
+}
+
+/* Aggiungi padding all'etichetta */
+ul li label {
+  padding-left: 5px; /* Spazio a sinistra dell'etichetta */
+}
+
 .submitButton {
   background-color: var(--ifm-color-primary); /* Colore primario di Docusaurus */
   color: white; /* Colore del testo */
@@ -26,14 +36,17 @@ ul li {
   cursor: not-allowed;
 }
 
-.score {
-  font-size: 24px; /* Imposta la dimensione del carattere */
-  font-weight: bold; /* Rendi il testo in grassetto per enfatizzare il punteggio */
-  margin-top: 20px; /* Aggiungi uno spazio superiore per separare dalla sezione precedente, se necessario */
+.cardWrong {
+  background-color: #f8d7da; /* Colore di sfondo verde chiaro */
+  border: 1px solid #721c24; /* Colore del bordo verde scuro */
+  border-radius: 8px; /* Bordi arrotondati */
+  padding: 20px; /* Spazio interno della card */
+  margin-top: 20px; /* Spazio superiore */
+  color: #721c24;
 }
 
-.score span {
-  color: var(--ifm-color-primary); /* Colore primario di Docusaurus per il testo nel tag span */
+.cardWrong span {
+  font-size: 24px; 
 }
 
 .wrongQuestion {
@@ -43,4 +56,15 @@ ul li {
   border-radius: 10px; /* Bordi smussati */
   padding: 10px; /* Padding di 10px */
   margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.cardSuccess {
+  background-color: #aaffaa; /* Colore di sfondo verde chiaro */
+  border: 1px solid #007700; /* Colore del bordo verde scuro */
+  border-radius: 8px; /* Bordi arrotondati */
+  padding: 20px; /* Spazio interno della card */
+  margin-top: 20px; /* Spazio superiore */
+  color: #1d1d1d;
+  font-size: 18px;
 }

@@ -4,7 +4,8 @@ import styles from './styles.module.css';
 const Quiz = ({ questions }) => {
   const [userAnswers, setUserAnswers] = useState(Array(questions.length).fill(null));
   const [score, setScore] = useState(0);
-  const [incorrectQuestions, setIncorrectQuestions] = useState(new Set()); // Set per tenere traccia delle domande errate
+  const [incorrectQuestions, setIncorrectQuestions] = useState(new Set()); 
+  const [submitted, setSubmitted] = useState(false);
 
   const handleAnswerSelect = (questionIndex, selectedAnswer) => {
     const newAnswers = [...userAnswers];
@@ -28,6 +29,7 @@ const handleSubmit = () => {
     // Calcola il punteggio
     const newScore = questions.length - newIncorrectQuestions.size;
     setScore(newScore);
+    setSubmitted(true);
   };
 
   return (
@@ -48,6 +50,7 @@ const handleSubmit = () => {
             </li>
           ))}
         </ul>
+        {incorrectQuestions.has(index) ? (<strong>#! _Errore</strong>) : null}
       </div>
     ))}
     <button
@@ -58,7 +61,16 @@ const handleSubmit = () => {
       Verifica
     </button>
 
-    <p className={styles.score}>Numero di risposte corrette: [<span>{score}</span>]</p>
+    {submitted && ( // Mostra il messaggio solo dopo aver premuto il pulsante di submit
+        allQuestionsAnswered && incorrectQuestions.size === 0 ? (
+          <p className={`${styles.cardSuccess}`}>Bravo nerd, non hai fatto errori, avanti così! 💪</p>
+        ) : (
+          <p className={`${styles.cardWrong}`}>
+            ❌ Mhhh, sembra ci sia un problema... le risposte corrette sono <span>{score} su {questions.length}</span>, prova a controllare bene
+          </p>
+        )
+      )}
+    
   </div>
   );
 };
