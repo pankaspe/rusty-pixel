@@ -1,0 +1,46 @@
+/* styles.module.css */
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Stile personalizzato per gli elementi dell'elenco */
+ul li {
+  margin-bottom: 10px; /* Spazio tra gli elementi dell'elenco */
+}
+
+.submitButton {
+  background-color: var(--ifm-color-primary); /* Colore primario di Docusaurus */
+  color: white; /* Colore del testo */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer; /* Cambia il cursore quando disabilitato */
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.submitButton:disabled {
+  background-color: #ccc; /* Colore di sfondo quando disabilitato */
+  cursor: not-allowed;
+}
+
+.score {
+  font-size: 24px; /* Imposta la dimensione del carattere */
+  font-weight: bold; /* Rendi il testo in grassetto per enfatizzare il punteggio */
+  margin-top: 20px; /* Aggiungi uno spazio superiore per separare dalla sezione precedente, se necessario */
+}
+
+.score span {
+  color: var(--ifm-color-primary); /* Colore primario di Docusaurus per il testo nel tag span */
+}
+
+.wrongQuestion {
+  background-color: #f8d7da; /* Colore di sfondo per le risposte sbagliate */
+  color: #721c24; /* Colore del testo per le risposte sbagliate */
+  border: 1px solid #721c24; /* Bordo da 1px di rosso scuro */
+  border-radius: 10px; /* Bordi smussati */
+  padding: 10px; /* Padding di 10px */
+  margin-bottom: 10px;
+}

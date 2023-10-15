@@ -15,6 +15,7 @@ Ho suddiviso il corso in 6 livelli differenti, dal più semplice al più comples
   - 1.3: [Ambiente di Sviluppo per Rust](./Capitolo-01/ambiente-sviluppo-rust)
   - 1.4: [Funzionamento del computer](./Capitolo-01/il-terminale)
   - 1.5: [Iniziamo con Rust](./Capitolo-01/installazione)
+  - 1.6: [Verifica](./Capitolo-01/verifica)
 
 ### Capitolo 2: Fondamenti della Programmazione
   - 2.1: [Le variabili](./Capitolo-02/variabili)
