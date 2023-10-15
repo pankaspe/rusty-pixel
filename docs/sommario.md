@@ -55,10 +55,10 @@ Ho suddiviso il corso in 6 livelli differenti, dal più semplice al più comples
   - 6.4: [Tipi Generici](./Capitolo-06/generics)
 
 ### Capitolo 7: Gestione degli Errori in Rust
-  - 7.1: Introduzione alla Gestione degli Errori
-  - 7.2: Il Tipo di Dato Result
-  - 7.3: Il Tipo di Dato Option
-  - 7.4: Gestire Errori Personalizzati
+  - 7.1: [Introduzione alla gestione degli Errori](./Capitolo-07/introduzione)
+  - 7.2: [Il tipo di dato Result](./Capitolo-07/tipo-dato-result)
+  - 7.3: [La macro panic!](./Capitolo-07/panic)
+  - 7.4: [Gestire errori personalizzati](./Capitolo-07/errori-personalizzati)
 
 ### Capitolo 8: Progetti Pratici
   - 8.1: Creazione di un Gioco Semplice
@@ -68,9 +68,11 @@ Ho suddiviso il corso in 6 livelli differenti, dal più semplice al più comples
 
 ## Livello 4 - *il Paranoico dei Bit* ★★★★
 ### Capitolo 9: Approfondimenti in Rust
-  - 9.1: Generics e Trait
-  - 9.2: Concorrenza e Multithreading in Rust
-  - 9.3: Uso delle Librerie e dei Framework
+  - 9.1: Concorrenza e Multithreading in Rust
+  - 9.2: Uso delle Librerie e dei Framework
+  - 9.3: Framework per sviluppo web
+  - 9.4: Framework per sviluppo desktop
+  - 9.5: Framework per sviluppo mobile
 
 ### Capitolo 10: Contribuzione Open Source e Comunità Rust
   - 10.1: Cos'è l'Open Source
