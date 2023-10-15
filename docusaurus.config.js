@@ -59,8 +59,7 @@ const config = {
         */
         theme: {
           customCss: require.resolve('./src/css/custom.css')
-        },
-        plugins: [["@gracefullight/docusaurus-plugin-vercel-analytics"]],
+        }
       }),
     ],
   ],
