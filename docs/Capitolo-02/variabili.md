@@ -2,10 +2,14 @@
 sidebar_position: 1
 ---
 # 2.1 Le variabili
-Nel mondo della programmazione, le variabili fungono da contenitori per memorizzare dati. In Rust, una lingua di programmazione moderna, flessibile e sicura, l'uso delle variabili è particolarmente versatile. In questo capitolo, esploreremo in dettaglio i diversi tipi di variabili disponibili in Rust, comprendendo come utilizzarle per manipolare dati nei nostri programmi.
+Nel mondo della programmazione, le variabili fungono da contenitori per memorizzare dati. In Rust l'uso delle variabili è particolarmente versatile. In questo capitolo, esploreremo in dettaglio i diversi tipi di variabili disponibili in Rust, comprendendo come utilizzarle per manipolare dati nei nostri programmi.
+
+:::info
+Nella vita quotidiana, le variabili sono come scatole in cui conservi oggetti diversi. Ad esempio, immagina una scatola di nome "Frutta": oggi contiene mele, ma domani potrebbe avere banane. La scatola rappresenta una variabile, il suo contenuto cambia. Analogamente, in matematica e programmazione, le variabili sono contenitori di dati che possono cambiare nel tempo, come un punteggio in un gioco o una temperatura che varia durante il giorno.
+:::
 
 ## Variabili immutabili
-In Rust, per default, le variabili sono immutabili, il che significa che il loro valore non può essere modificato una volta assegnato. Ad esempio:
+In Rust, per default, le variabili sono **immutabili**, il che significa che il loro valore non può essere modificato una volta assegnato. Ad esempio:
 
 ```rust
 let eta = 30; // Variabile immutabile chiamata "eta" con il valore 30.

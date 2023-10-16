@@ -1,0 +1,45 @@
+---
+sidebar_position: 9
+title: "2.9 Verifica"
+---
+import Quiz from '@site/src/components/Quiz';
+
+In questo bel capitolo, vediamo se le fondamente sono state costruite in maniera solida.  
+
+***
+
+<Quiz
+  questions={[
+    {
+      text: "#1 Che cosa sono le variabili?",
+      answers: [
+        "Le variabili non sono importanti per la matematica o la programmazione",
+        "Le variabili sono oggetti fisici che cambiano di posizione nel tempo", 
+        "Le variabili sono costanti fisse che non cambiano mai.", 
+        "Le variabili sono simboli che rappresentano dati variabili in matematica e programmazione, consentendo manipolazioni e calcoli", 
+      ],
+      correctAnswer: "Le variabili sono simboli che rappresentano dati variabili in matematica e programmazione, consentendo manipolazioni e calcoli",
+    },  
+    {
+      text: "#2 Come vengono definite le variabili in Rust di default?",
+      answers: [
+        "Di default sono mutabili, il che significa che possono essere modificate liberamente senza restrizioni",
+        "Di default sono immutabili, quindi non possono essere riassegnate una volta che il loro valore è stato assegnato", 
+        "Di default sono globali, il che significa che sono accessibili da qualsiasi parte del programma senza restrizioni", 
+        "Di default sono costanti, il che significa che non possono essere modificate dopo l'assegnazione del valore iniziale", 
+      ],
+      correctAnswer: "Di default sono immutabili, quindi non possono essere riassegnate una volta che il loro valore è stato assegnato",
+    },  
+    {
+      text: "#3 Qual'è la differenza tra variabili shadowed e variabili mutabili?",
+      answers: [
+        "Variabili shadowed: variabili modificabili liberamente; variabili mutabili: variabili in Rust con mut per modificare i valori",
+        "Le variabili shadowed nascondono variabili originali nel codice, mentre le variabili mutabili sono modificabili in JavaScript", 
+        "Le variabili shadowed sono variabili locali con lo stesso nome di variabili globali, creando uno scope locale", 
+        "Le variabili shadowed possono cambiare tipo; le variabili mutabili hanno valori fissi, non modificabili", 
+      ],
+      correctAnswer: "Le variabili shadowed sono variabili locali con lo stesso nome di variabili globali, creando uno scope locale",
+    },  
+  ]}
+/>
+

@@ -26,6 +26,7 @@ Ho suddiviso il corso in 6 livelli differenti, dal più semplice al più comples
   - 2.6: [Le funzioni](./Capitolo-02/le-funzioni)
   - 2.7: [Input e Output](./Capitolo-02/input-e-output)
   - 2.8: [I commenti e l'indentazione](./Capitolo-02/commenti-e-indentazione)
+  - 2.9: [Verifica](./Capitolo-02/verifica)
 
 ## Livello 2 - *L'audace programmatore* ★★
 ### Capitolo 3: Il concetto di Ownership
