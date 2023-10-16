@@ -129,6 +129,10 @@ const config = {
             title: 'More',
             items: [
               {
+                label: 'Privacy Policy',
+                href: '/privacy-policy',
+              },
+              {
                 label: 'GitHub',
                 href: 'https://github.com/pankaspe/rusty-pixel',
               },

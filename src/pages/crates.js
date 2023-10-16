@@ -11,7 +11,7 @@ export default function Hello() {
             Questa sezione di Rusty-Pixel offre un'accesso diretto e intuitivo all'ecosistema di librerie Rust tramite l'API di Crates.io. 
           </h3>
           <h4 style={{ textAlign: 'center', fontWeight: 'normal', paddingBottom: 16 }}>
-          Trova facilmente librerie, controlla le versioni più recenti e arricchisci i tuoi progetti Rust con le ultime soluzioni. Esplora Crates.io senza sforzo, tutto in un unico luogo su Rusty-Pixel.
+            Esplora Crates.io senza sforzo, tutto in un unico luogo su Rusty-Pixel.
           </h4>
           <CratesIoComponent /> 
         </div>

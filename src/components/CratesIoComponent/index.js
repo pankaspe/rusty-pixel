@@ -21,7 +21,6 @@ const CratesIoComponent = () => {
 
   return (
     <div className={styles.searchContainer}>
-      <h2>Cerca un Crate su crates.io</h2>
       <div className={styles.searchForm}>
         <input
           className={styles.searchInput}
