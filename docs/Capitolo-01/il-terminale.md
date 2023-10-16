@@ -3,7 +3,7 @@ sidebar_position: 4
 ---
 
 # 1.4 Funzionamento del computer
-Un computer è una macchina elettronica che può eseguire operazioni complesse in modo veloce ed efficiente. Ecco come è generalmente composto:
+Un computer è un calcolatore elettronico che può eseguire operazioni complesse in modo veloce ed efficiente. Ecco come è generalmente composto:
 
 ## Componenti di Base di un Computer
 1. **Processore (CPU):** È il "cervello" del computer, esegue istruzioni e processa dati.
