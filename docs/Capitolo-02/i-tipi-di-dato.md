@@ -6,6 +6,10 @@ I tipi di dati in Rust definiscono il tipo di valore che una variabile può cont
 
 C'è da sottolineare che in Rust, quando dichiari una variabile, il compilatore è in grado di *inferire automaticamente* il tipo di dato in base al valore che gli assegni. Questo è noto come "*type inference*" o inferenza del tipo. Grazie a questa caratteristica, non è sempre necessario specificare esplicitamente il tipo di dato quando dichiari una variabile, ma vediamo nel dettaglio quali sono i tipi di dato.
 
+:::info
+In Rust, il **type inference** è un concetto fondamentale che consente al compilatore di dedurre automaticamente il tipo di una variabile in base al contesto in cui viene utilizzata, senza richiedere esplicita annotazione del tipo da parte del programmatore. Questo significa che, se assegni un valore a una variabile senza specificare il tipo, Rust può capire autonomamente di che tipo è quel valore e utilizzare tale informazione per il resto del codice. Questo non solo rende il codice più leggibile e conciso, ma aiuta anche a prevenire errori di tipo durante la compilazione. L'approccio di Rust al type inference permette ai programmatori di scrivere codice più sicuro ed efficiente, riducendo la complessità senza compromettere la sicurezza del linguaggio.
+:::
+
 ## Numerici interi
 In Rust, i tipi di dati interi possono essere signed (con segno) o unsigned (senza segno). Vediamo cosa significa e fornisco un esempio per chiarire meglio.
 1. **Signed (Con Segno):**
