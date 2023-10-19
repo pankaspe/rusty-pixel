@@ -1,7 +1,7 @@
 ---
 title: SQL Injection
 description: Scopri tutto sulla pericolosa vulnerabilità SQL Injection. Leggi l'articolo per capire come proteggere il tuo sito web da attacchi informatici. Impara le migliori pratiche e tecniche per mantenere sicuri i tuoi dati online.
-tags: [release, beta]
+tags: [vulnerabilità, sql-injection, web]
 image: ./img/social-card.png
 ---
 
