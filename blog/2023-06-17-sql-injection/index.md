@@ -1,7 +1,7 @@
 ---
 title: SQL Injection
 description: Scopri tutto sulla pericolosa vulnerabilità SQL Injection. Leggi l'articolo per capire come proteggere il tuo sito web da attacchi informatici. Impara le migliori pratiche e tecniche per mantenere sicuri i tuoi dati online.
-tags: [vulnerabilità, sql-injection, web]
+tags: [vulnerabilità, sql-injection, programmazione-web]
 image: ./img/social-card.png
 ---
 
@@ -133,7 +133,7 @@ In alternativa, potresti coinvolgere un esperto di sicurezza informatica per con
 ## Angolo nerd Rust
 :::tip
 Ciao **ruster**!! Sei ancora qui, ti piace allora eh... ❤️ masochista.  
-Ti faccio vedere come potresti sviluppare un punto di partenza per un programma in **Rust** per scansionare il tuo sito internet in cerca di qualche vulnerabilità, oh *keep calm* eh, anche se questo codice così com'è non farebbe male neanche ad un *commodore 64* rispetta sempre l'etica, io ripeto, me ne lavo le mani.
+Ti faccio vedere come potresti sviluppare un punto di partenza per un programma in **Rust** per scansionare il tuo sito internet in cerca di qualche vulnerabilità, oh *keep calm* eh, anche se questo codice così com'è non farebbe male neanche ad un *commodore 64*. Rispetta sempre l'etica, io ripeto, me ne lavo le mani.
 
 ```rust
 extern crate reqwest;
