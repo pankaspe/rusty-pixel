@@ -31,7 +31,50 @@ Gli attacchi **MitM** su reti Wi-Fi e reti cellulari (2G, 3G, 4G, 5G) sfruttano 
 
 Quel che rende l'attacco **MitM** tanto tragico è il suo potenziale di distruzione. In entrambi i casi di rete, il malintenzionato può eseguire attacchi di intercettazione, dirottamento di sessioni, inserimento di malware e iniezione di dati dannosi sfruttando queste vulnerabilità. Proteggersi richiede l'uso di connessioni crittografate, l'attenzione alle impostazioni di sicurezza Wi-Fi e l'evitare reti non sicure.
 
-## SMS vs WhatsApp
+## Ma come fa l'attaccante a intercettare la comunicazione?
+Veniamo al cuore della questione, questa è l'arte dell'ingegneria informatica.  
+Prendiamo la casistica più comune, che riguarda l'intercettazione di comunicazione su reti wi fi pubbliche.
+Di solito vengono applicate diverse tecniche come *sniffing del traffico*, *DNS spoofing*, *session hijacking*, *SSL Stripping*, etc... ma prendiamo la più semplice
+
+### Sniffing del traffico
+:::caution
+Le informazioni fornite sono **solo per apprendimento**. L'abuso di tecniche di *sniffing di rete* è irresponsabile e illegale. Rusty-Pixel non si assume alcuna responsabilità per l'uso improprio da parte di terzi. La sicurezza è cruciale; utilizza queste conoscenze in modo etico e legale!
+:::
+
+Lo sniffing del traffico è il processo di intercettazione e registrazione dei pacchetti di dati che passano attraverso una rete. Gli attaccanti possono utilizzare software o hardware specializzati chiamati "sniffers" per condurre questo tipo di attività. Ecco come avviene lo sniffing del traffico:
+
+1. **Promiscuous Mode:** La scheda di rete del dispositivo dell'attaccante viene impostata in modalità "promiscua". In questa modalità, la scheda di rete può captare tutti i pacchetti che passano attraverso la rete, non solo i pacchetti destinati al dispositivo dell'attaccante. Normalmente, le schede di rete sono configurate per ricevere solo i pacchetti diretti al proprio indirizzo MAC.
+2. **Cattura dei pacchetti:** Il dispositivo dell'attaccante cattura i pacchetti di dati che viaggiano sulla rete. Questi pacchetti possono includere dati sensibili come informazioni di login, password, cookie di sessione e altre informazioni personali.
+
+3. **Analisi del traffico:** I pacchetti catturati vengono analizzati dall'attaccante per individuare informazioni sensibili. Gli sniffers possono essere configurati per filtrare pacchetti specifici o per cercare modelli di dati specifici all'interno dei pacchetti.
+
+4. **Utilizzo di software sniffer:** Gli attaccanti possono utilizzare software sniffers come Wireshark, tcpdump, o ettercap per catturare e analizzare i pacchetti di rete. Questi software forniscono un'interfaccia utente che consente agli attaccanti di visualizzare e interpretare facilmente i dati catturati.
+
+5. **Sfruttamento di vulnerabilità di rete:** In alcune situazioni, gli attaccanti possono sfruttare vulnerabilità nelle configurazioni di rete o nei protocolli di comunicazione per catturare il traffico. Ad esempio, possono eseguire un attacco ARP poisoning per indirizzare il traffico attraverso il loro dispositivo prima che raggiunga il suo destino legittimo.
+
+È importante notare che lo **sniffing del traffico è illegale** senza il consenso esplicito delle parti coinvolte. Gli sniffers sono strumenti potenti che possono essere utilizzati per scopi legittimi, come il debugging di reti o l'analisi del traffico, ma possono anche essere usati per attività malevole come il furto di dati personali e finanziari.
+
+In generale, è fondamentale evitare l'uso di reti Wi-Fi pubbliche non protette per attività sensibili e utilizzare una connessione **VPN** (Virtual Private Network) quando si è costretti a utilizzare reti Wi-Fi pubbliche. Una VPN crittografa il tuo traffico Internet, proteggendo le tue informazioni sensibili dall'intercettazione da parte di terze parti.
+
+## Come ci si protegge da questi MitM?
+Proteggersi dagli attacchi Man-in-the-Middle (MitM) richiede l'adozione di buone pratiche di sicurezza e l'utilizzo di strumenti e tecniche di protezione. Ecco alcune strategie per proteggersi da questi tipi di attacchi:
+
+1. **Utilizzare una connessione sicura:** Evita di utilizzare reti Wi-Fi pubbliche o non protette per attività sensibili. Preferisci reti sicure, come una connessione VPN (Virtual Private Network) per crittografare il tuo traffico e proteggerti da intercettazioni.
+2. **Verificare la connessione HTTPS:** Quando visiti siti web, assicurati che la connessione sia sicura e crittografata utilizzando HTTPS. La presenza di un lucchetto verde accanto all'URL nel browser indica una connessione sicura.
+3. **Evitare siti web non sicuri:** Evita di visitare siti web non sicuri o sospetti. I siti web che non utilizzano HTTPS o che presentano avvisi di sicurezza dovrebbero essere trattati con cautela.
+4. **Attenzione agli avvisi del browser:** Presta attenzione agli avvisi del tuo browser riguardo a certificati SSL/TLS non validi o siti web sospetti. Non ignorare mai questi avvisi.
+5. **Aggiornare i dispositivi e le applicazioni:** Mantieni **sempre** aggiornati i tuoi dispositivi e le applicazioni. Gli aggiornamenti spesso includono patch per vulnerabilità di sicurezza note.
+6. **Utilizzare DNS sicuri:** Configura i tuoi dispositivi per utilizzare server DNS affidabili e sicuri. Alcuni servizi DNS offrono protezione contro attacchi MitM.
+7. **Evitare clic su link sospetti:** Non cliccare su link sospetti o inviati da fonti non affidabili. Gli attaccanti potrebbero inviare link malevoli per dirottare il tuo traffico.
+8. **Utilizzare tecnologie di validazione:** Implementa tecniche di validazione come HSTS (HTTP Strict Transport Security) che forza una connessione HTTPS al sito web, proteggendo da attacchi di downgrading.
+9. **Educare gli utenti:** Se sei un amministratore di rete, educa gli utenti sulla sicurezza informatica e sulle minacce MitM. Insegnali a riconoscere i segnali di un attacco e a proteggere le proprie informazioni.
+10. **Firewall e sicurezza di Rete:** Configura un firewall robusto e utilizza soluzioni di sicurezza di rete che possono identificare e bloccare attività sospette.
+11. **Utilizzare protocoli sicuri di autenticazione:** Quando possibile, utilizza protocolli di autenticazione sicuri come Multi-Fattore (ad esempio, autenticazione a due fattori) per rendere più difficile agli attaccanti l'accesso non autorizzato.
+12. **Crittografa le comunicazioni:** Crittografa le comunicazioni sensibili, come le e-mail e i messaggi istantanei, utilizzando protocolli sicuri come PGP (Pretty Good Privacy) o **end-to-end** encryption nei servizi di messaggistica.
+
+Implementando queste pratiche e rimanendo vigili, puoi ridurre significativamente il rischio di essere vittima di attacchi Man-in-the-Middle.
+
+## SMS vs WhatsApp, la differenza
 Gli **SMS** (Short Message Service) sono vulnerabili agli attacchi Man-in-the-Middle (MitM) a causa del modo in cui vengono trasmessi attraverso la rete cellulare e del loro basso livello di sicurezza.
 
 :::info
