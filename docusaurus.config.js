@@ -48,7 +48,6 @@ const config = {
           */
 
         },
-        /*
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
@@ -56,7 +55,6 @@ const config = {
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        */
         theme: {
           customCss: require.resolve('./src/css/custom.css')
         }
@@ -82,7 +80,7 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          /* {to: '/blog', label: 'Blog', position: 'left'}, */
+          {to: '/blog', label: 'Hacklog', position: 'left'},
           {
             to: '/about', 
             label: 'il Progetto', 
@@ -148,7 +146,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-        additionalLanguages: ['rust'],
+        additionalLanguages: ['rust', 'php'],
       },
     }),
     customFields: {
