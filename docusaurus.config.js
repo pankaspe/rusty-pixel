@@ -139,7 +139,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Rusty Guardians, Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Rusty Pixel, Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
