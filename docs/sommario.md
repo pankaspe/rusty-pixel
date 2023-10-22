@@ -87,7 +87,7 @@ Ho suddiviso il corso in 6 livelli differenti, dal più semplice al più comples
   - 11.2: Ulteriori Risorse e Approfondimenti
   - 11.3: Il Vostro Cammino di Apprendimento Continuo
 
-## Livello 5 - *Il Delirante* ★★★★
+## Livello 5 - *Il Delirante* ★★★★★
 ### Capitolo 12: Etica dell'Hacking e sicurezza informatica con Rust
   - 12.1 Scopo dell'hacking etico
   - 12.2 Differenza tra white hat e black hat
@@ -101,7 +101,7 @@ Ho suddiviso il corso in 6 livelli differenti, dal più semplice al più comples
   - 13.2 Linee guida per un comportamento etico nel mondo digitale
   - 13.3 Come contribuire alla sicurezza informatica e all'etica online con le tue competenze
 
-## Livello 6 - *il Tessitore di Follia* ★★★★★
+## Livello 6 - *Il Manipolatore della Follia* ★★★★★
 ### Capitolo 14: Le Reti Neurali
   - 14.1 Cosa sono le reti neurali artificiali
   - 14.2 Funzionamento delle reti neurali nell'apprendimento automatico
