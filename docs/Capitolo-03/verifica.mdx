@@ -1,0 +1,75 @@
+---
+sidebar_position: 5
+title: "3.5 Verifica"
+---
+import Quiz from '@site/src/components/Quiz';
+
+Ownership nel dettaglio
+
+***
+
+<Quiz
+  questions={[
+    {
+      text: "#1 Cosa succede quando una variabile Rust viene assegnata a un'altra variabile?",
+      answers: [
+        "Una copia profonda dei dati viene creata", 
+        "Entrambe le variabili possono accedere ai dati simultaneamente", 
+        "La variabile originale perde l'accesso ai suoi dati", 
+        "Rust genera un errore di compilazione",
+      ],
+      correctAnswer: "La variabile originale perde l'accesso ai suoi dati",
+    },
+    {
+      text: "#2 Cosa rappresenta il concetto di prestito (borrowing) in Rust?",
+      answers: [
+        "La creazione di nuove variabili con dati esistenti", 
+        "Il passaggio temporaneo di accesso ai dati senza trasferire la proprietà", 
+        "La creazione di copie profonde dei dati originali", 
+        "La perdita permanente di accesso ai dati originali",
+      ],
+      correctAnswer: "Il passaggio temporaneo di accesso ai dati senza trasferire la proprietà",
+    },
+    {
+      text: "#3 Cosa rappresenta un riferimento in Rust?",
+      answers: [
+        "Una copia esatta dei dati originali", 
+        "Un puntatore che permette di accedere ai dati senza trasferire la proprietà", 
+        "Un'operazione che cancella definitivamente i dati originali", 
+        "Un modo per creare nuove variabili indipendenti",
+      ],
+      correctAnswer: "Un puntatore che permette di accedere ai dati senza trasferire la proprietà",
+    },
+    {
+      text: "#4 Qual è la principale differenza tra un riferimento 'mutabile' e un riferimento 'immutabile'?",
+      answers: [
+        "Un riferimento mutabile consente solo la lettura dei dati, mentre un riferimento immutabile consente la modifica dei dati", 
+        "Non esiste differenza tra riferimenti mutabili e immutabili in Rust", 
+        "Entrambi i tipi di riferimenti consentono solo la lettura dei dati", 
+        "Un riferimento mutabile consente la modifica dei dati, mentre un riferimento immutabile consente solo la lettura dei dati",
+      ],
+      correctAnswer: "Un riferimento mutabile consente la modifica dei dati, mentre un riferimento immutabile consente solo la lettura dei dati",
+    },
+    {
+      text: "#5 Cosa rappresenta un lifetime in Rust?",
+      answers: [
+        "La durata di esecuzione di un programma Rust", 
+        "La frequenza con cui una variabile viene utilizzata nel codice", 
+        "Il tempo che un riferimento è valido e può essere utilizzato", 
+        "Il numero di volte che una variabile viene passata come argomento a una funzione",
+      ],
+      correctAnswer: "Il tempo che un riferimento è valido e può essere utilizzato",
+    },
+    {
+      text: "#6 Qual è lo scopo principale di specificare i lifetimes?",
+      answers: [
+        "Permettere a Rust di allocare dinamicamente la memoria", 
+        "Evitare i memory leak nel codice Rust", 
+        "Garantire che i riferimenti siano sempre validi durante la loro utilizzazione", 
+        "Consentire la modifica diretta dei dati senza restrizioni",
+      ],
+      correctAnswer: "Garantire che i riferimenti siano sempre validi durante la loro utilizzazione",
+    },
+  ]}
+/>
+
