@@ -34,6 +34,7 @@ Ho suddiviso il corso in 6 livelli differenti, dal più semplice al più comples
   - 3.2: [Le regole dell'Ownership](./Capitolo-03/le-regole-dell-ownership)
   - 3.3: [Prestiti e Riferimenti](./Capitolo-03/borrowing-e-reference)
   - 3.4: [Lifetime](./Capitolo-03/lifetime)
+  - 3.5: [Verifica](./Capitolo-03/verifica)
 
 ### Capitolo 4: Strutture dati in Rust
   - 4.1: [Lo Slice](./Capitolo-04/il-tipo-slice)
