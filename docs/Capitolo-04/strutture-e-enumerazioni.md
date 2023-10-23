@@ -4,6 +4,10 @@ sidebar_position: 2
 # 4.2 Strutture e Enumerazioni
 Nel vasto mondo della programmazione, le informazioni vengono spesso organizzate e manipolate attraverso dati strutturati. In Rust, due costrutti fondamentali per questa organizzazione dei dati sono le **strutture** e le **enumerazioni**. In questo capitolo, esploreremo questi concetti in dettaglio.
 
+:::tip
+In Rust, le strutture dati come le **struct** e gli **enum** possono essere utilizzate per creare oggetti complessi, simili a *oggetti* in altri linguaggi di programmazione. Nel [capitolo 6 - programmazione orientata ad oggetti](../category/capitolo-6---programmazione-orientata-agli-oggetti) di Rusty Pixel, troverai informazioni dettagliate su come le **struct** e gli **enum** possono essere utilizzati per creare oggetti e gestire i dati in modo organizzato e sicuro.
+:::
+
 ## Strutture (Structs)
 Le **strutture** ci permettono di creare nuovi tipi di dati personalizzati raggruppando insieme diversi tipi di dati esistenti. Ogni elemento all'interno di una **struttura** è chiamato *campo*, e queste strutture sono particolarmente utili quando vogliamo rappresentare oggetti complessi con diverse *proprietà*. Con l'utilizzo delle **strutture**, possiamo organizzare dati come nomi, età, punti in un gioco, o qualsiasi combinazione di dati che ha senso per il nostro programma.
 
@@ -15,7 +19,7 @@ struct Persona {
     punteggio: u64,
 }
 ```
-Nel codice sopra, abbiamo definito una struttura chiamata `Persona` con tre campi: `nome` di tipo `String`, `eta` di tipo `u32` e `pounteggio` di tipo `u64`.
+Nel codice sopra, abbiamo definito una struttura chiamata `Persona` con tre campi: `nome` di tipo `String`, `eta` di tipo `u32` e `punteggio` di tipo `u64`.
 
 ### Utilizzo di una Struttura
 ```rust

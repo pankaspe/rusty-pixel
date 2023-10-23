@@ -1,7 +1,7 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
-# 4.3 I Vettori
+# 4.4 I Vettori
 I **vettori** sono una *struttura dati* fondamentale in Rust e in molti altri linguaggi di programmazione. In Rust, i **vettori** sono usati per memorizzare una sequenza ordinata di elementi dello stesso tipo. Sono dinamici e possono crescere o diminuire di dimensione durante l'esecuzione del programma.
 
 ## Creare un Vettore

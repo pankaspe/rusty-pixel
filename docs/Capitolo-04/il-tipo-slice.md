@@ -2,12 +2,12 @@
 sidebar_position: 1
 ---
 # 4.1 Lo Slice
-Le slice in Rust rappresentano una parte essenziale della manipolazione dei dati. Quando si tratta di gestire porzioni di una sequenza di elementi, come caratteri in una stringa, Rust offre concetti potenti chiamati "slice". 
+Le **slice**  rappresentano una parte essenziale della manipolazione dei dati. Quando si tratta di gestire porzioni di una sequenza di elementi, come caratteri in una stringa, Rust offre concetti potenti chiamati **slice**. 
 
-Una **slice** è una vista immutabile su una sequenza di elementi. Nel nostro contesto, ci concentreremo sulle slice di stringhe, ma la filosofia è la stessa per altre sequenze come vettori e array. Le slice consentono di lavorare con parti specifiche dei dati senza copiare l'intera sequenza. Questo significa risparmio di memoria e tempo, rendendo le operazioni più veloci ed efficienti.
+Una **slice** è una **vista immutabile** su una sequenza di elementi. Nel nostro contesto, ci concentreremo sulle **slice** di stringhe, ma la filosofia è la stessa per altre sequenze come *vettori* e *array*. Le **slice** consentono di lavorare con parti specifiche dei dati senza copiare l'intera sequenza. Questo significa risparmio di memoria e tempo, rendendo le operazioni più veloci ed efficienti.
 
 ## Riferimento a una stringa Slice `&str`
-In Rust, `&str` è un tipo di dato fondamentale che rappresenta una vista **immutabile** su una sequenza di caratteri. Questo significa che `&str` ci permette di guardare (o fare riferimento a) parti specifiche di una stringa senza dover copiare l'intera sequenza di caratteri. Le stringhe di Rust sono basate su codifica UTF-8, il che significa che `&str` può rappresentare testo multibyte in modo efficace.
+In Rust, `&str` è un tipo di dato fondamentale che rappresenta una vista **immutabile** su una sequenza di caratteri. Questo significa che `&str` ci permette di guardare (o fare *riferimento* a) parti specifiche di una stringa senza dover copiare l'intera sequenza di caratteri. Le stringhe di Rust sono basate su codifica UTF-8, il che significa che `&str` può rappresentare testo multibyte in modo efficace.
 
 ### Creare un riferimento
 Immagina di avere una `String` che contiene una frase:
@@ -17,7 +17,7 @@ fn main() {
 }
 ```
 
-Ora, supponiamo che vogliamo lavorare solo con la parola "mondo" in questa frase senza creare una nuova `String`. Possiamo farlo utilizzando una slice di stringa (`&str`):
+Ora, supponiamo che vogliamo lavorare solo con la parola "*mondo*" in questa frase senza creare una nuova `String`. Possiamo farlo utilizzando una slice di stringa (`&str`):
 ```rust
 fn main() {
     let mia_stringa = String::from("Benvenuto nel mondo di Rust!");

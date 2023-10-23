@@ -1,7 +1,7 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 ---
-# 4.4 Option
+# 4.5 Option
 `Option<T>` è un *tipo di dato* in Rust che rappresenta la possibilità di avere o non avere un valore. Questo è particolarmente utile quando si lavora con situazioni in cui il valore può essere assente o non ancora definito. In Rust, `Option<T>` è un **enum** che può avere uno di due valori:
 
 - `Some(T)`: Rappresenta un valore di tipo `T`.
@@ -11,7 +11,6 @@ sidebar_position: 4
 `Option<T>` è utile quando si vuole indicare esplicitamente che un valore potrebbe essere assente o quando si desidera gestire casi in cui un valore non è ancora disponibile o non esiste.
 
 ### Esempio di Utilizzo:
-
 ```rust
 fn main() {
     // Definiamo una funzione che restituisce un Option<i32>
@@ -39,6 +38,39 @@ fn main() {
 ```
 
 In questo esempio, la funzione `divide` restituisce un `Option<i32>`. Se il denominatore è diverso da zero, restituisce `Some(value)`, altrimenti `None`.
+
+:::tip
+In Rust, `.unwrap_or(default)` è un metodo utilizzato con il tipo `Option<T>`. L'invocazione di questo metodo restituisce il valore contenuto nell'`Option<T>` se è presente, altrimenti restituisce il valore di default fornito come argomento. Ad esempio, se hai un `Option<String>` e vuoi ottenere la stringa contenuta al suo interno o una stringa di default "Nessun valore", puoi farlo usando `.unwrap_or("Nessun valore".to_string())`.
+
+Questo approccio è più conciso e leggibile rispetto all'utilizzo di `match` per gestire gli `Option<T>`. Mentre usando `match` avresti bisogno di scrivere più codice per gestire i casi `Some` e `None`, `.unwrap_or(default)` semplifica il processo consentendo di gestire entrambi i casi in una sola riga di codice. Tuttavia, è importante notare che `.unwrap_or(default)` può causare un panic se si tenta di estrarre un valore da `None`, quindi dovresti usarlo solo quando sei sicuro che l'`Option<T>` è sempre `Some`. Se non sei sicuro, è preferibile considerare l'utilizzo di `.unwrap_or_else(|| default)`, che accetta una chiamata di funzione senza valutare il suo risultato finché `None` è presente, riducendo così il rischio di panico.
+
+```rust
+fn main() {
+    // Definiamo una funzione che restituisce un Option<i32>
+    fn divide(a: i32, b: i32) -> Option<i32> {
+        if b != 0 {
+            Some(a / b)
+        } else {
+            None
+        }
+    }
+
+    // Esempio di utilizzo di Option<T> con unwrap_or(default)
+    let numerator = 10;
+    let denominator = 2;
+
+    // Ottieni il risultato della divisione come Option<i32>
+    let result = divide(numerator, denominator);
+
+    // Ottieni il valore dalla Option usando unwrap_or(default)
+    let value = result.unwrap_or(0); // Default è 0 se l'Option è None
+
+    // Stampa il risultato
+    println!("Il risultato è: {}", value);
+}
+```
+
+:::
 
 ## Vantaggi di Option:
 1. **Sicurezza e affidabilità**: Evita errori comuni come i null pointer dereference.

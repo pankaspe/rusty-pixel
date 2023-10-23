@@ -1,0 +1,155 @@
+---
+sidebar_position: 6
+title: "4.6 Verifica"
+---
+import Quiz from '@site/src/components/Quiz';
+
+Strutture dati avanzate
+
+***
+
+<Quiz
+  questions={[
+    {
+      text: "#1 Cosa rappresenta una 'slice'?",
+      answers: [
+        "Una struttura dati simile a un array ma con dimensioni flessibili", 
+        "Un riferimento a un intervallo di elementi in un array o in un altro tipo di sequenza", 
+        "Una variabile che può contenere più valori di diversi tipi di dati", 
+        "Un tipo di variabile utilizzato solo per operazioni matematiche",
+      ],
+      correctAnswer: "Un riferimento a un intervallo di elementi in un array o in un altro tipo di sequenza",
+    },
+    {
+      text: "#2 Qual è la differenza principale tra un array e una slice in Rust?",
+      answers: [
+        "Un array è di dimensioni fisse, mentre una slice può variare di dimensione", 
+        "Un array può contenere solo elementi di tipo numerico, mentre una slice può contenere qualsiasi tipo di dato", 
+        "Un array non può essere passato come argomento a una funzione, mentre una slice può", 
+        "Non esiste differenza tra un array e una slice in Rust",
+      ],
+      correctAnswer: "Un array è di dimensioni fisse, mentre una slice può variare di dimensione",
+    },
+    {
+      text: "#3 Quando è preferibile utilizzare &str anziché String?",
+      answers: [
+        "Quando si hanno bisogno di modificare dinamicamente il contenuto della sequenza di caratteri", 
+        "Quando si vuole garantire l'immunità ai cambiamenti nel contenuto della sequenza di caratteri", 
+        "&str non è utilizzabile in Rust; dovrebbe sempre essere utilizzata String", 
+        "Quando si desidera passare una sequenza di caratteri a una funzione senza doverne trasferire la proprietà",
+      ],
+      correctAnswer: "Quando si desidera passare una sequenza di caratteri a una funzione senza doverne trasferire la proprietà",
+    },
+    {
+      text: "#4 Qual è la differenza principale tra una struttura (struct) e un'enumerazione (enum)?",
+      answers: [
+        "Una struttura è immutabile, mentre un'enumerazione può essere modificata durante l'esecuzione del programma", 
+        "Una struttura può rappresentare solo valori numerici, mentre un'enumerazione può rappresentare valori di qualsiasi tipo", 
+        "Una struttura è una collezione di valori di tipo diverso, mentre un'enumerazione rappresenta un singolo valore da un insieme di opzioni definite", 
+        "Una struttura è una collezione di valori di tipo simile, mentre un'enumerazione rappresenta una sequenza di operazioni da eseguire",
+      ],
+      correctAnswer: "Una struttura è una collezione di valori di tipo diverso, mentre un'enumerazione rappresenta un singolo valore da un insieme di opzioni definite",
+    },
+    {
+      text: "#5 Quando sarebbe opportuno utilizzare un'enumerazione anziché una struttura?",
+      answers: [
+        "Quando si ha bisogno di rappresentare un insieme fisso e limitato di opzioni o stati", 
+        "Quando si desidera conservare valori di tipo diverso all'interno della stessa variabile", 
+        "Quando si vuole garantire l'accesso diretto ai singoli elementi", 
+        "Un'enumerazione non può essere utilizzata in Rust; dovrebbe sempre essere utilizzata una struttura",
+      ],
+      correctAnswer: "Quando si ha bisogno di rappresentare un insieme fisso e limitato di opzioni o stati",
+    },
+    {
+      text: "#6 Qual è il principale vantaggio di utilizzare l'espressione if let in Rust in combinazione con una struttura (struct) o un'enumerazione (enum)?",
+      answers: [
+        "Per eseguire operazioni matematiche complesse in modo più efficiente", 
+        "Per semplificare la gestione dei valori opzionali o dei risultati di pattern matching senza dover scrivere codice tedioso", 
+        "Per creare nuove istanze di struct ed enum durante l'esecuzione del programma", 
+        "if let non è utilizzabile in combinazione con struct ed enum in Rust",
+      ],
+      correctAnswer: "Per semplificare la gestione dei valori opzionali o dei risultati di pattern matching senza dover scrivere codice tedioso",
+    },
+    {
+      text: "#7 Cosa accade se si cerca di ottenere un valore da un HashMap usando una chiave che non esiste nella mappa?",
+      answers: [
+        "Il programma genera un errore di compilazione", 
+        "Il programma termina in modo anomalo (crash)", 
+        "La mappa restituirà un valore speciale indicante l'assenza di valore associato a quella chiave (come None in Option)", 
+        "Il programma genera un errore di runtime",
+      ],
+      correctAnswer: "La mappa restituirà un valore speciale indicante l'assenza di valore associato a quella chiave (come None in Option)",
+    },
+    {
+      text: "#8 Come può un HashMap in Rust essere iterato per accedere a tutte le sue chiavi e valori?",
+      answers: [
+        "Un HashMap in Rust non può essere iterato; è necessario accedere alle chiavi e ai valori singolarmente", 
+        "Utilizzando un ciclo for con il metodo .iter(), che restituisce una sequenza di tuple (chiave, valore)", 
+        "Utilizzando il metodo .enumerate(), che aggiunge un indice numerico a ogni coppia chiave-valore nel HashMap", 
+        "Utilizzando il metodo .keys() per accedere alle chiavi e il metodo .values() per accedere ai valori separatamente",
+      ],
+      correctAnswer: "Utilizzando un ciclo for con il metodo .iter(), che restituisce una sequenza di tuple (chiave, valore)",
+    },
+    {
+      text: "#9 Come si dichiara un nuovo 'HashMap' in Rust con chiavi di tipo 'String' e valori di tipo 'i32'",
+      answers: [
+        "let mut hashmap: HashMap<String, i32> = HashMap::new();", 
+        "let hashmap: HashMap<i32, String> = HashMap::new();", 
+        "let hashmap: HashMap<String, i32> = new HashMap();", 
+        "HashMap<String, i32> hashmap = HashMap::create();",
+      ],
+      correctAnswer: "let mut hashmap: HashMap<String, i32> = HashMap::new();",
+    },
+    {
+      text: "#10 Come si dichiara un nuovo vettore in Rust contenente numeri interi?",
+      answers: [
+        "let vettore = [i32]::new();", 
+        "let vettore = Vec<i32>::new();", 
+        "let vettore: [i32] = [];", 
+        "let vettore: Vec<i32> = Vec::new();",
+      ],
+      correctAnswer: "let vettore: Vec<i32> = Vec::new();",
+    },
+    {
+      text: "#11 Qual è il modo corretto per accedere all'elemento in posizione indice di un vettore",
+      answers: [
+        "vettore(indice)", 
+        "vettore.index(indice)", 
+        "vettore[indice]", 
+        "vettore.get(indice)",
+      ],
+      correctAnswer: "vettore[indice]",
+    },
+    {
+      text: "#12 Come si può creare un vettore in Rust contenente valori di un'enumerazione (enum) chiamata Color con le varianti Red, Green e Blue",
+      answers: [
+        "let colors: Vec<Color> = vec![Color::Red, Color::Green, Color::Blue];", 
+        "let colors = Vec<Color>::new(Color::Red, Color::Green, Color::Blue);", 
+        "let colors: Vec<Color> = Vec::new(); colors.push(Color::Red); colors.push(Color::Green); colors.push(Color::Blue);", 
+        "let colors = [Color::Red, Color::Green, Color::Blue];",
+      ],
+      correctAnswer: "let colors: Vec<Color> = vec![Color::Red, Color::Green, Color::Blue];",
+    },
+    {
+      text: "#13 Qual è la principale differenza tra Option<T> e un valore direttamente di tipo T in Rust?",
+      answers: [
+        "Option<T> può contenere solo valori numerici, mentre T può contenere qualsiasi tipo di dato", 
+        "Option<T> è una struttura dati che può rappresentare un valore opzionale (o nullo) in modo sicuro, mentre T rappresenta un valore obbligatorio", 
+        "Option<T> è immutabile, mentre T è mutabile", 
+        "Non esiste differenza tra Option<T> e T; possono essere utilizzati in modo intercambiabile",
+      ],
+      correctAnswer: "Option<T> è una struttura dati che può rappresentare un valore opzionale (o nullo) in modo sicuro, mentre T rappresenta un valore obbligatorio",
+    },
+    {
+      text: "#14 Come si può ottenere il valore contenuto in un Option<T> in Rust?",
+      answers: [
+        "Utilizzando il metodo .unwrap() per ottenere direttamente il valore, rischiando un errore di runtime se l'opzione è None", 
+        "Utilizzando il metodo .get() per ottenere il valore in modo sicuro, senza rischiare errori di runtime", 
+        "Utilizzando una dichiarazione match o il metodo .unwrap_or(default) per gestire in modo sicuro sia i casi Some(value) che None", 
+        "Utilizzando il metodo .value() per estrarre il valore direttamente dall'opzione",
+      ],
+      correctAnswer: "Utilizzando una dichiarazione match o il metodo .unwrap_or(default) per gestire in modo sicuro sia i casi Some(value) che None",
+    },
+  ]}
+/>
+
